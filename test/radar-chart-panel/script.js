@@ -1,8 +1,17 @@
-document.addEventListener('ds:components-ready', () => {
+let initialized = false;
+
+function initRadarApp() {
+  if (initialized) return;
+  initialized = true;
+
   const app = document.getElementById('app');
+  if (!app) return;
+  const headerHtml = window.DS && window.DS.sectionHeader
+    ? window.DS.sectionHeader({ title: 'Radar Chart Editor' })
+    : '<div class="local-header">Radar Chart Editor</div>';
 
   app.innerHTML = `
-    ${window.DS.sectionHeader({ title: 'Radar Chart Editor' })}
+    ${headerHtml}
     <div class="radar-layout">
       <section class="chart-wrap">
         <div class="chart-title">
@@ -606,4 +615,9 @@ document.addEventListener('ds:components-ready', () => {
   renderPanel();
   renderChart();
   window.addEventListener('resize', renderChart);
+}
+
+document.addEventListener('ds:components-ready', initRadarApp);
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(initRadarApp, 500);
 });
