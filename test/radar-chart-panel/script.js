@@ -6,29 +6,41 @@ function initRadarApp() {
 
   const app = document.getElementById('app');
   if (!app) return;
-  const headerHtml = window.DS && window.DS.sectionHeader
-    ? window.DS.sectionHeader({ title: 'Radar Chart Editor' })
-    : '<div class="local-header">Radar Chart Editor</div>';
+  try {
+    const headerHtml = window.DS && window.DS.sectionHeader
+      ? window.DS.sectionHeader({ title: 'Radar Chart Editor' })
+      : '<div class="local-header">Radar Chart Editor</div>';
 
-  app.innerHTML = `
-    ${headerHtml}
-    <div class="radar-layout">
-      <section class="chart-wrap">
-        <div class="chart-title">
-          <h3>Radar Preview</h3>
-          <div class="chart-meta" id="chartMeta"></div>
-        </div>
-        <div class="canvas-shell">
-          <canvas id="radarCanvas"></canvas>
-        </div>
-      </section>
-      <section class="panel" id="panel"></section>
-    </div>
-  `;
+    app.innerHTML = `
+      ${headerHtml}
+      <div class="radar-layout">
+        <section class="chart-wrap">
+          <div class="chart-title">
+            <h3>Radar Preview</h3>
+            <div class="chart-meta" id="chartMeta"></div>
+          </div>
+          <div class="canvas-shell">
+            <canvas id="radarCanvas"></canvas>
+          </div>
+        </section>
+        <section class="panel" id="panel"></section>
+      </div>
+    `;
+  } catch (err) {
+    app.innerHTML = `
+      <div class="local-header">Radar Chart Editor</div>
+      <pre class="error-box">${String(err)}</pre>
+    `;
+    return;
+  }
 
   const panel = document.getElementById('panel');
   const canvas = document.getElementById('radarCanvas');
   const meta = document.getElementById('chartMeta');
+  if (!panel || !canvas || !meta) {
+    app.innerHTML += '<pre class="error-box">App mount failed: missing elements.</pre>';
+    return;
+  }
   const ctx = canvas.getContext('2d');
 
   const state = {
