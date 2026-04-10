@@ -1,0 +1,23 @@
+{
+  "name": "Top Navigation",
+  "tier": "02_components",
+  "key": "topnav",
+  "type": "block",
+  "description": "A fixed mobile navigation bar displayed at the top of the screen.",
+  "guidelines": {
+    "purpose": "Top Navigation is a mobile navigation bar fixed to the top of the screen. It supports two types of title alignment (center/left) and combines back icons, titles, menus, and avatars.",
+    "types": {
+      "Center": "Title is centered. Back icon on the left, menu icon on the right.",
+      "Left": "Title is left-aligned. Back icon and title are on the same line."
+    },
+    "anatomy": {
+      "container": "topnav topnav--mobile. height: var(--sizing-1300), padding: 0 var(--sizing-400), white background, bottom border var(--color-border-secondary).",
+      "center_layout": "topnav__left--fixed + topnav__title--center + topnav__right.",
+      "left_layout": "topnav__left (back + title) + topnav__right.",
+      "icon_slot": "topnav__icon (24xvar(--spacing-600)).",
+      "avatar": "topnav__avatar (32xvar(--sizing-800), radius var(--sizing-400))."
+    },
+    "_rawHtml": "\n    <div class=\"guide-card\">\n      <div class=\"guide-section\">\n        <div class=\"guide-title\">Top Navigation</div>\n        <div class=\"guide-body\">画面上部に固定表示されるモバイルナビゲーションバーです。center / left の2種類のタイトル配置に対応し、戻るアイコン・タイトル・メニュー・アバターを組み合わせて使用します.</div>\n      </div>\n\n      <div class=\"guide-section\">\n        <div class=\"guide-subtitle\">Center</div>\n        <div class=\"guide-body\">タイトルを中央配置。左に戻るアイコン、右にメニューアイコンを配置します。</div>\n        <div style=\"margin-top:var(--spacing-300);\">\n          <div class=\"topnav topnav--mobile\">\n            <div class=\"topnav__left--fixed\"><div class=\"topnav__icon\"><span data-ds-icon=\"chevron-left_solid\" data-ds-size=\"24\" data-ds-color=\"var(--color-content-primary)\"></span></div></div>\n            <div class=\"topnav__title topnav__title--center\">title text</div>\n            <div class=\"topnav__right\"><div class=\"topnav__icon\"><span data-ds-icon=\"bars_solid\" data-ds-size=\"24\" data-ds-color=\"var(--color-content-primary)\"></span></div></div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"guide-section\">\n        <div class=\"guide-subtitle\">Left</div>\n        <div class=\"guide-body\">タイトルを左配置。戻るアイコンとタイトルが同じ行に並びます。</div>\n        <div style=\"margin-top:var(--spacing-300);\">\n          <div class=\"topnav topnav--mobile\">\n            <div class=\"topnav__left\">\n              <div class=\"topnav__icon\"><span data-ds-icon=\"chevron-left_solid\" data-ds-size=\"24\" data-ds-color=\"var(--color-content-primary)\"></span></div>\n              <span class=\"topnav__title topnav__title--left\">title text</span>\n            </div>\n            <div class=\"topnav__right\"><div class=\"topnav__icon\"><span data-ds-icon=\"bars_solid\" data-ds-size=\"24\" data-ds-color=\"var(--color-content-primary)\"></span></div></div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"guide-section\">\n        <div class=\"guide-subtitle\">Anatomy</div>\n        <div class=\"guide-body\">\n          <b>Container</b> — <code>topnav topnav--mobile</code>. height:var(--sizing-1300)、padding:0 var(--sizing-400)、white background、bottom border <code>var(--color-border-secondary)</code>.<br>\n          <b>Center</b> — <code>topnav__left--fixed</code> + <code>topnav__title--center</code> + <code>topnav__right</code>.<br>\n          <b>Left</b> — <code>topnav__left</code>（戻る + タイトル）+ <code>topnav__right</code>.<br>\n          <b>Icon slot</b> — <code>topnav__icon</code>（24×var(--spacing-600)）. <b>Avatar</b> — <code>topnav__avatar</code>（32×var(--sizing-800)、radius:var(--sizing-400)）.\n        </div>\n      </div>\n    </div><!-- guide-card -->\n  "
+  },
+  "selector": ".topnav"
+}

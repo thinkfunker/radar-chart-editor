@@ -1,0 +1,73 @@
+{
+  "name": "Checkbox",
+  "tier": "02_components",
+  "key": "checkbox",
+  "type": "atom",
+  "description": "An input component for users to select/deselect one or more items.",
+  "guidelines": {
+    "purpose": "Checkbox is an input component for users to select or deselect one or more items. It is used when multiple selections are possible, and the selection state is maintained.",
+    "anatomy": {
+      "background_area": "The checkbox box itself.",
+      "icon_area": "The checkmark icon.",
+      "label": "Text label placed outside the checkbox wrap."
+    },
+    "style": {
+      "state": [
+        "enabled",
+        "hovered",
+        "focused",
+        "pressed",
+        "disabled"
+      ],
+      "selected": [
+        "true",
+        "false"
+      ]
+    },
+    "usage_guidelines": {
+      "general": [
+        "Maintains selected state after user interaction.",
+        "Labels should be placed outside the checkbox; the component itself does not include text.",
+        "Maintain consistent placement and spacing when aligning multiple checkboxes."
+      ],
+      "spacing": {
+        "horizontal_gap": "var(--sizing-200) between checkbox and label.",
+        "vertical_gap": "Minimum var(--sizing-400) between vertical checkboxes.",
+        "adjustment": "Adjust in var(--sizing-100) units."
+      },
+      "touch_target": "The touch area includes the label. Total touch target should be at least 44xvar(--sizing-1100) for mobile.",
+      "playground": {
+        "controls": [
+          {
+            "id": "checked",
+            "label": "Checked",
+            "type": "toggle",
+            "options": [
+              true,
+              false
+            ],
+            "default": false
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "type": "text",
+            "default": "Checkbox Label"
+          },
+          {
+            "id": "state",
+            "label": "State",
+            "type": "toggle",
+            "options": [
+              "enabled",
+              "disabled"
+            ],
+            "default": "enabled"
+          }
+        ]
+      }
+    },
+    "_rawHtml": "\n<h2 class=\"section-title\">Guide</h2>\n        <div class=\"guide-card\">\n\n          <!-- Purpose -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Purpose</h3>\n            <p>Checkboxは、ユーザーが1つ以上の項目を選択／解除するための入力コンポーネントです。複数選択が可能な場合に使用され、選択状態は保持されます。</p>\n          </div>\n\n          <!-- Anatomy -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Anatomy</h3>\n            <div class=\"anatomy-diagram\" style=\"display:flex;gap:var(--spacing-800);flex-wrap:wrap;padding:var(--spacing-500) 0;align-items:flex-start;\">\n              <div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-300);\">\n                <label class=\"checkbox-wrap\" style=\"gap:var(--spacing-300);\">\n                  <div class=\"checkbox selected\" style=\"outline:var(--border-width-200) dashed var(--color-gradient-content-stop-1);outline-offset:var(--sizing-100);\"><span class=\"checkbox-icon\" data-ds-icon=\"check_solid\" data-ds-size=\"12\" data-ds-color=\"white\"></span></div>\n                  <span class=\"checkbox-label\" style=\"outline:var(--border-width-200) dashed var(--color-content-key);outline-offset:var(--sizing-100);padding:var(--spacing-050) var(--space-xs);border-radius:var(--border-width-300);\">Label</span>\n                </label>\n              </div>\n              <div style=\"display:flex;flex-direction:column;gap:var(--spacing-200);font-size: var(--text-size-xs);;color:var(--color-content-tertiary);\">\n                <div style=\"display:flex;align-items:center;gap:var(--spacing-200);\"><span style=\"width:var(--sizing-300);height:var(--border-width-200);background:var(--color-gradient-content-stop-1);display:inline-block;border-radius:var(--border-width-100);\"></span>Background area (checkbox box)</div>\n                <div style=\"display:flex;align-items:center;gap:var(--spacing-200);\"><span style=\"width:var(--sizing-300);height:var(--border-width-200);background:var(--color-content-key);display:inline-block;border-radius:var(--border-width-100);\"></span>Icon area (checkmark)</div>\n              </div>\n            </div>\n          </div>\n\n          <!-- Style -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Style</h3>\n\n            <h4 class=\"guide-sub-heading\">State</h4>\n            <p>Checkboxはインタラクションに応じて状態が変化します。</p>\n            <div class=\"state-table\" style=\"display:grid;grid-template-columns:repeat(5,1fr);gap:var(--spacing-400);margin-top:var(--spacing-300);max-width:calc(var(--sizing-100) * 120);\">\n              <div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-200);\">\n                <label class=\"checkbox-wrap\"><div class=\"checkbox\"></div></label>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);text-align:center;\">enabled</span>\n              </div>\n              <div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-200);\">\n                <label class=\"checkbox-wrap state-hovered\"><div class=\"checkbox\"></div></label>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);text-align:center;\">hovered</span>\n              </div>\n              <div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-200);\">\n                <label class=\"checkbox-wrap state-focused\"><div class=\"checkbox\"></div></label>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);text-align:center;\">focused</span>\n              </div>\n              <div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-200);\">\n                <label class=\"checkbox-wrap state-pressed\"><div class=\"checkbox\"></div></label>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);text-align:center;\">pressed</span>\n              </div>\n              <div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-200);\">\n                <label class=\"checkbox-wrap state-disabled\"><div class=\"checkbox\"></div></label>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);text-align:center;\">disabled</span>\n              </div>\n            </div>\n\n            <h4 class=\"guide-sub-heading\" style=\"margin-top:var(--spacing-500);\">Selected</h4>\n            <p>選択状態はユーザー操作後も保持されます。</p>\n            <div style=\"display:flex;gap:var(--spacing-600);margin-top:var(--spacing-300);align-items:center;\">\n              <div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-200);\">\n                <label class=\"checkbox-wrap\"><div class=\"checkbox\"></div></label>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);\">false</span>\n              </div>\n              <div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-200);\">\n                <label class=\"checkbox-wrap\"><div class=\"checkbox selected\"><span data-ds-icon=\"check_solid\" data-ds-size=\"24\" data-ds-color=\"white\"></span></div></label>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);\">true</span>\n              </div>\n            </div>\n          </div>\n\n          <!-- Usage Guidelines -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Usage Guidelines</h3>\n\n            <h4 class=\"guide-sub-heading\">General</h4>\n            <ul class=\"guide-list\">\n              <li>Checkboxは、選択された状態（true / false）をユーザー操作後も保持します。</li>\n              <li>ラベルはCheckboxの外部に配置し、Checkboxコンポーネント自体にテキストを含めません。</li>\n              <li>複数のCheckboxを並べる場合は、一貫した配置・間隔を維持してください。</li>\n            </ul>\n\n            <h4 class=\"guide-sub-heading\" style=\"margin-top:var(--spacing-400);\">Spacing</h4>\n            <ul class=\"guide-list\">\n              <li>CheckboxとラベルのGap（水平間隔）は <strong>var(--sizing-200)</strong> を基本とします。</li>\n              <li>Checkboxを縦に並べる場合の最小 Gap（垂直間隔）は <strong>var(--sizing-400)</strong> を基本とします。</li>\n              <li>Gap は var(--sizing-100) 単位で調整してください。</li>\n            </ul>\n            <!-- Spacing diagram -->\n            <div class=\"spacing-diagram\" style=\"margin-top:var(--spacing-400);background:var(--color-background-secondary);border-radius:var(--radius-lg);padding:var(--spacing-600) var(--spacing-700);display:inline-flex;flex-direction:column;gap:var(--spacing-500);\">\n              <!-- Row 1 -->\n              <div style=\"display:flex;align-items:center;gap:0;\">\n                <label class=\"checkbox-wrap\" style=\"gap:0;position:relative;\">\n                  <div class=\"checkbox selected\"><span data-ds-icon=\"check_solid\" data-ds-size=\"24\" data-ds-color=\"white\"></span></div>\n                  <div style=\"width:var(--sizing-200);height:var(--border-width-200);background:var(--color-gradient-border-secondary-stop-1);flex-shrink:0;\"></div>\n                  <span class=\"checkbox-label\">Label</span>\n                </label>\n                <span style=\"font-size: var(--text-size-xs);;color:var(--color-gradient-content-stop-1);margin-left:var(--space-xs);\">←var(--sizing-200)→</span>\n              </div>\n              <!-- Vertical gap indicator -->\n              <div style=\"display:flex;flex-direction:column;gap:0;align-items:flex-start;\">\n                <label class=\"checkbox-wrap\"><div class=\"checkbox selected\"><span data-ds-icon=\"check_solid\" data-ds-size=\"24\" data-ds-color=\"white\"></span></div><span class=\"checkbox-label\">Option A</span></label>\n                <div style=\"display:flex;align-items:center;gap:var(--spacing-100);\">\n                  <div style=\"width:var(--border-width-200);height:var(--sizing-400);background:var(--color-content-key);\"></div>\n                  <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-key);\">↕ var(--sizing-400) min</span>\n                </div>\n                <label class=\"checkbox-wrap\"><div class=\"checkbox\"></div><span class=\"checkbox-label\">Option B</span></label>\n              </div>\n            </div>\n\n            <h4 class=\"guide-sub-heading\" style=\"margin-top:var(--spacing-500);\">Touch target</h4>\n            <ul class=\"guide-list\">\n              <li>Checkboxのタッチ領域にはラベルエリアも含まれます。ラベルをタップしてもCheckboxが切り替わるようにしてください。</li>\n              <li>モバイル環境では十分なタッチ領域（最小 44×var(--sizing-1100) 推奨）を確保してください。</li>\n            </ul>\n            <!-- Touch target diagram -->\n            <div style=\"margin-top:var(--spacing-400);background:var(--color-background-secondary);border-radius:var(--radius-lg);padding:var(--spacing-600) var(--spacing-700);display:inline-flex;align-items:center;gap:var(--spacing-400);\">\n              <div style=\"position:relative;display:inline-flex;align-items:center;\">\n                <label class=\"checkbox-wrap\" style=\"outline:var(--border-width-200) dashed var(--color-content-key);padding:var(--spacing-300) var(--line-height-label-small);border-radius:var(--radius-xs);gap:var(--spacing-200);\">\n                  <div class=\"checkbox selected\"><span data-ds-icon=\"check_solid\" data-ds-size=\"24\" data-ds-color=\"white\"></span></div>\n                  <span class=\"checkbox-label\">Label</span>\n                </label>\n              </div>\n              <div style=\"font-size: var(--text-size-xs);;color:var(--color-content-tertiary);max-width:calc(var(--sizing-100) * 45);\">\n                <span style=\"color: var(--color-content-key);\">破線エリア</span> がタッチ領域です。<br>ラベルを含む全体がタップ可能になっています。\n              </div>\n            </div>\n          </div>\n\n          <!-- Do & Don't -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Do &amp; Don't</h3>\n            <div class=\"do-dont-grid\">\n              <div class=\"do-card\">\n                <div class=\"do-card-header do\">✓ Do</div>\n                <div class=\"do-card-body\">\n                  <label class=\"checkbox-wrap\" style=\"margin-bottom:var(--spacing-200);\"><div class=\"checkbox selected\"><span data-ds-icon=\"check_solid\" data-ds-size=\"24\" data-ds-color=\"white\"></span></div><span class=\"checkbox-label\">通知を受け取る</span></label>\n                  <label class=\"checkbox-wrap\"><div class=\"checkbox\"></div><span class=\"checkbox-label\">マーケティングメール</span></label>\n                </div>\n                <div class=\"do-card-desc\">ラベルを外部に配置し、明確な選択肢を示す。</div>\n              </div>\n              <div class=\"do-card\">\n                <div class=\"do-card-header dont\">✕ Don't</div>\n                <div class=\"do-card-body\" style=\"opacity:0.6;\">\n                  <div class=\"checkbox selected\" style=\"width:calc(var(--sizing-100) * 20);height:var(--sizing-500);border-radius:var(--border-radius-100);background:linear-gradient(46.94deg, var(--color-gradient-background-stop-1) 5.1%, var(--color-gradient-background-stop-2) 92.4%);display:flex;align-items:center;justify-content:center;\">\n                    <span style=\"color:white;font-size: var(--text-size-xs);;\">通知を受け取る</span>\n                  </div>\n                </div>\n                <div class=\"do-card-desc\">Checkboxのボックス内にテキストを詰め込まない。</div>\n              </div>\n            </div>\n          </div>\n\n        </div>\n    "
+  },
+  "selector": ".checkbox-wrap"
+}

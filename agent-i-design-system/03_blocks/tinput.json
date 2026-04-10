@@ -1,0 +1,9 @@
+{
+  "name": "Text Input",
+  "tier": "03_blocks",
+  "key": "tinput",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".tinput"
+}

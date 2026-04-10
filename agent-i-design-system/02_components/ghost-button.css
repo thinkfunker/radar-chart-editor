@@ -1,0 +1,58 @@
+/**
+ * @agent-i/ui — Ghost Button Component
+ * Requires: @agent-i/design-tokens, @agent-i/theme
+ */
+
+/* ── Ghost Button Component ──────────────────────────── */
+.ghost-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-100);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.12s, box-shadow 0.12s;
+}
+/* Size */
+.ghost-btn--small  { height: var(--sizing-700); padding: 0 var(--spacing-300); font-size: var(--sizing-300); gap: var(--spacing-100); line-height: var(--line-height-label-small); }
+.ghost-btn--medium { height: var(--sizing-800); padding: 0 var(--spacing-300); font-size: var(--sizing-300); gap: var(--spacing-100); line-height: var(--line-height-label-small); }
+.ghost-btn--large  { height: var(--sizing-1000); padding: 0 var(--line-height-label-small); font-size: var(--font-size-0875); gap: var(--space-xs); line-height: var(--line-height-label-medium); }
+.ghost-btn--xlarge { height: var(--sizing-1200); padding: 0 var(--spacing-400); font-size: var(--sizing-400); gap: var(--spacing-200); line-height: var(--line-height-body-small); }
+
+/* Priority – Primary */
+.ghost-btn--primary { color: var(--color-content-key); }
+.ghost-btn--primary.state-hovered { background: var(--color-state-hover-secondary); }
+.ghost-btn--primary.state-focused  { box-shadow: 0 0 0 var(--spacing-050) var(--color-state-focused-secondary); background: var(--color-state-hover-secondary); }
+.ghost-btn--primary.state-pressed  { background: var(--color-state-pressed-secondary); }
+
+/* Priority – Secondary */
+.ghost-btn--secondary { color: var(--color-content-primary); }
+.ghost-btn--secondary.state-hovered { background: var(--color-background-disabled-accent); }
+.ghost-btn--secondary.state-focused  { box-shadow: 0 0 0 var(--spacing-050) var(--color-border-primary); background: var(--color-background-disabled-accent); }
+.ghost-btn--secondary.state-pressed  { background: var(--color-border-tertiary); }
+
+/* Disabled */
+.ghost-btn.state-disabled,
+.ghost-btn[disabled] { opacity: 0.38; pointer-events: none; cursor: default; }
+
+/* Icons */
+.ghost-btn-icon { flex-shrink: 0; display: block; }
+.ghost-btn--small  .ghost-btn-icon,
+.ghost-btn--medium .ghost-btn-icon { width: var(--sizing-400); height: var(--sizing-400); }
+.ghost-btn--large  .ghost-btn-icon { width: var(--sizing-500); height: var(--sizing-500); }
+.ghost-btn--xlarge .ghost-btn-icon { width: var(--sizing-600); height: var(--sizing-600); }
+
+/* Icon only */
+.ghost-btn.icon-only { gap: 0; }
+.ghost-btn.icon-only .ghost-btn-label { display: none; }
+.ghost-btn--small.icon-only  { padding: 0; width: var(--sizing-700); }
+.ghost-btn--medium.icon-only { padding: 0; width: var(--sizing-800); }
+.ghost-btn--large.icon-only  { padding: 0; width: var(--sizing-1000); }
+.ghost-btn--xlarge.icon-only { padding: 0; width: var(--sizing-1200); }

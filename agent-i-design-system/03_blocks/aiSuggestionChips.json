@@ -1,0 +1,9 @@
+{
+  "name": "AI Suggestion Chips",
+  "tier": "03_blocks",
+  "key": "aiSuggestionChips",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.aiSuggestionChips(opts)"
+}

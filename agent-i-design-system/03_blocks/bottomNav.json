@@ -1,0 +1,9 @@
+{
+  "name": "Bottom Nav",
+  "tier": "03_blocks",
+  "key": "bottomNav",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.bottomNav(opts)"
+}

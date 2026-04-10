@@ -1,0 +1,21 @@
+{
+  "name": "Agent Hero",
+  "tier": "02_components",
+  "key": "agenthero",
+  "type": "block",
+  "description": "A high-visibility hero section for AI agent identification and messaging.",
+  "guidelines": {
+    "purpose": "Agent Hero is the entry-point component for AI chat interfaces, introducing the agent's name and primary greeting message with high visual emphasis.",
+    "anatomy": {
+      "container": "agenthero. var(--size-card-width-lg) width, var(--sizing-500) gap between header and title.",
+      "icon": "agenthero__icon. 32xvar(--sizing-800) circular gradient badge containing a center icon.",
+      "name": "agenthero__name. var(--sizing-400) bold, var(--color-content-primary), intended for the product or agent brand name.",
+      "title": "agenthero__title. var(--sizing-600) bold, line-height var(--line-height-title-medium). Large greeting or value proposition text."
+    },
+    "specs": {
+      "spacing": "var(--sizing-700) internal padding when used within hero wrappers.",
+      "typography": "High-contrast var(--color-content-primary) for all text elements."
+    }
+  },
+  "selector": ".agenthero"
+}

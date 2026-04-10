@@ -1,0 +1,49 @@
+{
+  "name": "Carousel",
+  "tier": "02_components",
+  "key": "carousel",
+  "type": "block",
+  "description": "複数のカードを横方向に探索するためのコンポーネントです。",
+  "guidelines": {
+    "purpose": "Carouselは、複数のカードを横方向に探索するためのコンポーネントです。カードそのものの表現ではなく、コンテンツの探索体験とナビゲーションに重点を置いています。",
+    "type": {
+      "allowedCards": [
+        "Media Card",
+        "List Card",
+        "Review Card"
+      ],
+      "notAllowed": "Info CardやForm Cardなど、読み取り・入力が主目的のカードには使用しません。"
+    },
+    "usageGuidelines": {
+      "navigation": {
+        "useMoreButtonWhen": [
+          "Carouselに続きのアイテムが存在する場合",
+          "一覧ページなど、遷移先が明確に存在する場合"
+        ],
+        "role": [
+          "Carousel におけるナビゲーションは、特定のカードではなく全体に紐づく要素です。",
+          "Carouselの末尾に到達した際に、まだコンテンツが存在することを示すために使用します。"
+        ]
+      },
+      "placement": [
+        "more buttonは常に Carouselの右側（カード外） に配置します。",
+        "カード内やサムネイル上へのオーバーレイは行いません。",
+        "縦位置は、カードの高さを基準に中央揃えとします。"
+      ],
+      "spacing": [
+        "カード同士、および最後のカードとmore buttonの間隔はすべて8pxに統一します。",
+        "more button内部のpaddingは左 12px/右 20pxとし、視覚的に揃って見えるよう調整しています。"
+      ]
+    },
+    "do": [
+      "Carouselは、複数のカードを素早く比較・把握したい場面で使用します。",
+      "同一 Carousel内では、カードの構成や視覚的リズムを揃えます。"
+    ],
+    "dont": [
+      "カードコンポーネント内にmore buttonを含めないでください。",
+      "カードタイプごとに異なるナビゲーション表現を混在させないでください。",
+      "情報の読み取りが主目的のカードにCarouselを使用しないでください。"
+    ]
+  },
+  "selector": ".car"
+}

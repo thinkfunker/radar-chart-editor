@@ -1,0 +1,32 @@
+/**
+ * @agent-i/design-tokens — Shadow Tokens
+ * Elevation layers: 0 (flat) → 4 (floating)
+ */
+
+:root {
+
+  /* ──────────────────────────────────────────
+     Elevation Shadows
+     ────────────────────────────────────────── */
+  --shadow-0: none;
+  --shadow-1: var(--spacing-0) var(--border-width-100)  var(--sizing-100)  rgba(0, 0, 0, 0.16);   /* subtle: cards */
+  --shadow-2: var(--spacing-0) var(--border-width-200)  var(--sizing-200)  rgba(0, 0, 0, 0.16);   /* low: dropdowns */
+  --shadow-3: var(--spacing-0) var(--sizing-100)  var(--sizing-400) rgba(0, 0, 0, 0.16);   /* medium: modals */
+  --shadow-4: var(--spacing-0) var(--sizing-200)  var(--sizing-500) rgba(0, 0, 0, 0.16);   /* high: tooltips */
+
+  /* ──────────────────────────────────────────
+     Raw Effect Values
+     (used internally to compose shadow tokens)
+     ────────────────────────────────────────── */
+  --effect-0:  0;
+  --effect-1:  1;
+  --effect-2:  2;
+  --effect-3:  4;
+  --effect-4:  8;
+  --effect-5:  12;
+  --effect-6:  16;
+  --effect-7:  20;
+  --effect-8:  36;
+  --effect-9:  60;
+  --effect-10: 84;
+}

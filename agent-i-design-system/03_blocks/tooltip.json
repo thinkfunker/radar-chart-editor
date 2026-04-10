@@ -1,0 +1,9 @@
+{
+  "name": "Tooltip",
+  "tier": "03_blocks",
+  "key": "tooltip",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".tooltip"
+}

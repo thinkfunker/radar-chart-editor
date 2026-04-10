@@ -1,0 +1,17 @@
+{
+  "name": "List Selectable",
+  "tier": "02_components",
+  "key": "listsel",
+  "type": "molecule",
+  "description": "Selectable list item with title and optional sub text.",
+  "behavior": {
+    "state": ["enabled", "hovered", "focused", "pressed", "disabled"],
+    "props": {
+      "selected": "Selection state.",
+      "showSubText": "Toggle sub text visibility.",
+      "title": "Title text.",
+      "subText": "Sub text."
+    }
+  },
+  "selector": ".list-sel"
+}

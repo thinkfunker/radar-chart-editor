@@ -1,0 +1,8 @@
+{
+  "name": "Chat Modal",
+  "tier": "03_blocks",
+  "key": "chatmodal",
+  "type": "block",
+  "description": "Chat modal header with input area in default/full-height modes.",
+  "selector": ".chatmodal"
+}

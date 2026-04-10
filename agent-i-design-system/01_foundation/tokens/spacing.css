@@ -1,0 +1,81 @@
+/**
+ * @agent-i/design-tokens — Spacing Tokens
+ * Spacing, Sizing, Layout, Breakpoints, Grid
+ * Scale: var(--sizing-100) base unit
+ */
+
+:root {
+
+  /* ──────────────────────────────────────────
+     Spacing  (margin, padding, gap)
+     ────────────────────────────────────────── */
+  --spacing-0:    var(--spacing-0);
+  --spacing-050:  var(--border-width-200);
+  --spacing-100:  var(--sizing-100);
+  --spacing-200:  var(--sizing-200);
+  --spacing-300:  var(--sizing-300);
+  --spacing-400:  var(--sizing-400);
+  --spacing-500:  var(--sizing-500);
+  --spacing-600:  var(--sizing-600);
+  --spacing-700:  var(--sizing-700);
+  --spacing-800:  var(--sizing-800);
+  --spacing-900:  var(--sizing-900);
+  --spacing-1000: var(--sizing-1000);
+  --spacing-1100: var(--sizing-1100);
+
+  /* ──────────────────────────────────────────
+     Sizing  (width, height)
+     ────────────────────────────────────────── */
+  --sizing-100:  var(--sizing-100);
+  --sizing-200:  var(--sizing-200);
+  --sizing-300:  var(--sizing-300);
+  --sizing-400:  var(--sizing-400);
+  --sizing-500:  var(--sizing-500);
+  --sizing-600:  var(--sizing-600);
+  --sizing-700:  var(--sizing-700);
+  --sizing-800:  var(--sizing-800);
+  --sizing-900:  var(--sizing-900);
+  --sizing-1000: var(--sizing-1000);
+  --sizing-1100: var(--sizing-1100);
+  --sizing-1200: var(--sizing-1200);
+  --sizing-1300: var(--sizing-1300);
+  --sizing-1400: var(--sizing-1400);
+  --sizing-1500: var(--sizing-1500);
+  --sizing-1600: var(--sizing-1600);
+  --sizing-1900: var(--sizing-1900);
+  --sizing-2400: var(--sizing-2400);
+  --sizing-3000: var(--sizing-3000);
+
+  /* ──────────────────────────────────────────
+     Layout
+     ────────────────────────────────────────── */
+  --layout-max-width:    var(--layout-max-width);
+  --layout-side-margin:  var(--sizing-600);
+  --layout-inner-width:  var(--layout-inner-width); /* max-width - 2 × side-margin */
+
+  /* ──────────────────────────────────────────
+     Breakpoints  (use in @media queries)
+     xs  : 0 – var(--breakpoint-xs-max)       (mobile)
+     md  : var(--breakpoint-md) – var(--breakpoint-md-max)  (tablet)
+     lg  : var(--breakpoint-lg) – var(--breakpoint-lg-max) (desktop)
+     xl  : var(--layout-max-width)+         (wide)
+     ────────────────────────────────────────── */
+  --breakpoint-md: var(--breakpoint-md);
+  --breakpoint-lg: var(--breakpoint-lg);
+  --breakpoint-xl: var(--layout-max-width);
+
+  /* ──────────────────────────────────────────
+     Grid (Column Grid)
+     ────────────────────────────────────────── */
+  --grid-xs-columns: 4;
+  --grid-xs-gutter:  var(--sizing-400);
+  --grid-xs-margin:  var(--sizing-400);
+
+  --grid-md-columns: 8;
+  --grid-md-gutter:  var(--sizing-400);
+  --grid-md-margin:  var(--sizing-600);
+
+  --grid-lg-columns: 12;
+  --grid-lg-gutter:  var(--sizing-600);
+  --grid-lg-margin:  var(--sizing-1200);
+}

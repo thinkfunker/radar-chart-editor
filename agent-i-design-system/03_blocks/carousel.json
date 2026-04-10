@@ -1,0 +1,9 @@
+{
+  "name": "Carousel",
+  "tier": "03_blocks",
+  "key": "carousel",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".carousel"
+}

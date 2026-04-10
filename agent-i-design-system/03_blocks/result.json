@@ -1,0 +1,9 @@
+{
+  "name": "Result Pattern",
+  "tier": "03_blocks",
+  "key": "result",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".result"
+}

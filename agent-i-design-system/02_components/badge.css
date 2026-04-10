@@ -1,0 +1,46 @@
+/**
+ * @agent-i/ui — Badge Component
+ * Requires: @agent-i/design-tokens, @agent-i/theme
+ */
+
+/* ── Badge component ─────────────────────────────────── */
+.badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: calc(var(--border-radius-100) * 25); font-family: "Noto Sans JP","Hiragino Kaku Gothic Pro",sans-serif;
+  font-weight: 700; white-space: nowrap; flex-shrink: 0;
+  position: relative;
+}
+/* Type: number */
+.badge--number { padding: 0 var(--spacing-100); }
+.badge--number.badge--small  { height: var(--sizing-400); min-width: var(--sizing-400); font-size: var(--font-size-0687); line-height: var(--line-height-label-xsmall); }
+.badge--number.badge--medium { height: var(--sizing-800); min-width: var(--sizing-800); font-size: var(--sizing-400); line-height: var(--line-height-body-small); }
+/* Type: dot */
+.badge--dot { padding: 0; }
+.badge--dot.badge--small  { width: var(--sizing-200);  height: var(--sizing-200);  border: calc(var(--border-width-100) * 1.5) solid var(--color-background-white); }
+.badge--dot.badge--medium { width: var(--sizing-300); height: var(--sizing-300); border: calc(var(--border-width-100) * 1.5) solid var(--color-background-white); }
+/* Priority: primary — gradient */
+.badge--primary.badge--number { background: linear-gradient(46.94deg, var(--color-gradient-background-stop-1) 5.1%, var(--color-gradient-background-stop-2) 92.36%); color: var(--color-content-inverted); }
+.badge--primary.badge--dot    { background: var(--color-content-notification); }
+/* Priority: secondary — gray */
+.badge--secondary.badge--number { background: var(--color-border-secondary); color: var(--color-content-primary); }
+.badge--secondary.badge--dot    { background: var(--color-content-tertiary); }
+
+/* badge positioned over another element */
+.badge-host { position: relative; display: inline-flex; }
+.badge-host .badge {
+  position: absolute;
+}
+.badge-host .badge-pos-tr  { top: -var(--sizing-100);  right: -var(--sizing-100);  }
+.badge-host .badge-pos-br  { bottom: -var(--sizing-100); right: -var(--sizing-100); }
+.badge-host .badge-pos-tr-dot { top: 0; right: 0; transform: translate(33%,-33%); }
+
+/* badge demo rows */
+.badge-grid {
+  display: flex; gap: var(--spacing-500); align-items: center; flex-wrap: wrap;
+}
+.badge-demo-cell {
+  display: flex; flex-direction: column; align-items: center; gap: var(--spacing-200);
+}
+.badge-demo-cell .badge-demo-label {
+  font-size: var(--text-size-xxs); color: var(--shell-muted); font-family: monospace; text-align:center;
+}

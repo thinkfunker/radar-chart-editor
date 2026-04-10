@@ -1,0 +1,9 @@
+{
+  "name": "Chip Group",
+  "tier": "03_blocks",
+  "key": "cg",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".cg"
+}

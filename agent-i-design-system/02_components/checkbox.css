@@ -1,0 +1,52 @@
+/**
+ * @agent-i/ui — Checkbox Component
+ * Requires: @agent-i/design-tokens, @agent-i/theme
+ */
+
+/* ── Checkbox Component ──────────────────────────────── */
+.checkbox-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  cursor: pointer;
+  user-select: none;
+}
+.checkbox-wrap.state-disabled { opacity: 0.38; pointer-events: none; }
+
+.checkbox {
+  position: relative;
+  width: var(--sizing-500); height: var(--sizing-500);
+  border-radius: var(--border-radius-100);
+  border: calc(var(--border-width-100) * 1.5) solid var(--color-content-tertiary);
+  background: var(--color-background-white);
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+/* Selected state */
+.checkbox.selected {
+  background: linear-gradient(46.94deg, var(--color-gradient-background-stop-1) 5.1%, var(--color-gradient-background-stop-2) 92.4%);
+  border-color: transparent;
+}
+.checkbox.selected .checkbox-icon { display: block; }
+.checkbox .checkbox-icon { display: none; }
+.checkbox-icon {
+  width: var(--sizing-300); height: var(--sizing-300); flex-shrink: 0;
+}
+
+/* State variants – unselected */
+.checkbox-wrap.state-hovered .checkbox:not(.selected) { border-color: var(--color-content-tertiary); background: var(--color-background-disabled-accent); }
+.checkbox-wrap.state-focused .checkbox:not(.selected)  { box-shadow: 0 0 0 var(--border-width-300) var(--color-state-focused-secondary); border-color: var(--color-content-key); }
+.checkbox-wrap.state-pressed .checkbox:not(.selected)  { border-color: var(--color-content-secondary); background: var(--color-border-tertiary); }
+
+/* State variants – selected */
+.checkbox-wrap.state-hovered .checkbox.selected { opacity: 0.88; }
+.checkbox-wrap.state-focused .checkbox.selected { box-shadow: 0 0 0 var(--border-width-300) var(--color-gradient-border-secondary-stop-1); }
+.checkbox-wrap.state-pressed .checkbox.selected { opacity: 0.78; }
+
+.checkbox-label {
+  font-size: var(--font-size-0875);
+  color: var(--color-content-primary);
+  line-height: 1.4;
+}

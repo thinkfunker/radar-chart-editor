@@ -1,0 +1,9 @@
+{
+  "name": "Selectable Chip",
+  "tier": "03_blocks",
+  "key": "sch",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".sch"
+}

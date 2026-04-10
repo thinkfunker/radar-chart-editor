@@ -1,0 +1,9 @@
+{
+  "name": "Product Grid",
+  "tier": "03_blocks",
+  "key": "productGrid",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.productGrid(opts)"
+}

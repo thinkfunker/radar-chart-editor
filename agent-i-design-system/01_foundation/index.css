@@ -1,0 +1,16 @@
+/**
+ * @agent-i/design-system
+ * Full bundle — loads tokens + theme + all component styles.
+ *
+ * Usage:
+ *   @import "@agent-i/design-system";
+ *
+ * Or load selectively:
+ *   @import "@agent-i/design-system/tokens";   /* CSS custom properties */
+ *   @import "@agent-i/design-system/theme";    /* light + dark themes */
+ *   @import "@agent-i/design-system/ui";       /* component classes */
+ */
+
+@import "./tokens/index.css";
+@import "./theme/index.css";
+@import "./ui/index.css";

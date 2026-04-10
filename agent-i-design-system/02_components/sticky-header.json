@@ -1,0 +1,17 @@
+{
+  "name": "Sticky Header",
+  "tier": "03_blocks",
+  "key": "stickyheader",
+  "type": "block",
+  "description": "A container that remains fixed at the top of the scrollable area.",
+  "guidelines": {
+    "purpose": "Sticky Header is used to keep important navigation or interaction elements visible as the user scrolls through long content lists.",
+    "anatomy": {
+      "container": "position: sticky, top: 0, z-index: 20, background: var(--color-background-white), box-shadow: 0 var(--border-width-100) 0 var(--color-background-tertiary)."
+    },
+    "usage_guidelines": [
+      "Use for search bars, category tabs, or context-specific navigation that should remain accessible at all times."
+    ]
+  },
+  "selector": ".sticky-header"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Spacing",
+  "tier": "01_foundation",
+  "type": "token",
+  "description": "Margin, Padding, and Gap tokens on var(--sizing-100) scale.",
+  "guidelines": {
+    "purpose": "Margin, Padding, and Gap tokens on var(--sizing-100) scale.",
+    "tokens": {
+      "--spacing-0 to 1100": "var(--spacing-0) to var(--sizing-1100) (var(--sizing-100) scale)",
+      "--sizing-100 to 3000": "var(--sizing-100) to var(--sizing-3000)"
+    }
+  }
+}

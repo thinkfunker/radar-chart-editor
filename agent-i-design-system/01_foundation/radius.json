@@ -1,0 +1,13 @@
+{
+  "name": "Radius",
+  "tier": "01_foundation",
+  "type": "token",
+  "description": "Corners and rounding definitions.",
+  "guidelines": {
+    "purpose": "Corners and rounding definitions.",
+    "tokens": {
+      "--border-radius-100 to 700": "var(--sizing-100) to var(--sizing-700) (var(--sizing-100) scale)",
+      "--border-radius-full": "var(--border-radius-full) (use 50% for circles)"
+    }
+  }
+}

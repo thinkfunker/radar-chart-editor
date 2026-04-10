@@ -1,0 +1,20 @@
+{
+  "name": "Chip Group",
+  "tier": "03_blocks",
+  "key": "chipgrp",
+  "type": "block",
+  "description": "A grid-based layout for chips, typically used within Selection Cards.",
+  "guidelines": {
+    "purpose": "Chip Group provides a structured grid for chips in selection-heavy contexts. It adapts between 2-column (categories) and 4-column (granular options) layouts.",
+    "anatomy": {
+      "container": "cg. var(--size-list-card-width-md) width, var(--sizing-200) gap between items.",
+      "row": "cg__row. Horizontal flex container ensuring equal distribution of chips via flex:1.",
+      "chip": "cg__chip. var(--sizing-1000) height, var(--border-radius-full) radius, var(--border-width-100) border var(--color-gradient-border-secondary-stop-1)."
+    },
+    "states": {
+      "default": "Regular font weight, secondary background.",
+      "selected": "cg__chip--sel. 700 bold weight, bg var(--color-background-selection-secondary), border var(--color-gradient-content-stop-1), and var(--color-content-key) text color."
+    }
+  },
+  "selector": ".cg"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AI Search Bar",
+  "tier": "03_blocks",
+  "key": "searchBar",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.searchBar(opts)"
+}

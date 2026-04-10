@@ -1,0 +1,17 @@
+{
+  "name": "List",
+  "tier": "02_components",
+  "key": "list",
+  "type": "molecule",
+  "description": "List row with optional thumbnail and ghost action.",
+  "behavior": {
+    "type": ["default", "divider", "box"],
+    "props": {
+      "image": "Toggle thumbnail/left icon area.",
+      "ghostButton": "Toggle right action.",
+      "listTitle": "Title text.",
+      "subText": "Sub text."
+    }
+  },
+  "selector": ".list-item"
+}

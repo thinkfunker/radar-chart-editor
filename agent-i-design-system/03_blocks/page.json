@@ -1,0 +1,9 @@
+{
+  "name": "Page Assembler",
+  "tier": "03_blocks",
+  "key": "page",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.page(opts)"
+}

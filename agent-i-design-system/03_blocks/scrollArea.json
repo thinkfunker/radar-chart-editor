@@ -1,0 +1,9 @@
+{
+  "name": "Scroll Area",
+  "tier": "03_blocks",
+  "key": "scrollArea",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.scrollArea(opts)"
+}

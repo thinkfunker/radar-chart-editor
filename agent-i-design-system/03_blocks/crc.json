@@ -1,0 +1,9 @@
+{
+  "name": "Selection Result Card",
+  "tier": "03_blocks",
+  "key": "crc",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".crc"
+}

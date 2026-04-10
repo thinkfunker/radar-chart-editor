@@ -1,0 +1,9 @@
+{
+  "name": "Card Expand",
+  "tier": "03_blocks",
+  "key": "card-expand",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".card-expand"
+}

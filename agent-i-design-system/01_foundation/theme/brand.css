@@ -1,0 +1,50 @@
+/**
+ * @agent-i/theme — Brand Overrides
+ *
+ * Override default Agent-i blue brand with your own product brand color.
+ * Apply AFTER light.css / dark.css.
+ *
+ * Usage:
+ *   @import "@agent-i/theme/light.css";
+ *   @import "@agent-i/theme/brand.css";
+ *
+ * Then set your brand color:
+ *   :root {
+ *     --brand-primary-h: 262;   /* hue */
+ *     --brand-primary-s: 75%;
+ *     --brand-primary-l: 50%;
+ *   }
+ *
+ * Or directly override the semantic vars:
+ *   :root {
+ *     --color-primary:       var(--color-gradient-content-stop-1);   /* your brand */
+ *     --color-primary-hover: #6a45de;
+ *   }
+ */
+
+/* ─── Example: Purple brand ───────────────────────────── */
+/* Uncomment to activate a purple brand:
+
+:root {
+  --color-primary:          var(--color-gradient-content-stop-1);
+  --color-primary-hover:    #6a45de;
+  --color-primary-active:   #5935cd;
+  --color-primary-subtle:   rgba(123, 85, 239, 0.08);
+  --color-primary-border:   rgba(123, 85, 239, 0.28);
+
+  --color-gradient-brand:   linear-gradient(135deg, var(--color-gradient-content-stop-1), #3083fd);
+  --color-gradient-subtle:  linear-gradient(135deg, rgba(123,85,239,0.06), var(--color-gradient-background-ai-surface-stop-2));
+
+  --color-tag-text:         var(--color-primary);
+  --color-tag-bg:           var(--color-primary-subtle);
+
+  --btn-primary-bg:         var(--color-primary);
+  --input-border-focus:     var(--color-primary);
+}
+
+*/
+
+/* ─── Your brand goes here ────────────────────────────── */
+:root {
+  /* Override --color-primary and related vars to match your brand */
+}

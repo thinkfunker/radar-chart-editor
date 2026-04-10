@@ -1,0 +1,9 @@
+{
+  "name": "Selectable List",
+  "tier": "03_blocks",
+  "key": "list-sel",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".list-sel"
+}

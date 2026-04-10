@@ -1,0 +1,8 @@
+{
+  "name": "Filter Input",
+  "tier": "02_components",
+  "key": "filterinput",
+  "type": "atom",
+  "description": "Search input and price range input used in filters.",
+  "selector": ".filter-input"
+}

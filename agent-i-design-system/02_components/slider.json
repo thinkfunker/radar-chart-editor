@@ -1,0 +1,9 @@
+{
+  "name": "Slider",
+  "tier": "02_components",
+  "key": "slider",
+  "type": "component",
+  "description": "Segmented slider with 4 steps and a draggable knob representation.",
+  "guidelines": {},
+  "selector": ".slider"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Review Card",
+  "tier": "03_blocks",
+  "key": "review-card",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".review-card"
+}

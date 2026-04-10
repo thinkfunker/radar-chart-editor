@@ -1,0 +1,298 @@
+/**
+ * Agent-i Design System — Color Tokens
+ * Auto-converted from Figma Design System
+ * Source: Agent-i Design System (node: 10956:16144)
+ */
+
+:root {
+
+  /* ============================================
+     PRIMITIVE COLOR PALETTE
+     ============================================ */
+
+  /* Red */
+  --color-red-1: #f9dedf;
+  --color-red-2: #f4c3c5;
+  --color-red-3: #efa8ab;
+  --color-red-4: #ea8d90;
+  --color-red-5: #e57376;
+  --color-red-6: #e0585c;
+  --color-red-7: #db3d42;
+  --color-red-8: #d62228;
+  --color-red-9: #b81d22;
+  --color-red-10: #99181d;
+  --color-red-11: #7b1417;
+  --color-red-12: #5d0f11;
+  --color-red-13: #3e0a0c;
+  --color-red-14: #200506;
+
+  /* Blue */
+  --color-blue-1: #dbe7ff;
+  --color-blue-2: #bed4ff;
+  --color-blue-3: #a1c1ff;
+  --color-blue-4: #84aefe;
+  --color-blue-5: #669bfe;
+  --color-blue-6: #4988fe;
+  --color-blue-7: var(--color-content-key);
+  --color-blue-8: #0f62fe;
+  --color-blue-9: #0d54da;
+  --color-blue-10: #0b46b6;
+  --color-blue-11: #093892;
+  --color-blue-12: #062a6e;
+  --color-blue-13: #041d4a;
+  --color-blue-14: #020f26;
+
+  /* Green */
+  --color-green-1: #dcece1;
+  --color-green-2: #bfdcca;
+  --color-green-3: #a3cdb2;
+  --color-green-4: #86bd9a;
+  --color-green-5: #6aae82;
+  --color-green-6: #4d9e6a;
+  --color-green-7: #318f52;
+  --color-green-8: #147f3a;
+  --color-green-9: #116d32;
+  --color-green-10: #0e5b2a;
+  --color-green-11: #0b4921;
+  --color-green-12: #093719;
+  --color-green-13: #062511;
+  --color-green-14: #031309;
+
+  /* Yellow */
+  --color-yellow-1: #f2e8d9;
+  --color-yellow-2: #e7d5ba;
+  --color-yellow-3: #ddc29b;
+  --color-yellow-4: #d2af7c;
+  --color-yellow-5: #c89c5d;
+  --color-yellow-6: #bd8a3e;
+  --color-yellow-7: #b3771f;
+  --color-yellow-8: #a86400;
+  --color-yellow-9: #905600;
+  --color-yellow-10: #784800;
+  --color-yellow-11: #613900;
+  --color-yellow-12: #492b00;
+  --color-yellow-13: #311d00;
+  --color-yellow-14: #190f00;
+
+  /* Orange */
+  --color-orange-1: #ffe9e1;
+  --color-orange-2: #ffd3c1;
+  --color-orange-3: #ffbea2;
+  --color-orange-4: #ffa882;
+  --color-orange-5: #ff9363;
+  --color-orange-6: #f36f3f;
+  --color-orange-7: #de5a2e;
+  --color-orange-8: #c44522;
+  --color-orange-9: #9f371b;
+  --color-orange-10: #7f2c15;
+  --color-orange-11: #612110;
+  --color-orange-12: #43170b;
+  --color-orange-13: #2a0e06;
+  --color-orange-14: #160703;
+
+  /* Amber */
+  --color-amber-1: #fff3da;
+  --color-amber-2: #ffe7b6;
+  --color-amber-3: #ffdb92;
+  --color-amber-4: #ffce6e;
+  --color-amber-5: #ffc24a;
+  --color-amber-6: #e8a92f;
+  --color-amber-7: #cb8f1e;
+  --color-amber-8: #a36e12;
+  --color-amber-9: #85590e;
+  --color-amber-10: #6b470b;
+  --color-amber-11: #513608;
+  --color-amber-12: #372505;
+  --color-amber-13: #241803;
+  --color-amber-14: #120c02;
+
+  /* Teal */
+  --color-teal-1: #e6f6f2;
+  --color-teal-2: #cdede5;
+  --color-teal-3: #b3e3d8;
+  --color-teal-4: #99dacb;
+  --color-teal-5: #80d0be;
+  --color-teal-6: #55b8a3;
+  --color-teal-7: #3fa08b;
+  --color-teal-8: #1f7a68;
+  --color-teal-9: #1a6154;
+  --color-teal-10: #144c42;
+  --color-teal-11: #0f3830;
+  --color-teal-12: #0a241f;
+  --color-teal-13: #071a16;
+  --color-teal-14: #03100d;
+
+  /* Cyan */
+  --color-cyan-1: #eaf9fe;
+  --color-cyan-2: #d6f1fa;
+  --color-cyan-3: #c2e9f6;
+  --color-cyan-4: #aee1f1;
+  --color-cyan-5: #9ad9ec;
+  --color-cyan-6: #74c3de;
+  --color-cyan-7: #4fadcf;
+  --color-cyan-8: #27799a;
+  --color-cyan-9: #1f5f7a;
+  --color-cyan-10: #184b60;
+  --color-cyan-11: #123847;
+  --color-cyan-12: #0c252f;
+  --color-cyan-13: #081c23;
+  --color-cyan-14: #041015;
+
+  /* Purple */
+  --color-purple-1: #f2edff;
+  --color-purple-2: #e1daff;
+  --color-purple-3: #d0c7ff;
+  --color-purple-4: #bfb4ff;
+  --color-purple-5: #aea1ff;
+  --color-purple-6: #8e81e8;
+  --color-purple-7: #7769cf;
+  --color-purple-8: #5c50a6;
+  --color-purple-9: #4a4188;
+  --color-purple-10: #3a3369;
+  --color-purple-11: #2b264c;
+  --color-purple-12: #1d1931;
+  --color-purple-13: #120e1a;
+  --color-purple-14: #04020c;
+
+  /* Magenta */
+  --color-magenta-1: #fdecf8;
+  --color-magenta-2: #f7d8ef;
+  --color-magenta-3: #f1c4e6;
+  --color-magenta-4: #ebb0dd;
+  --color-magenta-5: #e59cd4;
+  --color-magenta-6: #c97bb8;
+  --color-magenta-7: #af639e;
+  --color-magenta-8: #8f4e7e;
+  --color-magenta-9: #753f68;
+  --color-magenta-10: #5d3153;
+  --color-magenta-11: #45253f;
+  --color-magenta-12: #2f1a2c;
+  --color-magenta-13: #1c1019;
+  --color-magenta-14: #060207;
+
+
+  /* ============================================
+     SEMANTIC TOKENS — BACKGROUND
+     ============================================ */
+
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f0f2f7;
+  --color-background-tertiary: #e4e7ed;
+  --color-background-key: #0f62fe;
+  --color-background-success: #147f3a;
+  --color-background-alert: #d62228;
+  --color-background-warning: #a86400;
+  --color-background-neutral: #3083fd29;
+  --color-background-disabled: #e4e7ed;
+  --color-background-disabled-accent: #0000000a;
+  --color-background-scrim: #0000007a;
+  --color-background-selection-secondary: #0f62fe0f;
+  --color-background-accent: var(--color-background-accent);
+  --color-background-surface: #ffffff;
+  --color-background-white: #ffffff;
+  --color-background-elevated-1: #ffffff;
+  --color-background-elevated-2: #e4e7ed;
+  --color-background-overlay-white: #ffffffc2;
+  --color-background-overlay-black: #000000c2;
+
+
+  /* ============================================
+     SEMANTIC TOKENS — CONTENT
+     ============================================ */
+
+  --color-content-primary: #17181a;
+  --color-content-secondary: #000000c2;
+  --color-content-tertiary: #0000008f;
+  --color-content-key: #0f62fe;
+  --color-content-link: #0f62fe;
+  --color-content-link-visited: #5c50a6;
+  --color-content-success: #147f3a;
+  --color-content-alert: #d62228;
+  --color-content-notification: #db3d42;
+  --color-content-warning: #a86400;
+  --color-content-rating: #ffb617;
+  --color-content-inverted: #ffffff;
+  --color-content-white: #ffffff;
+  --color-content-disabled: #00000047;
+  --color-content-placeholder: #0000008f;
+  --color-content-subtle: #00000029;
+
+
+  /* ============================================
+     SEMANTIC TOKENS — BORDER
+     ============================================ */
+
+  --color-border-primary: #0000007a;
+  --color-border-secondary: #00000029;
+  --color-border-tertiary: #00000014;
+  --color-border-key: var(--color-content-key);
+  --color-border-success: #318f52;
+  --color-border-alert: #db3d42;
+  --color-border-warning: #b3771f;
+  --color-border-accent: #00000047;
+  --color-border-inverted: #ffffff;
+  --color-border-disabled: #00000029;
+  --color-border-elevated-1: #00000014;
+
+
+  /* ============================================
+     SEMANTIC TOKENS — STATE
+     ============================================ */
+
+  --color-state-hover-primary: #0000000a;
+  --color-state-focused-primary: #00000014;
+  --color-state-pressed-primary: #0000001f;
+  --color-state-hover-secondary: #0f62fe0a;
+  --color-state-focused-secondary: #0f62fe14;
+  --color-state-pressed-secondary: #0f62fe1f;
+
+
+  /* ============================================
+     GRADIENT STOPS
+     ============================================ */
+
+  /* Content Gradient */
+  --color-gradient-content-stop-1: #a83deb;
+  --color-gradient-content-stop-2: #3083fd;
+
+  /* Background Gradient */
+  --color-gradient-background-stop-1: #a83deb;
+  --color-gradient-background-stop-2: #3083fd;
+
+  /* AI Surface Gradient */
+  --color-gradient-background-ai-surface-stop-1: #a83deb0f;
+  --color-gradient-background-ai-surface-stop-2: #3083fd0f;
+
+  /* Logo Primary Gradient */
+  --color-gradient-logo-primary-stop-1: #ff598e;
+  --color-gradient-logo-primary-stop-2: #a83deb;
+  --color-gradient-logo-primary-stop-3: #3083fd;
+  --color-gradient-logo-primary-stop-4: #8ad9fe;
+
+  /* Logo Secondary Gradient */
+  --color-gradient-logo-secondary-stop-1: #3083fd;
+  --color-gradient-logo-secondary-stop-2: #a83deb;
+
+  /* Logo Tertiary Gradient */
+  --color-gradient-logo-tertiary-stop-1: #ff598e;
+  --color-gradient-logo-tertiary-stop-2: #a83deb;
+  --color-gradient-logo-tertiary-stop-3: #3083fd;
+  --color-gradient-logo-tertiary-stop-4: #8ad9fe;
+
+  /* Border Gradient */
+  --color-gradient-border-stop-1: #a83deb;
+  --color-gradient-border-stop-2: #3083fd;
+  --color-gradient-border-secondary-stop-1: #a83deb29;
+  --color-gradient-border-secondary-stop-2: #3083fd29;
+
+
+  /* ============================================
+     BRAND — RIFF
+     ============================================ */
+
+  --color-brand-riff-blue-4: #8ab9fe;
+  --color-brand-riff-blue-5: #3083fd;
+  --color-brand-riff-violet-6: #7462e8;
+  --color-brand-riff-pink-5: #dd5888;
+  --color-brand-riff-purple-6: #af53ad;
+}

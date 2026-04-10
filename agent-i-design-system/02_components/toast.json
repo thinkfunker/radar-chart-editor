@@ -1,0 +1,29 @@
+{
+  "name": "Toast",
+  "tier": "02_components",
+  "key": "toast",
+  "type": "block",
+  "description": "A temporary feedback component for status updates or system notifications.",
+  "guidelines": {
+    "purpose": "Toast provides temporary feedback about operation results (success/error) or system status. It appears as an overlay at the edge of the screen and disappears automatically or via user action.",
+    "types": {
+      "info": "Blue icon for informative updates.",
+      "success": "Green icon for successful completions.",
+      "warning": "Amber icon for potential issues.",
+      "error": "Red icon for critical failures or errors."
+    },
+    "anatomy": {
+      "container": "calc(var(--sizing-100) * 90) width, white box, var(--sizing-200) radius, shadow, 12/var(--sizing-400) padding.",
+      "icon": "20xvar(--sizing-500) typed icon on the left.",
+      "body": "Title (var(--line-height-label-small) bold) and Description (var(--line-height-label-small) regular) stacked vertically.",
+      "action": "Optional Ghost Button (Label) on the right for immediate follow-up actions."
+    },
+    "behavior": [
+      "Should disappear automatically after a set duration.",
+      "Should not obstruct critical navigation or interactive elements.",
+      "Use Action Button only if the feedback requires immediate user attention."
+    ],
+    "_rawHtml": "\n    <div class=\"guide-card\">\n      <div class=\"guide-section\">\n        <div class=\"guide-title\">Toast</div>\n        <div class=\"guide-body\">Toastは、ユーザーの操作結果や重要なシステム情報を一時的に表示するフィードバックコンポーネントです。info・success・warning・errorの4種類があり、画面端や下部にオーバーレイ表示されます。</div>\n      </div>\n\n      <div class=\"guide-section\">\n        <div class=\"guide-subtitle\">Usage</div>\n        <div class=\"guide-body\">操作完了・エラー発生・警告などの短いフィードバックとして使用します。ユーザーの作業を妨げない位置に表示し、一定時間後に自動で消えるか、閉じるボタンで非表示にします。アクションが必要な場合はAction Buttonを使用します。</div>\n      </div>\n\n      <div class=\"guide-section\">\n        <div class=\"guide-subtitle\">Types</div>\n        <div style=\"display:flex;flex-direction:column;gap:var(--spacing-300);margin-top:var(--spacing-200);\">\n          <script>(function(){\n            var iconInfo    = window.DS_UTILS.icon('info-circle_solid', { size: 20, color: 'var(--color-content-key)', className: 'toast__icon' });\n            var iconSuccess = window.DS_UTILS.icon('check-circle_solid', { size: 20, color: 'var(--color-content-success)', className: 'toast__icon' });\n            var iconWarning = window.DS_UTILS.icon('exclamation-triangle_solid', { size: 20, color: 'var(--color-content-warning)', className: 'toast__icon' });\n            var iconError   = window.DS_UTILS.icon('exclamation-circle_solid', { size: 20, color: 'var(--color-content-notification)', className: 'toast__icon' });\n            var types = [\n              { key:'info',    label:'Info',    icon: iconInfo },\n              { key:'success', label:'Success', icon: iconSuccess },\n              { key:'warning', label:'Warning', icon: iconWarning },\n              { key:'error',   label:'Error',   icon: iconError },\n            ];\n            var out = '';\n            types.forEach(function(t) {\n              out += '<div class=\"toast toast--' + t.key + '\" style=\"margin-bottom:var(--spacing-100);\">'\n                   + '<div class=\"toast__left\">' + t.icon\n                   + '<div class=\"toast__body\">'\n                   + '<div class=\"toast__title\">Title text</div>'\n                   + '<div class=\"toast__desc\">Text</div>'\n                   + '</div></div></div>';\n            });\n            document.currentScript.insertAdjacentHTML('afterend', out);\n          }());</script>\n        </div>\n      </div>\n\n      <div class=\"guide-section\">\n        <div class=\"guide-subtitle\">With Action Button</div>\n        <div class=\"guide-body\">アクションが必要な場合、右端にGhost Buttonを配置できます。</div>\n        <div style=\"margin-top:var(--spacing-300);\">\n          <div class=\"toast toast--info\">\n            <div class=\"toast__left\">\n              <span class=\"toast__icon\" data-ds-icon=\"info-circle_solid\" data-ds-size=\"20\" data-ds-color=\"var(--color-content-key)\"></span>\n              <div class=\"toast__body\">\n                <div class=\"toast__title\">Title text</div>\n                <div class=\"toast__desc\">Text</div>\n              </div>\n            </div>\n            <button class=\"toast__action\">Label</button>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"guide-section\">\n        <div class=\"guide-subtitle\">Anatomy</div>\n        <div class=\"guide-body\">\n          <b>Container</b> — 幅calc(var(--sizing-100) * 90)、padding var(--sizing-300)/var(--sizing-400)、border-radius var(--sizing-200)、shadow付き白ボックス。<br>\n          <b>Icon</b> — 左端に20×var(--sizing-500)のタイプ別アイコン（<code>toast__icon</code>）。<br>\n          <b>Body</b> — Title（var(--line-height-label-small) bold）とDescription（var(--line-height-label-small) regular）を縦並び（<code>toast__body</code>）。<br>\n          <b>Action Button</b> — 任意。右端にGhost Buttonとして配置（<code>toast__action</code>）。\n        </div>\n      </div>\n    </div><!-- guide-card -->\n  "
+  },
+  "selector": ".toast"
+}

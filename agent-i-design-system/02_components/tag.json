@@ -1,0 +1,92 @@
+{
+  "name": "Tag",
+  "tier": "02_components",
+  "key": "tag",
+  "type": "atom",
+  "description": "A component for visually indicating the category or state of content as a label.",
+  "guidelines": {
+    "purpose": "Tag is a component that visually indicates the category or state of content as a label. It distinguishes AI-related statuses and priorities using colors and styles.",
+    "anatomy": [
+      "Label",
+      "Container"
+    ],
+    "style": {
+      "type": {
+        "solid": "Solid background for high visibility.",
+        "outline": "Bordered style for secondary information."
+      },
+      "color_mapping": {
+        "AI Status": "Specific colors for AI processing states.",
+        "Priority": "Differentiated by color intensity."
+      }
+    },
+    "usage_guidelines": [
+      "Use to indicate content categories or system status.",
+      "Vary styles to represent different levels of information importance."
+    ],
+    "playground": {
+      "controls": [
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "text",
+          "default": "Label"
+        },
+        {
+          "id": "style",
+          "label": "Style",
+          "type": "toggle",
+          "options": [
+            "gradient",
+            "solid",
+            "outline"
+          ],
+          "default": "gradient"
+        },
+        {
+          "id": "priority",
+          "label": "Priority",
+          "type": "toggle",
+          "options": [
+            "primary",
+            "secondary",
+            "tertiary"
+          ],
+          "default": "primary"
+        },
+        {
+          "id": "shape",
+          "label": "Shape",
+          "type": "toggle",
+          "options": [
+            "rectengle",
+            "circle"
+          ],
+          "default": "circle"
+        },
+        {
+          "id": "size",
+          "label": "Size",
+          "type": "toggle",
+          "options": [
+            "small",
+            "medium"
+          ],
+          "default": "small"
+        },
+        {
+          "id": "leftIcon",
+          "label": "Left icon",
+          "type": "toggle",
+          "options": [
+            true,
+            false
+          ],
+          "default": true
+        }
+      ]
+    },
+    "_rawHtml": "\n<h2 class=\"section-title\">Guide</h2>\n        <div class=\"guide-card\">\n\n          <!-- Purpose -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Purpose</h3>\n            <p class=\"guide-body\">Tagは、コンテンツのカテゴリや状態をラベルとして視覚的に示すコンポーネントです。AI関連のステータスや優先度を色・スタイルで区別します。</p>\n          </div>\n\n          <!-- Anatomy -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Anatomy</h3>\n            <div style=\"display:flex;gap:var(--spacing-400);flex-wrap:wrap;padding:var(--spacing-500) 0;align-items:center;\" id=\"guide-tag2-anatomy\"></div>\n            <script>\n            (function() {\n              var icon = DS_UTILS.icon('sparkles_solid', { size: 24 });\n              var variants = [\n                ['gradient-primary',   'gradient · primary'],\n                ['gradient-secondary', 'gradient · secondary'],\n                ['solid-secondary',    'solid · secondary'],\n                ['solid-tertiary',     'solid · tertiary'],\n                ['outline-primary',    'outline · primary'],\n                ['outline-secondary',  'outline · secondary'],\n              ];\n              var el = document.getElementById('guide-tag2-anatomy');\n              if (el) {\n                el.innerHTML = variants.map(function(v) {\n                  return '<div style=\"display:flex;flex-direction:column;align-items:center;gap:var(--spacing-200);\">'\n                    + '<span class=\"tag tag--' + v[0] + '\">' + icon + '<span class=\"tag__label\">Label</span></span>'\n                    + '<span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);text-align:center;\">' + v[1] + '</span>'\n                    + '</div>';\n                }).join('');\n              }\n            })();\n            </script>\n          </div>\n\n          <!-- Variants table -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Variants</h3>\n            <table style=\"width:100%;border-collapse:collapse;font-size: var(--text-size-xs);;\">\n              <thead>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">Style</th>\n                  <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">Priority</th>\n                  <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">small · rect</th>\n                  <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">medium · pill</th>\n                </tr>\n              </thead>\n              <tbody id=\"guide-tag2-variants-tbody\"></tbody>\n            </table>\n            <script>\n            (function() {\n              var icon = DS_UTILS.icon('sparkles_solid', { size: 24 });\n              var rows = [\n                ['gradient','primary',   'gradient-primary'],\n                ['gradient','secondary', 'gradient-secondary'],\n                ['solid',   'secondary', 'solid-secondary'],\n                ['solid',   'tertiary',  'solid-tertiary'],\n                ['outline', 'primary',   'outline-primary'],\n                ['outline', 'secondary', 'outline-secondary'],\n              ];\n              var tb = document.getElementById('guide-tag2-variants-tbody');\n              if (tb) {\n                tb.innerHTML = rows.map(function(r, i) {\n                  var border = i < rows.length - 1 ? 'border-bottom:var(--border-width-100) solid var(--shell-border)' : '';\n                  var v = r[2];\n                  return '<tr style=\"' + border + '\">'\n                    + '<td style=\"padding:var(--space-lg) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">' + r[0] + '</td>'\n                    + '<td style=\"padding:var(--space-lg) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">' + r[1] + '</td>'\n                    + '<td style=\"padding:var(--space-lg) 0;\"><span class=\"tag tag--' + v + '\">' + icon + '<span class=\"tag__label\">Label</span></span></td>'\n                    + '<td style=\"padding:var(--space-lg) 0;\"><span class=\"tag tag--' + v + ' tag--md tag--pill\">' + icon + '<span class=\"tag__label\">Label</span></span></td>'\n                    + '</tr>';\n                }).join('');\n              }\n            })();\n            </script>\n          </div>\n\n          <!-- Specs -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Specs</h3>\n            <table style=\"width:100%;border-collapse:collapse;font-size: var(--text-size-xs);;\">\n              <thead>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">Property</th>\n                  <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">small</th>\n                  <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">medium</th>\n                </tr>\n              </thead>\n              <tbody>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">Height</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">var(--sizing-500)</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">var(--sizing-600)</td>\n                </tr>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">Padding</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">0 var(--sizing-100)</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">0 var(--radius-xs)</td>\n                </tr>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">Border-radius (rect)</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\" colspan=\"2\">var(--sizing-100)</td>\n                </tr>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">Border-radius (pill)</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\" colspan=\"2\">var(--border-radius-full)</td>\n                </tr>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">Font</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\" colspan=\"2\">var(--font-size-0687) · 400 · line-height var(--line-height-label-xsmall)</td>\n                </tr>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">Icon size</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\" colspan=\"2\">12 × var(--sizing-300)</td>\n                </tr>\n                <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">Gap (icon ↔ label)</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\" colspan=\"2\">var(--border-width-200)</td>\n                </tr>\n                <tr>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\">Gradient angle</td>\n                  <td style=\"padding:var(--space-md) 0;color:var(--shell-muted);font-size: var(--text-size-xs);;\" colspan=\"2\">22.76° · var(--color-gradient-content-stop-1) → var(--color-content-key)</td>\n                </tr>\n              </tbody>\n            </table>\n          </div>\n\n          <!-- Usage -->\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Usage</h3>\n            <p class=\"guide-body\">ステータス・カテゴリ・AI生成コンテンツの識別など、情報のメタデータを視覚的に補足する際に使用します。</p>\n            <div class=\"do-dont-grid\" style=\"margin-top:var(--spacing-300);\">\n              <div class=\"do-card\">\n                <div class=\"do-card-header\">✓ DO</div>\n                <div class=\"do-card-body\">\n                  <p>コンテンツのカテゴリや状態を端的に示す1〜2語のラベルを使用する</p>\n                  <p>AI生成コンテンツには gradient · primary を使用する</p>\n                </div>\n              </div>\n              <div class=\"dont-card\">\n                <div class=\"dont-card-header\">✗ DON'T</div>\n                <div class=\"dont-card-body\">\n                  <p>長い説明文をTagに入れない（Badge · Chipを使用）</p>\n                  <p>同一コンテキストで多数のTagを並べてコンテンツを埋めない</p>\n                </div>\n              </div>\n            </div>\n          </div>\n\n        </div><!-- guide-card -->\n  "
+  },
+  "selector": ".tag"
+}

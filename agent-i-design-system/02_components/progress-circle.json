@@ -1,0 +1,9 @@
+{
+  "name": "Progress",
+  "tier": "02_components",
+  "key": "progress-circle",
+  "type": "atom",
+  "description": "",
+  "guidelines": {},
+  "selector": ".progress-circle"
+}

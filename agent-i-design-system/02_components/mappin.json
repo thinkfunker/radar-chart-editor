@@ -1,0 +1,8 @@
+{
+  "name": "Mappin",
+  "tier": "02_components",
+  "key": "mappin",
+  "type": "atom",
+  "description": "Map pin indicator with selected/other/number/check variants.",
+  "selector": ".mappin"
+}

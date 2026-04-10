@@ -1,0 +1,9 @@
+{
+  "name": "Message Action Bar",
+  "tier": "03_blocks",
+  "key": "mab",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".mab"
+}

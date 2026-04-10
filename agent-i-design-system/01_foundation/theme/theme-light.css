@@ -1,0 +1,120 @@
+/**
+ * Agent-i Design Tokens - Light Theme
+ */
+
+:root {
+  --font-family-primary: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  /* sizes */
+  --font-size-0687:var(--font-size-0687); --font-size-075:var(--sizing-300); --font-size-0875:var(--line-height-label-small);
+  --font-size-100:var(--sizing-400);  --font-size-112:var(--font-size-112); --font-size-125:var(--sizing-500);
+  --font-size-150:var(--sizing-600);  --font-size-175:var(--sizing-700); --font-size-200:var(--sizing-800);
+  --font-size-275:var(--sizing-1100);
+  
+  /* weights */
+  --font-weight-light:300; --font-weight-regular:400; --font-weight-bold:700;
+  
+  /* line-heights */
+  --line-height-title-xxlarge:var(--line-height-title-xxlarge); --line-height-title-xlarge:var(--line-height-title-xlarge);
+  --line-height-title-large:var(--sizing-900);   --line-height-title-medium:var(--line-height-title-medium);
+  --line-height-title-small:var(--line-height-body-large);   --line-height-title-xsmall:var(--line-height-title-xsmall);
+  --line-height-title-xxsmall:var(--line-height-title-xxsmall);
+  --line-height-body-large:var(--line-height-body-large);    --line-height-body-medium:var(--line-height-body-medium);
+  --line-height-body-small:var(--line-height-body-small);
+  --line-height-label-large:var(--line-height-body-small);   --line-height-label-medium:var(--line-height-label-medium);
+  --line-height-label-small:var(--line-height-label-small);   --line-height-label-xsmall:var(--line-height-label-xsmall);
+  
+  /* primitives */
+  --color-red-1:#f9dedf;  --color-red-2:#f4c3c5;  --color-red-3:#efa8ab;
+  --color-red-4:#ea8d90;  --color-red-5:#e57376;  --color-red-6:#e0585c;
+  --color-red-7:#db3d42;  --color-red-8:#d62228;  --color-red-9:#b81d22;
+  --color-red-10:#99181d; --color-red-11:#7b1417; --color-red-12:#5d0f11;
+  --color-red-13:#3e0a0c; --color-red-14:#200506;
+  
+  --color-blue-1:#dbe7ff;  --color-blue-2:#bed4ff;  --color-blue-3:#a1c1ff;
+  --color-blue-4:#84aefe;  --color-blue-5:#669bfe;  --color-blue-6:#4988fe;
+  --color-blue-7:var(--color-content-key);  --color-blue-8:#0f62fe;  --color-blue-9:#0d54da;
+  --color-blue-10:#0b46b6; --color-blue-11:#093892; --color-blue-12:#062a6e;
+  --color-blue-13:#041d4a; --color-blue-14:#020f26;
+
+  --color-green-1:#dcece1;  --color-green-2:#bfdcca;  --color-green-3:#a3cdb2;
+  --color-green-4:#86bd9a;  --color-green-5:#6aae82;  --color-green-6:#4d9e6a;
+  --color-green-7:#318f52;  --color-green-8:#147f3a;  --color-green-9:#116d32;
+  --color-green-10:#0e5b2a; --color-green-11:#0b4921; --color-green-12:#093719;
+  --color-green-13:#062511; --color-green-14:#031309;
+
+  --color-yellow-1:#f2e8d9; --color-yellow-2:#e7d5ba; --color-yellow-3:#ddc29b;
+  --color-yellow-4:#d2af7c; --color-yellow-5:#c89c5d; --color-yellow-6:#bd8a3e;
+  --color-yellow-7:#b3771f; --color-yellow-8:#a86400; --color-yellow-9:#905600;
+  --color-yellow-10:#784800;--color-yellow-11:#613900;--color-yellow-12:#492b00;
+  --color-yellow-13:#311d00;--color-yellow-14:#190f00;
+
+  --color-orange-1:#ffe9e1; --color-orange-2:#ffd3c1; --color-orange-3:#ffbea2;
+  --color-orange-4:#ffa882; --color-orange-5:#ff9363; --color-orange-6:#f36f3f;
+  --color-orange-7:#de5a2e; --color-orange-8:#c44522; --color-orange-9:#9f371b;
+  --color-orange-10:#7f2c15;--color-orange-11:#612110;--color-orange-12:#43170b;
+  --color-orange-13:#2a0e06;--color-orange-14:#160703;
+
+  --color-amber-1:#fff3da;  --color-amber-2:#ffe7b6;  --color-amber-3:#ffdb92;
+  --color-amber-4:#ffce6e;  --color-amber-5:#ffc24a;  --color-amber-6:#e8a92f;
+  --color-amber-7:#cb8f1e;  --color-amber-8:#a36e12;  --color-amber-9:#85590e;
+  --color-amber-10:#6b470b; --color-amber-11:#513608; --color-amber-12:#372505;
+  --color-amber-13:#241803; --color-amber-14:#120c02;
+
+  --color-teal-1:#e6f6f2;  --color-teal-2:#cdede5;  --color-teal-3:#b3e3d8;
+  --color-teal-4:#99dacb;  --color-teal-5:#80d0be;  --color-teal-6:#55b8a3;
+  --color-teal-7:#3fa08b;  --color-teal-8:#1f7a68;  --color-teal-9:#1a6154;
+  --color-teal-10:#144c42; --color-teal-11:#0f3830; --color-teal-12:#0a241f;
+  --color-teal-13:#071a16; --color-teal-14:#03100d;
+
+  --color-cyan-1:#eaf9fe;  --color-cyan-2:#d6f1fa;  --color-cyan-3:#c2e9f6;
+  --color-cyan-4:#aee1f1;  --color-cyan-5:#9ad9ec;  --color-cyan-6:#74c3de;
+  --color-cyan-7:#4fadcf;  --color-cyan-8:#27799a;  --color-cyan-9:#1f5f7a;
+  --color-cyan-10:#184b60; --color-cyan-11:#123847; --color-cyan-12:#0c252f;
+  --color-cyan-13:#081c23; --color-cyan-14:#041015;
+
+  --color-purple-1:#f2edff; --color-purple-2:#e1daff; --color-purple-3:#d0c7ff;
+  --color-purple-4:#bfb4ff; --color-purple-5:#aea1ff; --color-purple-6:#8e81e8;
+  --color-purple-7:#7769cf; --color-purple-8:#5c50a6; --color-purple-9:#4a4188;
+  --color-purple-10:#3a3369;--color-purple-11:#2b264c;--color-purple-12:#1d1931;
+  --color-purple-13:#120e1a;--color-purple-14:#04020c;
+
+  --color-magenta-1:#fdecf8;--color-magenta-2:#f7d8ef;--color-magenta-3:#f1c4e6;
+  --color-magenta-4:#ebb0dd;--color-magenta-5:#e59cd4;--color-magenta-6:#c97bb8;
+  --color-magenta-7:#af639e;--color-magenta-8:#8f4e7e;--color-magenta-9:#753f68;
+  --color-magenta-10:#5d3153;--color-magenta-11:#45253f;--color-magenta-12:#2f1a2c;
+  --color-magenta-13:#1c1019;--color-magenta-14:#060207;
+
+  /* semantic */
+  --color-background-primary:#ffffff;   --color-background-secondary:#f0f2f7;
+  --color-background-tertiary:#e4e7ed;  --color-background-key:#0f62fe;
+  --color-background-success:#147f3a;   --color-background-alert:#d62228;
+  --color-background-warning:#a86400;   --color-background-accent:var(--color-background-accent);
+  --color-content-primary:#17181a;      --color-content-secondary:#000000c2;
+  --color-content-tertiary:#0000008f;   --color-content-key:#0f62fe;
+  --color-content-success:#147f3a;      --color-content-alert:#d62228;
+  --color-content-warning:#a86400;      --color-content-inverted:#ffffff;
+  --color-border-primary:#0000007a;     --color-border-secondary:#00000029;
+  --color-border-key:var(--color-content-key);           --color-border-success:#318f52;
+  --color-border-alert:#db3d42;
+
+  /* gradients */
+  --color-gradient-stop-1:#a83deb; --color-gradient-stop-2:#3083fd;
+
+  /* shell — minimal light */
+  --shell-sidebar-w: var(--size-shell-sidebar-width);
+  --shell-bg: #ffffff;
+  --shell-surface: #f7f7f8;
+  --shell-card: #ffffff;
+  --shell-border: rgba(0,0,0,0.08);
+  --shell-text: #111111;
+  --shell-muted: #6b7280;
+  --shell-accent: #0f62fe;
+  --shell-tag-bg: #eef2ff;
+  --shell-tag-text: #1d4ed8;
+  
+  /* Icon tokens */
+  --ds-icon-size: var(--sizing-600);
+  --ds-icon-color: var(--color-content-primary);
+  --ds-icon-transition: color 0.15s, background-color 0.15s, transform 0.1s;
+}

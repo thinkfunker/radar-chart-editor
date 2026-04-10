@@ -1,0 +1,55 @@
+{
+  "name": "Avatar",
+  "tier": "02_components",
+  "key": "avatar",
+  "type": "atom",
+  "description": "Avatar is a component for visually identifying a user or AI agent.",
+  "guidelines": {
+    "purpose": "Avatar is a component for visually identifying a user or AI agent.",
+    "anatomy": [
+      "Container: Circular clip area (border-radius: 50%). Applies Figma token --border-radius/400.",
+      "Portrait (user): Profile photo. Cropped to square with object-fit: cover.",
+      "Icon (AI): AI agent icon SVG (robot / word / check types). Retrieved from Figma Assets.",
+      "Outline: ultra-fine ring overlaid on user avatar (stroke-opacity: 0.08)."
+    ],
+    "variants": {
+      "type": [
+        "user: portrait",
+        "AI: agent icon (3 types x 2 styles Colored/Dark)"
+      ],
+      "size": [
+        "x-small: var(--sizing-400) (radius 8)",
+        "small: var(--sizing-600) (radius 12)",
+        "medium: var(--sizing-800) (radius 16)"
+      ]
+    },
+    "playground": {
+      "controls": [
+        {
+          "id": "size",
+          "label": "Size",
+          "type": "toggle",
+          "options": [
+            "small",
+            "medium",
+            "large",
+            "xlarge"
+          ],
+          "default": "medium"
+        },
+        {
+          "id": "type",
+          "label": "Type",
+          "type": "toggle",
+          "options": [
+            "user",
+            "ai"
+          ],
+          "default": "user"
+        }
+      ]
+    },
+    "_rawHtml": "\n<div class=\"guide-section\">\n            <div class=\"guide-title\">Purpose</div>\n            <div class=\"guide-body\">\n              Avatarは、ユーザーまたはAIエージェントを視覚的に識別するためのコンポーネントです。プロフィール表示、コメント、チャット、ユーザーリストなどにおいて、発話・操作主体を直感的に伝える役割を担います。\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Anatomy</div>\n            <div class=\"guide-body\">\n              <span class=\"guide-label\">Container</span> — 円形クリップ領域（border-radius: 50%）。Figmaトークン <code>--border-radius/400</code> を適用。<br><br>\n              <span class=\"guide-label\">Portrait (user)</span> — プロフィール写真。object-fit: cover で正方形にクロップ。<br><br>\n              <span class=\"guide-label\">Icon (AI)</span> — AIエージェントのアイコンSVG（robot / word / check タイプ）。Figma Assetsより取得。<br><br>\n              <span class=\"guide-label\">Outline</span> — ユーザーアバターに重ねる極細リング（stroke-opacity: 0.08）。\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Type</div>\n            <div class=\"guide-body\">\n              <span class=\"guide-label\">user</span> — ユーザーのプロフィール写真を表示。写真未設定時はプレースホルダー。<br><br>\n              <span class=\"guide-label\">AI</span> — AIエージェントのアイコン。以下の3種のアイコンタイプ × 2スタイル（Colored / Dark）がある。<br>\n              ・<b>Robot</b>: エージェントのデフォルト識別アイコン<br>\n              ・<b>Word (AI)</b>: テキスト「AI」で識別するタイプ<br>\n              ・<b>Check</b>: タスク完了・確認済みを表すタイプ\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Size</div>\n            <div class=\"guide-body\">\n              <span class=\"guide-label\">xsmall</span> — 16×var(--border-radius-400)。インラインテキストや密度の高いリスト。<br><br>\n              <span class=\"guide-label\">small</span> — 24×var(--border-radius-600)。コンパクトなUIやサブリスト。<br><br>\n              <span class=\"guide-label\">medium</span> — 32×var(--sizing-800)。チャット・メッセージ・プロフィール表示の標準サイズ。\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Usage</div>\n            <div class=\"guide-body\">\n              チャットUIでは、メッセージ発話者のアバターを左端に配置します。ユーザーとAIエージェントでタイプを使い分け、視覚的に区別します。ユーザーリストや通知エリアでは、バッジと組み合わせて状態を表示できます。\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Design Tokens</div>\n            <div class=\"guide-body\">\n              <code>--sizing/400</code> → var(--border-radius-400) (xsmall)<br>\n              <code>--sizing/600</code> → var(--sizing-600) (small)<br>\n              <code>--sizing/800</code> → var(--sizing-800) (medium)<br>\n              <code>--border-radius/400</code> → var(--border-radius-400) (全サイズで border-radius: 50% 相当)\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Code</div>\n            <div class=\"guide-body\">\n<pre class=\"code-block\"><code><span style=\"color:var(--color-content-tertiary)\">&lt;!-- User Avatar (medium) --&gt;</span>\n<span style=\"color:var(--color-content-key)\">&lt;div</span> <span style=\"color:var(--color-content-key)\">class</span>=<span style=\"color:var(--color-content-success)\">\"avatar avatar--medium avatar--user\"</span><span style=\"color:var(--color-content-key)\">&gt;</span>\n  <span style=\"color:var(--color-content-key)\">&lt;img</span> <span style=\"color:var(--color-content-key)\">src</span>=<span style=\"color:var(--color-content-success)\">\"portrait.jpg\"</span> <span style=\"color:var(--color-content-key)\">alt</span>=<span style=\"color:var(--color-content-success)\">\"\"</span> <span style=\"color:var(--color-content-key)\">/&gt;</span>\n<span style=\"color:var(--color-content-key)\">&lt;/div&gt;</span>\n\n<span style=\"color:var(--color-content-tertiary)\">&lt;!-- AI Avatar (medium, robot type) --&gt;</span>\n<span style=\"color:var(--color-content-key)\">&lt;div</span> <span style=\"color:var(--color-content-key)\">class</span>=<span style=\"color:var(--color-content-success)\">\"avatar avatar--medium avatar--ai\"</span><span style=\"color:var(--color-content-key)\">&gt;</span>\n  <span style=\"color:var(--color-content-tertiary)\">&lt;!-- ai-agent-primary SVG --&gt;</span>\n<span style=\"color:var(--color-content-key)\">&lt;/div&gt;</span></code></pre>\n            </div>\n          </div>\n    "
+  },
+  "selector": ".avatar"
+}

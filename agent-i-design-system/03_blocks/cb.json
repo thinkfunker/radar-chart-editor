@@ -1,0 +1,9 @@
+{
+  "name": "Card Button",
+  "tier": "03_blocks",
+  "key": "cb",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".cb"
+}

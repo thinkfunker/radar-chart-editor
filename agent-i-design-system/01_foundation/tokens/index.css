@@ -1,0 +1,19 @@
+/**
+ * @agent-i/design-system/tokens
+ * Full token bundle — import this single file to get all design tokens.
+ *
+ * Or import individual token files:
+ *   @import "@agent-i/design-system/tokens/colors.css";
+ *   @import "@agent-i/design-system/tokens/spacing.css";
+ *   @import "@agent-i/design-system/tokens/radius.css";
+ *   @import "@agent-i/design-system/tokens/shadow.css";
+ *   @import "@agent-i/design-system/tokens/typography.css";
+ *   @import "@agent-i/design-system/tokens/motion.css";
+ */
+
+@import "./colors.css";
+@import "./spacing.css";
+@import "./radius.css";
+@import "./shadow.css";
+@import "./typography.css";
+@import "./motion.css";

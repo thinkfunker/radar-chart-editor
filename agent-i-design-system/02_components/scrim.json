@@ -1,0 +1,8 @@
+{
+  "name": "Scrim",
+  "tier": "02_components",
+  "key": "scrim",
+  "type": "atom",
+  "description": "A full-screen scrim layer for overlays.",
+  "selector": ".scrim-layer"
+}

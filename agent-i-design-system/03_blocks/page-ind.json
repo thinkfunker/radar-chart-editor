@@ -1,0 +1,9 @@
+{
+  "name": "Page Indicator",
+  "tier": "03_blocks",
+  "key": "page-ind",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".page-ind"
+}

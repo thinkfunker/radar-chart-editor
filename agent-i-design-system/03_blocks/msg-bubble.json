@@ -1,0 +1,9 @@
+{
+  "name": "L2151",
+  "tier": "03_blocks",
+  "key": "msg-bubble",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".msg-bubble"
+}

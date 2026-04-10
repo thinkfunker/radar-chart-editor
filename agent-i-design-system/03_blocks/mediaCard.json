@@ -1,0 +1,9 @@
+{
+  "name": "Media Card",
+  "tier": "03_blocks",
+  "key": "mediaCard",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.mediaCard(opts)"
+}

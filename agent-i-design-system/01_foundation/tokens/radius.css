@@ -1,0 +1,36 @@
+/**
+ * @agent-i/design-tokens — Radius & Border Tokens
+ */
+
+:root {
+
+  /* ──────────────────────────────────────────
+     Border Radius
+     ────────────────────────────────────────── */
+  --border-radius-100:  var(--sizing-100);
+  --border-radius-200:  var(--sizing-200);
+  --border-radius-300:  var(--sizing-300);
+  --border-radius-400:  var(--sizing-400);
+  --border-radius-500:  var(--sizing-500);
+  --border-radius-600:  var(--sizing-600);
+  --border-radius-700:  var(--sizing-700);
+  --border-radius-full: var(--border-radius-full); /* use 50% for true circles */
+
+  /* ──────────────────────────────────────────
+     Border Width
+     ────────────────────────────────────────── */
+  --border-width-100: var(--border-width-100);
+  --border-width-200: var(--border-width-200);
+  --border-width-300: var(--border-width-300);
+
+  /* ──────────────────────────────────────────
+     Opacity
+     ────────────────────────────────────────── */
+  --opacity-100:  0.04;   /* 4%  */
+  --opacity-200:  0.08;   /* 8%  */
+  --opacity-300:  0.12;   /* 12% */
+  --opacity-400:  0.16;   /* 16% */
+  --opacity-900:  0.36;   /* 36% */
+  --opacity-1500: 0.60;   /* 60% */
+  --opacity-2100: 0.84;   /* 84% */
+}

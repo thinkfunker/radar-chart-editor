@@ -1,0 +1,8 @@
+{
+  "name": "Pagination Nav",
+  "tier": "02_components",
+  "key": "pgnav",
+  "type": "atom",
+  "description": "Pagination navigation button (prev/next) with state variants.",
+  "selector": ".pg-nav"
+}

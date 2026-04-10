@@ -1,0 +1,16 @@
+{
+  "name": "AI Text Input Button",
+  "tier": "02_components",
+  "key": "aitinputButton",
+  "type": "atom",
+  "description": "AI Text Input button variants for send, voice, login, and analysis actions.",
+  "behavior": {
+    "type": ["send", "voice", "login", "analysis"],
+    "state": ["on", "off"],
+    "props": {
+      "label": "Label text for login button.",
+      "className": "Optional extra class for layout customization."
+    }
+  },
+  "selector": ".aitinput__btn, .aitinput__label-btn"
+}

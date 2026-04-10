@@ -1,0 +1,9 @@
+{
+  "name": "Media Card Thumbnail",
+  "tier": "03_blocks",
+  "key": "mcard-thumb",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".mcard-thumb"
+}

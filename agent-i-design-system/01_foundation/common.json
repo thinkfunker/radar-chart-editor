@@ -1,0 +1,6 @@
+{
+  "name": "Common",
+  "tier": "01_foundation",
+  "type": "token",
+  "description": "Core common tokens."
+}

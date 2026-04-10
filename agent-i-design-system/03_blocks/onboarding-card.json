@@ -1,0 +1,8 @@
+{
+  "name": "Onboarding Card",
+  "tier": "03_blocks",
+  "key": "onboardingcard",
+  "type": "block",
+  "description": "A two-card onboarding comparison layout with a centered VS badge.",
+  "selector": ".obcard"
+}

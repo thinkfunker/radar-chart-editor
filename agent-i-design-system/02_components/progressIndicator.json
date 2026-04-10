@@ -1,0 +1,8 @@
+{
+  "name": "Progress Indicator",
+  "tier": "02_components",
+  "key": "progressindicator",
+  "type": "atom",
+  "description": "Single-line progress indicator bar.",
+  "selector": ".progress-indicator"
+}

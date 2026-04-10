@@ -1,0 +1,9 @@
+{
+  "name": "List Item",
+  "tier": "03_blocks",
+  "key": "list-item",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".list-item"
+}

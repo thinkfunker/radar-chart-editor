@@ -1,0 +1,14 @@
+{
+  "name": "Pagination",
+  "tier": "03_blocks",
+  "key": "pg-wrap",
+  "type": "composition",
+  "description": "Complex pg-wrap layout block.",
+  "guidelines": {
+    "purpose": "",
+    "usage": "",
+    "do": "",
+    "dont": ""
+  },
+  "selector": ".pg-wrap"
+}

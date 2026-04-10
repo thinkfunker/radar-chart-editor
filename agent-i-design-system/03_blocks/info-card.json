@@ -1,0 +1,9 @@
+{
+  "name": "Info Card",
+  "tier": "03_blocks",
+  "key": "info-card",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".info-card"
+}

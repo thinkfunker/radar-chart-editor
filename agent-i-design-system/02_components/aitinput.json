@@ -1,0 +1,63 @@
+{
+  "name": "AI Text Input",
+  "tier": "02_components",
+  "key": "aitinput",
+  "type": "molecule",
+  "description": "Chat input field supporting simple and multiple layouts with voice/send actions.",
+  "guidelines": {
+    "summary": "AI Text Input は、ユーザー入力と AI 応答のトリガーを行う中心的なインタラクション要素です。テキスト入力、音声入力、ファイル／写真添付、メッセージ送信など、多様な操作を 1 つの入力欄で実行できるよう設計されています。",
+    "anatomy": [
+      "Left button（＋）",
+      "Input field（プレースホルダー／カーソル／テキスト）",
+      "Right button（マイク／送信）",
+      "Container（背景・角丸・ボーダー）"
+    ],
+    "type": [
+      "AI Text Input は、単一行入力（simple）と複数行入力（multiple）をサポートします。"
+    ],
+    "style": {
+      "state": [
+        "enabled",
+        "focused",
+        "typing",
+        "typed",
+        "disabled"
+      ],
+      "icon_controls": [
+        "Left button ON/OFF",
+        "Left Icon ON/OFF",
+        "Right button 1 ON/OFF",
+        "Right button 2 ON/OFF"
+      ],
+      "left_menu": "「＋」ボタン押下時に表示される添付メニュー（写真／カメラ／ファイル）の表示状態を制御します。"
+    },
+    "usage_guidelines": {
+      "Text input": "明確な質問や指示を書くための基本手段です。",
+      "Left menu (Menu button)": "写真・カメラ・ファイルのアップロードなど、入力の拡張手段を提供します。",
+      "Right button 1 (Mic button)": "音声入力が利用できる環境で、テキスト入力の代替手段として使用されます。",
+      "Right button 2 (Send button)": "テキストが存在する場合のみ有効化され、AI の応答を送信します。"
+    },
+    "do_dont": {
+      "do": [
+        "添付メニューと入力欄が混同されないよう、メニューは明確に分離された位置に表示します。",
+        "送信ボタンは、入力が明確な場合にのみ有効化します。"
+      ],
+      "dont": [
+        "添付メニューが周囲の操作を妨げないよう、重なりを避けます。",
+        "重要な操作をマイクボタンのみに依存させないでください。"
+      ]
+    }
+  },
+  "behavior": {
+    "type": ["simple", "multiple"],
+    "state": ["enabled", "focused", "typing", "typed", "disabled"],
+    "props": {
+      "showLeftButton": "Toggle left button visibility.",
+      "showLeftIcon": "Toggle left icon visibility.",
+      "showRightButton1": "Toggle right voice button.",
+      "showRightButton2": "Toggle right send button.",
+      "inputText": "Displayed text or placeholder."
+    }
+  },
+  "selector": ".aitinput"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Agent Hero",
+  "tier": "03_blocks",
+  "key": "agent-hero",
+  "type": "composition",
+  "description": "Hero section for AI agent identity.",
+  "guidelines": {
+    "purpose": "Hero section for AI agent identity.",
+    "anatomy": [
+      "var(--sizing-800) gradient icon",
+      "var(--sizing-400) bold name",
+      "var(--sizing-600) bold title (var(--line-height-title-medium) line-height)."
+    ]
+  },
+  "selector": ".agent-hero"
+}

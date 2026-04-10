@@ -1,0 +1,21 @@
+{
+  "name": "Search Bar",
+  "tier": "03_blocks",
+  "key": "searchbar",
+  "type": "block",
+  "description": "A search input field optimized for AI-driven information discovery.",
+  "guidelines": {
+    "purpose": "Search Bar provides a high-visibility entry point for global or contextual searches. It is styled to match the AI interaction language of the system.",
+    "anatomy": {
+      "container": "aitinput class with flex-direction: row and padding: var(--sizing-200) var(--sizing-300).",
+      "background": "var(--color-background-secondary) (default) or aitinput--bg-white.",
+      "icon": "18xvar(--font-size-112) search icon (magnifying glass) with var(--color-content-tertiary) color.",
+      "action": "Circular send button with SEND_SVG(16)."
+    },
+    "specs": {
+      "radius": "var(--sizing-300)",
+      "font": "System primary font, var(--sizing-400) placeholder text."
+    }
+  },
+  "selector": ".search-bar"
+}

@@ -1,0 +1,81 @@
+/**
+ * @agent-i/ui — Button Component
+ * Requires: @agent-i/design-tokens (for standard system rules)
+ */
+
+/* ── Button Component ────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--space-xs); cursor: pointer;
+  font-family: var(--font-family-primary, 'SF Pro JP', sans-serif);
+  font-weight: 700; line-height: 1; white-space: nowrap;
+  transition: opacity .12s, box-shadow .15s, transform .1s;
+  position: relative; text-decoration: none; outline: none; border: none;
+}
+
+.btn:disabled, .btn.state-disabled { opacity: 0.4; pointer-events: none; }
+.btn.state-hovered { opacity: 0.88; }
+.btn.state-pressed  { opacity: 0.74; transform: scale(0.98); }
+
+/* Sizes */
+.btn--medium  { height: var(--sizing-800); padding: 0 var(--spacing-300); font-size: var(--font-size-0875); border-radius: var(--border-radius-200); }
+.btn--large   { height: var(--sizing-1000); padding: 0 var(--spacing-400); font-size: var(--font-size-0875); border-radius: var(--radius-lg); }
+.btn--xlarge  { height: var(--sizing-1200); padding: 0 var(--spacing-500); font-size: var(--sizing-400); border-radius: var(--border-radius-300); }
+.btn--xxlarge { height: var(--sizing-1400); padding: 0 var(--spacing-600); font-size: var(--sizing-400); border-radius: var(--line-height-label-small); gap: var(--spacing-200); }
+
+/* Icon only */
+.btn.icon-only { padding: 0; }
+.btn--medium.icon-only  { width: var(--sizing-800); }
+.btn--large.icon-only   { width: var(--sizing-1000); }
+.btn--xlarge.icon-only  { width: var(--sizing-1200); }
+.btn--xxlarge.icon-only { width: var(--sizing-1400); }
+
+/* Priority: solid-primary (gradient) */
+.btn--solid-primary {
+  background: linear-gradient(26deg, var(--color-gradient-background-stop-1) 5.1%, var(--color-gradient-background-stop-2) 92.4%);
+  color: var(--color-content-inverted);
+}
+.btn--solid-primary.state-focused { box-shadow: 0 0 0 var(--border-width-300) var(--color-state-focused-secondary); }
+
+/* Priority: outline-primary (gradient border) */
+.btn--outline-primary {
+  background: var(--color-background-white); color: var(--color-gradient-content-stop-1);
+}
+.btn--outline-primary::before {
+  content: ''; position: absolute; inset: 0;
+  border-radius: inherit; padding: calc(var(--border-width-100) * 1.5);
+  background: linear-gradient(26deg, var(--color-gradient-background-stop-1) 5.1%, var(--color-gradient-background-stop-2) 92.4%);
+  -webkit-mask: linear-gradient(var(--color-background-white) 0 0) content-box, linear-gradient(var(--color-background-white) 0 0);
+  mask: linear-gradient(var(--color-background-white) 0 0) content-box, linear-gradient(var(--color-background-white) 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.btn--outline-primary.state-focused { box-shadow: 0 0 0 var(--border-width-300) var(--color-state-focused-secondary); }
+
+/* Priority: outline-secondary */
+.btn--outline-secondary {
+  background: transparent; color: var(--color-content-primary);
+  border: calc(var(--border-width-100) * 1.5) solid var(--color-border-primary);
+}
+.btn--outline-secondary.state-hovered { border-color: var(--color-content-tertiary); }
+.btn--outline-secondary.state-focused { box-shadow: 0 0 0 var(--border-width-300) var(--color-border-secondary); }
+
+/* Priority: outline-tertiary */
+.btn--outline-tertiary {
+  background: transparent; color: var(--color-content-primary);
+  border: calc(var(--border-width-100) * 1.5) solid var(--color-border-secondary);
+}
+.btn--outline-tertiary.state-hovered { border-color: var(--color-content-tertiary); }
+.btn--outline-tertiary.state-focused  { box-shadow: 0 0 0 var(--border-width-300) var(--color-border-tertiary); }
+
+/* Priority: outline-danger */
+.btn--outline-danger {
+  background: transparent; color: var(--color-content-alert);
+  border: calc(var(--border-width-100) * 1.5) solid var(--color-content-alert);
+}
+.btn--outline-danger.state-hovered { background: var(--color-background-alert); }
+.btn--outline-danger.state-focused  { box-shadow: 0 0 0 var(--border-width-300) var(--color-content-alert); }
+
+/* Icon utility */
+.btn-icon { width: 1em; height: 1em; display: block; flex-shrink: 0; }

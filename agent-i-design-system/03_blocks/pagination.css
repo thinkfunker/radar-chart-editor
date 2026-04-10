@@ -1,0 +1,119 @@
+/**
+ * @agent-i/ui — Pagination Component
+ * Requires: @agent-i/design-tokens, @agent-i/theme
+ */
+
+/* ══ Pagination Standard ════════════════════════════════ */
+.pg-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-400);
+  justify-content: center;
+}
+.pg-wrap--pc     { width: calc(var(--sizing-100) * 92); }
+.pg-wrap--mobile { width: var(--size-info-card-square); }
+
+/* Nav button */
+.pg-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--sizing-800);
+  height: var(--sizing-800);
+  border-radius: calc(var(--border-radius-100) * 25);
+  border: var(--border-width-100) solid var(--color-border-secondary);
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.12s, box-shadow 0.12s;
+  color: var(--color-content-primary);
+  padding: 0;
+}
+.pg-nav:hover:not(.pg-nav--disabled)       { background: var(--color-background-disabled-accent); }
+.pg-nav:focus-visible:not(.pg-nav--disabled) {
+  outline: none;
+  box-shadow: 0 0 0 var(--spacing-050) var(--color-border-primary);
+  background: var(--color-background-disabled-accent);
+}
+.pg-nav:active:not(.pg-nav--disabled)      { background: var(--color-border-tertiary); }
+.pg-nav--disabled { opacity: 0.38; cursor: default; pointer-events: none; }
+.pg-nav svg { width: var(--sizing-500); height: var(--sizing-500); display: block; }
+
+/* Page group */
+.pg-page-group {
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--spacing-200);
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+/* Page item */
+.pg-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--sizing-800);
+  height: var(--sizing-800);
+  min-width: var(--sizing-800);
+  border-radius: calc(var(--border-radius-100) * 25);
+  font-size: var(--font-size-0875);
+  line-height: var(--line-height-label-medium);
+  color: var(--color-content-primary);
+  cursor: pointer;
+  transition: background 0.12s, box-shadow 0.12s;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+}
+.pg-page:hover:not(.pg-page--selected):not(.pg-page--dots) { background: var(--color-background-disabled-accent); }
+.pg-page:focus-visible:not(.pg-page--selected):not(.pg-page--dots) {
+  outline: none;
+  box-shadow: 0 0 0 var(--spacing-050) var(--color-border-primary);
+  background: var(--color-background-disabled-accent);
+}
+.pg-page:active:not(.pg-page--selected):not(.pg-page--dots) { background: var(--color-border-secondary); }
+.pg-page--selected { background: var(--color-state-focused-secondary); cursor: default; }
+.pg-page--dots     { cursor: default; pointer-events: none; color: var(--color-content-tertiary); }
+.pg-page--disabled { opacity: 0.38; pointer-events: none; }
+
+/* Page Jumper */
+.pg-jumper-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  justify-content: center;
+  flex-shrink: 0;
+}
+.pg-jumper-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-100);
+  height: var(--sizing-800);
+  padding: 0 var(--spacing-300);
+  border: var(--border-width-100) solid var(--color-border-secondary);
+  border-radius: var(--border-radius-200);
+  background: transparent;
+  cursor: pointer;
+  font-size: var(--font-size-0875);
+  color: var(--color-content-primary);
+  font-family: inherit;
+  transition: background 0.12s, box-shadow 0.12s;
+}
+.pg-jumper-select:hover         { background: var(--color-background-disabled-accent); }
+.pg-jumper-select:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 var(--spacing-050) var(--color-state-focused-secondary);
+  background: var(--color-state-hover-secondary);
+  border-color: var(--color-content-key);
+}
+.pg-jumper-page-num { min-width: var(--sizing-600); text-align: center; }
+.pg-jumper-select svg { width: var(--sizing-400); height: var(--sizing-400); flex-shrink: 0; }
+.pg-jumper-sep   { font-size: var(--font-size-0875); color: var(--color-content-primary); line-height: var(--line-height-label-medium); }
+.pg-jumper-total { min-width: var(--sizing-600); font-size: var(--font-size-0875); color: var(--color-content-primary); line-height: var(--line-height-label-medium); text-align: center; }
+
+/* ╔══════════════════════════════════════════════════════════════╗
+   ║

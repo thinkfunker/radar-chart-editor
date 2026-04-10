@@ -1,0 +1,72 @@
+/**
+ * @agent-i/ui — Chip Component
+ * Requires: @agent-i/design-tokens, @agent-i/theme
+ */
+
+/* ── Chip Component ──────────────────────────────────── */
+.chip {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--space-xxs); cursor: pointer;
+  font-family: var(--font-family-primary, 'Noto Sans JP', sans-serif);
+  font-weight: 400; line-height: 1; white-space: nowrap;
+  transition: all .15s; position: relative; outline: none;
+  border: var(--border-width-100) solid transparent;
+}
+.chip:disabled, .chip.state-disabled { opacity: 0.4; pointer-events: none; }
+.chip.state-pressed  { opacity: 0.74; transform: scale(0.97); }
+/* Sizes */
+.chip--small   { height: var(--sizing-700); padding: 0 var(--spacing-200);  font-size: var(--sizing-300); }
+.chip--medium  { height: var(--sizing-800); padding: 0 var(--space-lg); font-size: var(--font-size-0875); }
+.chip--large   { height: var(--sizing-1000); padding: 0 var(--line-height-label-small); font-size: var(--font-size-0875); }
+.chip--xlarge  { height: var(--sizing-1200); padding: 0 var(--spacing-500); font-size: var(--sizing-400); }
+/* Variant: solid-rounded-rect */
+.chip--solid-rounded-rect {
+  background: var(--color-background-secondary); border-radius: var(--border-radius-200); color: var(--color-content-primary);
+}
+.chip--solid-rounded-rect.chip--small  { border-radius: var(--radius-xs); }
+.chip--solid-rounded-rect.chip--medium { border-radius: var(--radius-sm); }
+.chip--solid-rounded-rect.state-hovered:not(.selected) { background: var(--color-background-secondary); }
+.chip--solid-rounded-rect.state-focused { box-shadow: 0 0 0 var(--spacing-050) var(--color-border-secondary); }
+.chip--solid-rounded-rect.selected {
+  background: var(--color-background-selection-secondary); border-color: var(--color-gradient-content-stop-1); color: var(--color-content-key);
+}
+.chip--solid-rounded-rect.selected.state-hovered { background: var(--color-state-pressed-secondary); }
+.chip--solid-rounded-rect.selected.state-focused  { box-shadow: 0 0 0 var(--spacing-050) var(--color-gradient-border-secondary-stop-1); }
+/* Variant: solid-rounded (pill) */
+.chip--solid-rounded {
+  background: var(--color-background-secondary); border-radius: calc(var(--border-radius-100) * 25); color: var(--color-content-primary);
+  padding: 0 var(--line-height-label-small);
+}
+.chip--solid-rounded.chip--small  { padding: 0 var(--space-lg); }
+.chip--solid-rounded.chip--medium { padding: 0 var(--spacing-300); }
+.chip--solid-rounded.chip--xlarge { padding: 0 var(--font-size-112); }
+.chip--solid-rounded.state-hovered:not(.selected) { background: var(--color-background-secondary); }
+.chip--solid-rounded.state-focused { box-shadow: 0 0 0 var(--spacing-050) var(--color-border-secondary); }
+.chip--solid-rounded.selected {
+  background: var(--color-background-selection-secondary); border-color: var(--color-gradient-content-stop-1); color: var(--color-content-key);
+}
+.chip--solid-rounded.selected.state-hovered { background: var(--color-state-pressed-secondary); }
+.chip--solid-rounded.selected.state-focused  { box-shadow: 0 0 0 var(--spacing-050) var(--color-gradient-border-secondary-stop-1); }
+/* Variant: outline-gradient (pill) */
+.chip--outline-gradient {
+  background: var(--color-background-white); border-radius: calc(var(--border-radius-100) * 25); color: var(--color-content-primary);
+  border: var(--border-width-100) solid var(--color-gradient-border-secondary-stop-1); padding: 0 var(--line-height-label-small);
+}
+.chip--outline-gradient.chip--small  { padding: 0 var(--space-lg); }
+.chip--outline-gradient.chip--medium { padding: 0 var(--spacing-300); }
+.chip--outline-gradient.chip--xlarge { padding: 0 var(--font-size-112); }
+.chip--outline-gradient.state-hovered:not(.selected) { background: var(--color-gradient-border-secondary-stop-1); border-color: var(--color-gradient-border-secondary-stop-1); }
+.chip--outline-gradient.state-focused { box-shadow: 0 0 0 var(--spacing-050) var(--color-gradient-border-secondary-stop-1); }
+.chip--outline-gradient.selected {
+  background: var(--color-background-selection-secondary); border-color: var(--color-gradient-content-stop-1); color: var(--color-content-key);
+}
+.chip--outline-gradient.selected.state-hovered { background: var(--color-state-pressed-secondary); }
+.chip--outline-gradient.selected.state-focused  { box-shadow: 0 0 0 var(--spacing-050) var(--color-gradient-border-secondary-stop-1); }
+/* Chip graphic (avatar) */
+.chip-graphic {
+  width: var(--font-size-112); height: var(--font-size-112); border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--color-gradient-background-stop-1) , var(--color-gradient-background-stop-2) );
+  display: flex; align-items: center; justify-content: center;
+}
+.chip--xlarge .chip-graphic { width: var(--line-height-body-medium); height: var(--line-height-body-medium); }
+.chip--small  .chip-graphic { width: var(--line-height-label-small); height: var(--line-height-label-small); }

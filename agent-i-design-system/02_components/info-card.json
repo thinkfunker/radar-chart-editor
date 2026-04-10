@@ -1,0 +1,24 @@
+{
+  "name": "Info Card",
+  "tier": "02_components",
+  "key": "infocard",
+  "type": "block",
+  "description": "A versatile information card supporting multiple densities and media layouts.",
+  "guidelines": {
+    "purpose": "Info Card is a highly flexible component designed for various information densities and media combinations. It provides 9 layout variations based on detail (low/medium/high), media (icon/thumbnail/none), and action (none/button).",
+    "variants": {
+      "detail": "low (minimal), medium (standard), high (detailed order/summary).",
+      "media": "icon (weather/status), thumbnail (var(--sizing-2400) or calc(var(--sizing-100) * 22) notification/product), none.",
+      "width": "ic--narrow (calc(var(--sizing-100) * 49)), ic--wide (var(--size-card-width-lg)), ic--sq (var(--size-info-card-square) square)."
+    },
+    "anatomy": {
+      "base": "ic class. White bg, border var(--color-border-tertiary), radius var(--sizing-400), padding var(--sizing-400), gap var(--sizing-300).",
+      "gradient_title": "ic__gradient-title. AI-themed gradient text.",
+      "buttons": {
+        "primary": "AI gradient background, var(--sizing-1100) height, var(--border-radius-full) radius.",
+        "secondary": "Outline style, var(--sizing-1100) height, var(--border-radius-full) radius."
+      }
+    }
+  },
+  "selector": ".ic"
+}

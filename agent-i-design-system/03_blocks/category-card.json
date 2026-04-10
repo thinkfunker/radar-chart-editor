@@ -1,0 +1,8 @@
+{
+  "name": "Category Card",
+  "tier": "03_blocks",
+  "key": "categorycard",
+  "type": "block",
+  "description": "Category highlight card with image, gradient title, and optional video overlay.",
+  "selector": ".catcard"
+}

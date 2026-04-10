@@ -1,0 +1,17 @@
+{
+  "name": "Modal",
+  "tier": "03_blocks",
+  "key": "modal",
+  "type": "composition",
+  "description": "Critical dialog overlay on scrim.",
+  "guidelines": {
+    "purpose": "Critical dialog overlay on scrim.",
+    "anatomy": [
+      "Scrim: var(--color-background-scrim), radius 16.",
+      "Mobile: calc(var(--sizing-100) * 72) width, radius 12, center text.",
+      "PC: var(--size-modal-width-pc) width, left text, close btn.",
+      "Title: 18-var(--sizing-500) 700. Desc: var(--line-height-label-small) 400 (76% opac)."
+    ]
+  },
+  "selector": ".modal"
+}

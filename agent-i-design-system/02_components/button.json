@@ -1,0 +1,184 @@
+{
+  "name": "Button",
+  "tier": "02_components",
+  "key": "button",
+  "type": "atom",
+  "description": "Button is a basic interaction element that clearly communicates primary and secondary actions.",
+  "guidelines": {
+    "summary": "Button is a basic interaction element used when a user clicks (or taps) to perform an action or navigate to a specific page. This guideline ensures that all button elements in Agent-i are provided consistently according to set standards.",
+    "anatomy": {
+      "Container": "The entire area of the button (including background color, border, shadow, etc.)",
+      "Label": "The text area describing the action the button will perform",
+      "Icon (optional)": "An icon that supports the meaning of the text or implies an action on its own (can be placed on the left or right)"
+    },
+    "priority_system": {
+      "Primary": "The single most important or mandatory action to induce on a given screen.\nRecommended to be placed once per screen.\nKey style: solid-primary (core action).",
+      "Secondary": "A major action that assists or serves as an alternative to the Primary action.\nPlaced alongside a Primary button, or used alone as an alternative major action.\nKey style: outline-secondary.",
+      "Tertiary": "A supplementary action with low priority or neutral meaning (e.g., cancel, go back, close).\nApplies a text-only (ghost) or outlined (outline-tertiary) style.",
+      "Danger (Destructive)": "An action that requires caution or cannot be undone upon execution, such as delete, initialize, or block.\nProvides a clear visual warning using a red-toned status color.\nKey style: outline-danger or danger."
+    },
+    "style": {
+      "size": {
+        "xxlarge": "var(--sizing-1400) - [Mobile] Fixed major button at the bottom of the screen, etc.",
+        "xlarge": "var(--sizing-1200) - [Mobile/Tablet] Wide-area major form submission button, etc.",
+        "large": "var(--sizing-1000) - [All environments] Default button size.",
+        "medium": "var(--sizing-800) - Constrained spaces, secondary/supplementary control areas, etc."
+      },
+      "state": {
+        "enabled": "Default active state.",
+        "hovered": "Mouse over state.",
+        "focused": "Focused state, such as during keyboard tab navigation.",
+        "pressed": "State while click/touch is maintained.",
+        "disabled": "Deactivated state where interaction is not possible (follows token principles like adjusting opacity or avoiding disabled-accent)."
+      },
+      "icon_controls": {
+        "Left Icon ON/OFF": "Presence of an icon before the label.",
+        "Right Icon ON/OFF": "Presence of an icon after the label.",
+        "Icon only": "Consists of only an icon without a label (restricted to intuitive actions).",
+        "Icon swap": "Changes the icon depending on the context."
+      }
+    },
+    "usage_guidelines": {
+      "Primary": "Use only for the main action that the user must definitely perform on the screen.",
+      "Secondary": "Use to assist or alternate the main action.",
+      "Tertiary": "Suitable for the lowest priority neutral actions, such as cancel.",
+      "Danger": "Use when a warning is needed to avoid severe consequences from misoperation.",
+      "Icon-only": "Use only when the meaning is clearly conveyed by the icon alone, such as a trash can or close icon."
+    },
+    "do_dont": {
+      "do": [
+        "💡 Clarify the priority by placing only one Primary button per screen if possible.",
+        "💡 Maintain a clear hierarchy by grouping Secondary and Tertiary actions according to their importance.",
+        "💡 Utilize Icon-only only when the context is sufficiently understood by the icon alone."
+      ],
+      "dont": [
+        "🚫 Do not place multiple Primary buttons in a single view, which disperses attention.",
+        "🚫 Do not replace a button with just a generic icon that could have an ambiguous meaning.",
+        "🚫 Do not make a disabled button stand out by overlapping emphasis colors intended for its original function (fallback to achromatic or muted colors by default)."
+      ]
+    },
+    "playground": {
+      "controls": [
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "text",
+          "default": "Label"
+        },
+        {
+          "id": "priority",
+          "label": "Priority",
+          "type": "toggle",
+          "options": [
+            "solid-primary",
+            "outline-primary",
+            "outline-secondary",
+            "outline-tertiary",
+            "outline-danger"
+          ],
+          "default": "solid-primary"
+        },
+        {
+          "id": "size",
+          "label": "Size",
+          "type": "toggle",
+          "options": [
+            "medium",
+            "large",
+            "xlarge",
+            "xxlarge"
+          ],
+          "default": "medium"
+        },
+        {
+          "id": "state",
+          "label": "State",
+          "type": "toggle",
+          "options": [
+            "enabled",
+            "hovered",
+            "focused",
+            "pressed",
+            "disabled"
+          ],
+          "default": "enabled"
+        },
+        {
+          "id": "showLeftIcon",
+          "label": "Show left icon",
+          "type": "toggle",
+          "options": [
+            false,
+            true
+          ],
+          "default": false
+        },
+        {
+          "id": "leftIcon",
+          "label": "Left Icon",
+          "type": "select",
+          "options": [
+            "",
+            "check_solid",
+            "star_solid_full",
+            "plus_solid",
+            "chevron-right_solid",
+            "paper-plane_solid"
+          ],
+          "default": ""
+        },
+        {
+          "id": "showRightIcon",
+          "label": "Show right icon",
+          "type": "toggle",
+          "options": [
+            false,
+            true
+          ],
+          "default": false
+        },
+        {
+          "id": "rightIcon",
+          "label": "Right Icon",
+          "type": "select",
+          "options": [
+            "",
+            "check_solid",
+            "star_solid_full",
+            "plus_solid",
+            "chevron-right_solid",
+            "paper-plane_solid"
+          ],
+          "default": ""
+        },
+        {
+          "id": "swapIcon",
+          "label": "Swap Icon",
+          "type": "select",
+          "options": [
+            "",
+            "check_solid",
+            "star_solid_full",
+            "plus_solid",
+            "chevron-right_solid",
+            "paper-plane_solid"
+          ],
+          "default": ""
+        },
+        {
+          "id": "iconOnly",
+          "label": "Icon only",
+          "type": "toggle",
+          "options": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "_rawHtml": "\n<div class=\"guide-section\">\n            <div class=\"guide-title\">Purpose</div>\n            <div class=\"guide-body\">\n              <p>Buttonは、ユーザーが実行する主要／補助アクションを明確に伝える基本的なインタラクション要素です。<br>Priority（優先度）は操作の重要度と視覚的強調を示し、Style（Solid／Outline）は同一 Priority 内での視覚的バリエーションを提供します。</p>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Anatomy</div>\n            <div class=\"guide-body\">\n              <p><strong>構成要素</strong></p>\n              <ul>\n                <li>Label</li>\n                <li>Left icon（任意）</li>\n                <li>Right icon（任意）</li>\n                <li>Container（スタイル、角丸、サイズ）</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Priority System</div>\n            <div class=\"guide-body\">\n              <p><strong>Primary</strong></p>\n              <p>最重要アクションに使用し、画面内で 1 回の使用が推奨されます。solid-primary は最も強い視覚強調を提供し、outline-primary は代替 Primary として機能します。</p>\n              <div style=\"display:flex; gap:var(--spacing-300); margin-top:var(--space-lg); margin-bottom:var(--spacing-400); flex-wrap:wrap;\">\n                <button class=\"btn btn--xlarge btn--solid-primary\" style=\"pointer-events:none;\">solid-primary</button>\n                <button class=\"btn btn--xlarge btn--outline-primary\" style=\"pointer-events:none;\">outline-primary</button>\n              </div>\n              <p><strong>Secondary</strong></p>\n              <p>主要アクションを補助したり、追加選択肢を提供する場合に使用します。</p>\n              <div style=\"margin-top:var(--space-lg); margin-bottom:var(--spacing-400);\">\n                <button class=\"btn btn--xlarge btn--outline-secondary\" style=\"pointer-events:none;\">outline-secondary</button>\n              </div>\n              <p><strong>Tertiary</strong></p>\n              <p>中立的または低優先度の操作（キャンセル、閉じるなど）に使用します。</p>\n              <div style=\"margin-top:var(--space-lg); margin-bottom:var(--spacing-400);\">\n                <button class=\"btn btn--xlarge btn--outline-tertiary\" style=\"pointer-events:none;\">outline-tertiary</button>\n              </div>\n              <p><strong>Danger</strong></p>\n              <p>削除・除去・初期化など、元に戻せない危険操作を明確に警告します。</p>\n              <div style=\"margin-top:var(--space-lg);\">\n                <button class=\"btn btn--xlarge btn--outline-danger\" style=\"pointer-events:none;\">danger</button>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Style</div>\n            <div class=\"guide-body\">\n              <p><strong>Size</strong></p>\n              <p>利用シーンやレイアウトに応じて高さとパディングが決まります。</p>\n              <ul>\n                <li>xxlarge — var(--sizing-1400)</li>\n                <li>xlarge — var(--sizing-1200)</li>\n                <li>large — var(--sizing-1000)</li>\n                <li>medium — var(--sizing-800)</li>\n              </ul>\n              <p style=\"margin-top:var(--line-height-label-small);\"><strong>State</strong></p>\n              <p>ユーザーのインタラクション状態を反映した視覚フィードバックとなります。</p>\n              <ul>\n                <li>enabled</li>\n                <li>hovered</li>\n                <li>focused</li>\n                <li>pressed</li>\n                <li>disabled</li>\n              </ul>\n              <p style=\"margin-top:var(--line-height-label-small);\"><strong>Icon Controls</strong></p>\n              <p>コンテンツ構造に応じてアイコン表示は自動的に制御されます。</p>\n              <ul>\n                <li>Left Icon ON/OFF</li>\n                <li>Right Icon ON/OFF</li>\n                <li>Icon only</li>\n                <li>Icon swap</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Usage Guidelines</div>\n            <div class=\"guide-body\">\n              <p><strong>Primary</strong></p>\n              <ul><li>ユーザーが確実に実行すべき主要操作にのみ使用します。</li></ul>\n              <p><strong>Secondary</strong></p>\n              <ul><li>主要操作を補助または代替する際に使用します。</li></ul>\n              <p><strong>Tertiary</strong></p>\n              <ul><li>低優先度の中立的操作に適しています。</li></ul>\n              <p><strong>Danger</strong></p>\n              <ul><li>誤操作による重大な結果を避けるために警告が必要な場合に使用します。</li></ul>\n              <p><strong>Icon-only</strong></p>\n              <ul><li>アイコンだけで意味が明確に伝わる場合にのみ使用します。</li></ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Do &amp; Don't</div>\n            <div class=\"guide-body\">\n              <p><strong>Do</strong></p>\n              <ul>\n                <li>Primary は 1 画面につき 1 つだけ配置し、優先度を明確にします。</li>\n                <li>操作の重要度に応じて Secondary と Tertiary を組み合わせ、階層構造を保ちます。</li>\n                <li>Icon-only は意味が直感的に理解できる場合にのみ使用します。</li>\n              </ul>\n              <p style=\"margin-top:var(--spacing-300);\"><strong>Don't</strong></p>\n              <ul>\n                <li>同一画面に Primary を複数配置しないでください。</li>\n                <li>意味が曖昧なアイコンで Icon-only を構成しないでください。</li>\n                <li>基本的に background / disabled トークンを使用します。一般的な surface 上では、disabled-accent は使用しません。</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Design Tokens</div>\n            <div class=\"guide-body\">\n              <table style=\"width:100%; border-collapse:collapse; font-size: var(--text-size-xs);;\">\n                <thead>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <th style=\"text-align:left; padding:var(--spacing-200) 0; color:var(--shell-muted); font-weight:600;\">Property</th>\n                    <th style=\"text-align:left; padding:var(--spacing-200) 0; color:var(--shell-muted); font-weight:600;\">Token</th>\n                    <th style=\"text-align:left; padding:var(--spacing-200) 0; color:var(--shell-muted); font-weight:600;\">Value</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">BG solid-primary</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">gradient/background/primary</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--color-gradient-content-stop-1) → var(--color-content-key)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Text on solid</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">content/on-color</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--color-background-white)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Border outline</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">border/secondary</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--color-border-primary)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Border danger</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">border/danger</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--color-content-alert)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Height medium</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">sizing/400</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--sizing-800)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Height large</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">sizing/500</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--sizing-1000)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Height xlarge</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">sizing/600</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--sizing-1200)</td>\n                  </tr>\n                  <tr>\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Height xxlarge</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">sizing/700</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--sizing-1400)</td>\n                  </tr>\n                </tbody>\n              </table>\n            </div>\n          </div>\n    "
+  },
+  "usage_fn": "DS.button(opts)",
+  "selector": ".btn"
+}

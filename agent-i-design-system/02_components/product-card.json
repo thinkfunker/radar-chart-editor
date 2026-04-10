@@ -1,0 +1,31 @@
+{
+  "name": "Product Card",
+  "tier": "02_components",
+  "key": "productcard",
+  "type": "block",
+  "description": "A refined product display card featuring image overlays, branding, and pricing details.",
+  "guidelines": {
+    "purpose": "Product Card is a refined component for displaying products in a grid or list. It features an image area with optional badge overlays and a body area with branding, naming, rating, and pricing information.",
+    "anatomy": {
+      "image_wrap": "pcard__img-wrap. Contains product image/icon, badge overlay (Tag), and a wish button (Heart icon).",
+      "body": "pcard__body. Contains brand name, product name, rating (Score), and price row.",
+      "wish_button": "pcard__wish. Circular button for heart-ing items."
+    },
+    "variants": {
+      "sale_price": "Triggered by salePriceAlert, changes price color to var(--color-content-alert).",
+      "badge": "Optional badge overlay on the top-left of the image using gradient-primary or other Tag variants."
+    },
+    "specs": {
+      "typography": {
+        "brand": "Small text for brand identification.",
+        "name": "Primary product name text.",
+        "price": "var(--sizing-400) bold text. Default var(--color-content-primary), Alert var(--color-content-alert)."
+      },
+      "interactions": {
+        "score": "Uses 'sm' size rating component.",
+        "wish_btn": "var(--sizing-400) heart icon."
+      }
+    }
+  },
+  "selector": ".pcard"
+}

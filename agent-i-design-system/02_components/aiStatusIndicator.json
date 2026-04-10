@@ -1,0 +1,13 @@
+{
+  "name": "AI Status Indicator",
+  "tier": "02_components",
+  "key": "aiStatusIndicator",
+  "type": "atom",
+  "description": "AI 로고 상태 표시 인디케이터입니다. 타입(Word/Check), 사이즈, 스타일을 지원합니다.",
+  "behavior": {
+    "type": ["word", "check"],
+    "size": ["xxlarge", "xlarge", "large", "medium", "small"],
+    "style": ["primary", "black", "riff"]
+  },
+  "selector": ".ai-status-indicator"
+}

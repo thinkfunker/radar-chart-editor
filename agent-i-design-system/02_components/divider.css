@@ -1,0 +1,14 @@
+/**
+ * @agent-i/ui — Divider Component
+ * Requires: @agent-i/design-tokens, @agent-i/theme
+ */
+
+/* ── Divider Component ───────────────────────────────── */
+.divider {
+  width: 100%;
+  height: var(--border-width-100);
+  background: var(--color-border-tertiary);
+  border: none;
+  flex-shrink: 0;
+  display: block;
+}

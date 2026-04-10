@@ -1,0 +1,15 @@
+{
+  "name": "Shadow",
+  "tier": "01_foundation",
+  "type": "token",
+  "description": "Elevation layers for UI depth.",
+  "guidelines": {
+    "purpose": "Elevation layers for UI depth.",
+    "tokens": {
+      "--shadow-1": "0 var(--border-width-100) var(--sizing-100) 16% (subtle cards)",
+      "--shadow-2": "0 var(--border-width-200) var(--sizing-200) 16% (dropdowns)",
+      "--shadow-3": "0 var(--sizing-100) var(--sizing-400) 16% (modals)",
+      "--shadow-4": "0 var(--sizing-200) var(--sizing-500) 16% (tooltips)"
+    }
+  }
+}

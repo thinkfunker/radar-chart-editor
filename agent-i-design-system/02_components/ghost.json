@@ -1,0 +1,52 @@
+{
+  "name": "Ghost Button",
+  "tier": "02_components",
+  "key": "ghostbtn",
+  "type": "atom",
+  "description": "A button with minimal visual emphasis, used for secondary or auxiliary actions.",
+  "guidelines": {
+    "purpose": "Ghost Button is a button that does not have a container and minimizes visual emphasis. It is primarily used for auxiliary or low-priority actions, providing operations without interfering with other buttons or content.",
+    "anatomy": [
+      "Label",
+      "Left icon (optional)",
+      "Right icon (optional)",
+      "Container (style, border radius, size)"
+    ],
+    "priority_system": {
+      "Primary": "Used to assist major actions like Button-Primary or to provide additional options.",
+      "Secondary": "Used for neutral or low-priority operations (cancel, close, etc.)."
+    },
+    "style": {
+      "size": {
+        "xlarge": "Height/Padding based",
+        "large": "Height/Padding based",
+        "medium": "Height/Padding based",
+        "small": "Height/Padding based"
+      },
+      "state": [
+        "enabled",
+        "hovered",
+        "focused",
+        "pressed",
+        "disabled"
+      ],
+      "icon_controls": [
+        "Left icon",
+        "Right icon",
+        "Icon only"
+      ]
+    },
+    "do_dont": {
+      "do": [
+        "Combine with Button-Primary to maintain operation hierarchy.",
+        "Use labels that clearly indicate the intention."
+      ],
+      "dont": [
+        "Do not use Ghost button alone to induce actions. Always use Button-Primary for the most important action.",
+        "Do not use Icon-only if the meaning is ambiguous."
+      ]
+    }
+  },
+  "usage_fn": "DS.ghostButton(opts)",
+  "selector": ".ghost-btn"
+}

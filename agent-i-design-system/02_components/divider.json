@@ -1,0 +1,32 @@
+{
+  "name": "Divider",
+  "tier": "02_components",
+  "key": "divider",
+  "type": "atom",
+  "description": "A horizontal line component for visually separating content areas.",
+  "guidelines": {
+    "purpose": "Divider is a horizontal line component for visually separating content areas. It clearly isolates information groups within list items, sections, cards, etc.",
+    "anatomy": [
+      "Divider line: var(--border-width-100), var(--color-border-tertiary)"
+    ],
+    "style": {
+      "thickness": "var(--border-width-100)",
+      "color": "var(--color-border-tertiary)"
+    },
+    "usage_guidelines": [
+      "Used for visually indicating content separation. Not for decorative purposes.",
+      "Divider occupies the full width of its container horizontally. Control the width via the parent container.",
+      "Use in locations where content grouping is needed, such as lists, cards, and section delimiters."
+    ],
+    "do_dont": {
+      "do": [
+        "Place Divider between content groups."
+      ],
+      "dont": [
+        "Do not use multiple Dividers consecutively for decorative purposes."
+      ]
+    },
+    "_rawHtml": "\n<h2 class=\"section-title\">Guide</h2>\n        <div class=\"guide-card\">\n\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Purpose</h3>\n            <p>Dividerは、コンテンツ領域を視覚的に区切るための水平線コンポーネントです。リストアイテム、セクション、カード内などで情報のグループを明確に分離します。</p>\n          </div>\n\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Anatomy</h3>\n            <div style=\"display:flex;flex-direction:column;gap:var(--spacing-400);padding:var(--spacing-500) 0;max-width:calc(var(--sizing-100) * 100);\">\n              <div style=\"position:relative;display:flex;flex-direction:column;gap:0;\">\n                <p style=\"font-size: var(--text-size-xs);;color: var(--color-content-primary);padding:var(--spacing-300) 0;margin:0;\">Content area</p>\n                <div class=\"divider\" style=\"outline:var(--border-width-200) dashed var(--color-gradient-border-secondary-stop-1);outline-offset:var(--border-width-200);\"></div>\n                <p style=\"font-size: var(--text-size-xs);;color: var(--color-content-primary);padding:var(--spacing-300) 0;margin:0;\">Content area</p>\n              </div>\n              <div style=\"font-size: var(--text-size-xs);;color:var(--color-content-tertiary);display:flex;align-items:center;gap:var(--spacing-200);\">\n                <span style=\"width:var(--sizing-300);height:var(--border-width-200);background:var(--color-gradient-content-stop-1);display:inline-block;border-radius:var(--border-width-100);\"></span>\n                Divider line — var(--border-width-100), <code style=\"font-size: var(--text-size-xs);;background: var(--color-background-secondary);padding:var(--border-width-100) var(--space-xxs);border-radius:var(--border-width-300);\">var(--color-border-tertiary)</code>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Style</h3>\n            <div style=\"display:flex;gap:var(--spacing-500);flex-wrap:wrap;margin-top:var(--spacing-200);\">\n              <div style=\"display:flex;flex-direction:column;align-items:flex-start;gap:var(--spacing-200);\">\n                <div style=\"width:calc(var(--sizing-100) * 50);height:var(--border-width-100);background:var(--color-border-tertiary);\"></div>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);\">Thickness: var(--border-width-100)</span>\n              </div>\n              <div style=\"display:flex;flex-direction:column;align-items:flex-start;gap:var(--spacing-200);\">\n                <div style=\"width:var(--sizing-800);height:var(--sizing-400);border-radius:var(--border-width-300);background:var(--color-border-tertiary);\"></div>\n                <span style=\"font-size: var(--text-size-xs);;color: var(--color-content-tertiary);\">Color: var(--color-border-tertiary)</span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Usage Guidelines</h3>\n            <ul class=\"guide-list\">\n              <li>コンテンツの区切りを視覚的に示す目的で使用します。装飾的な目的には使用しません。</li>\n              <li>Dividerは水平方向にコンテナの全幅を占めます。幅の調整は親コンテナ側でコントロールしてください。</li>\n              <li>リスト、カード、セクション区切りなど、コンテンツのグルーピングが必要な場所で使用します。</li>\n            </ul>\n          </div>\n\n          <div class=\"guide-block\">\n            <h3 class=\"guide-heading\">Do &amp; Don't</h3>\n            <div class=\"do-dont-grid\">\n              <div class=\"do-card\">\n                <div class=\"do-card-header do\">✓ Do</div>\n                <div class=\"do-card-body\">\n                  <div style=\"display:flex;flex-direction:column;width:100%;border:var(--border-width-100) solid var(--color-border-tertiary);border-radius:var(--border-radius-200);overflow:hidden;background: var(--color-background-white);\">\n                    <div style=\"padding:var(--space-lg) var(--spacing-300);font-size: var(--text-size-xs);;color: var(--color-content-primary);\">Section A</div>\n                    <div class=\"divider\"></div>\n                    <div style=\"padding:var(--space-lg) var(--spacing-300);font-size: var(--text-size-xs);;color: var(--color-content-primary);\">Section B</div>\n                  </div>\n                </div>\n                <div class=\"do-card-desc\">コンテンツグループ間にDividerを置く。</div>\n              </div>\n              <div class=\"do-card\">\n                <div class=\"do-card-header dont\">✕ Don't</div>\n                <div class=\"do-card-body\" style=\"opacity:0.6;\">\n                  <div style=\"display:flex;flex-direction:column;width:100%;gap:var(--spacing-100);\">\n                    <div class=\"divider\"></div>\n                    <div class=\"divider\"></div>\n                    <div class=\"divider\"></div>\n                  </div>\n                </div>\n                <div class=\"do-card-desc\">装飾目的で複数のDividerを連続使用しない。</div>\n              </div>\n            </div>\n          </div>\n\n        </div>\n    "
+  },
+  "selector": ".divider"
+}

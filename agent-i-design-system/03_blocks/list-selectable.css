@@ -1,0 +1,37 @@
+/**
+ * @agent-i/ui — List Selectable Component
+ * Requires: @agent-i/design-tokens, @agent-i/theme
+ */
+
+/* ── Selectable List Item ─────────────────────────────── */
+.list-sel {
+  display: flex; flex-direction: column; gap: var(--spacing-100);
+  padding: var(--spacing-300) var(--spacing-400); border-radius: var(--border-radius-200);
+  border: var(--border-width-100) solid transparent;
+  position: relative; overflow: hidden;
+  cursor: pointer; box-sizing: border-box;
+  transition: background 0.12s, border-color 0.12s;
+}
+.list-sel-title { font-size: var(--font-size-0875); line-height: var(--line-height-label-medium); }
+.list-sel-sub   { font-size: var(--sizing-300); line-height: var(--line-height-body-small); }
+
+/* Unselected */
+.list-sel--unselected { background: var(--color-background-secondary); }
+.list-sel--unselected .list-sel-title { color: var(--color-content-primary); }
+.list-sel--unselected .list-sel-sub   { color: var(--color-content-tertiary); }
+.list-sel--unselected.state-hovered { background: var(--color-background-secondary); }
+.list-sel--unselected.state-focused { box-shadow: 0 0 0 var(--spacing-050) var(--color-border-primary); background: var(--color-background-secondary); }
+.list-sel--unselected.state-pressed { background: var(--color-background-secondary); }
+.list-sel--unselected.state-disabled { opacity: 0.38; }
+
+/* Selected */
+.list-sel--selected {
+  background: var(--color-background-selection-secondary);
+  border-color: var(--color-gradient-content-stop-1);
+}
+.list-sel--selected .list-sel-title,
+.list-sel--selected .list-sel-sub { color: var(--color-content-key); }
+.list-sel--selected.state-hovered { background: var(--color-state-pressed-secondary); }
+.list-sel--selected.state-focused { box-shadow: 0 0 0 var(--spacing-050) var(--color-gradient-border-secondary-stop-1); background: var(--color-state-pressed-secondary); }
+.list-sel--selected.state-pressed { background: var(--color-state-focused-secondary); }
+.list-sel--selected.state-disabled { opacity: 0.38; }

@@ -1,0 +1,12 @@
+/* Review Card */
+
+.card-review {
+  width: var(--size-card-width-lg); padding: var(--spacing-400);
+  display: flex; flex-direction: column; gap: var(--spacing-300);
+}
+.card-review__header { display: flex; flex-direction: column; gap: var(--spacing-100); }
+.card-review__gallery {
+  display: flex; flex-direction: row; gap: var(--spacing-050);
+  border-radius: var(--border-radius-200); overflow: hidden;
+}
+.card-review__gallery-img { flex: 1; height: var(--size-gallery-thumb-height); }

@@ -1,0 +1,9 @@
+{
+  "name": "Media Card Tag Group",
+  "tier": "03_blocks",
+  "key": "mcard-tag-group",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".mcard-tag-group"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Floating Button",
+  "tier": "02_components",
+  "key": "floatingbutton",
+  "type": "atom",
+  "description": "Floating action button with AI agent or close icon.",
+  "selector": ".float-btn"
+}

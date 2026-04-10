@@ -1,0 +1,22 @@
+{
+  "title": "Typography",
+  "name": "Typography",
+  "tier": "01_foundation",
+  "type": "token",
+  "description": "Font scaling and hierarchy.",
+  "styles": [
+    { "name": "Title/XXLarge", "size": 44, "weight": 700, "lineHeight": "1.2", "letterSpacing": "-0.02" },
+    { "name": "Title/XLarge", "size": 36, "weight": 700, "lineHeight": "1.2", "letterSpacing": "-0.01" },
+    { "name": "Title/Large", "size": 28, "weight": 700, "lineHeight": "1.3", "letterSpacing": "-0.01" },
+    { "name": "Title/Medium", "size": 24, "weight": 700, "lineHeight": "1.3", "letterSpacing": "0" },
+    { "name": "Title/Small", "size": 20, "weight": 700, "lineHeight": "1.4", "letterSpacing": "0" },
+    { "name": "Title/XSmall", "size": 18, "weight": 700, "lineHeight": "1.4", "letterSpacing": "0" },
+    { "name": "Body/Large", "size": 18, "weight": 400, "lineHeight": "1.6", "letterSpacing": "0" },
+    { "name": "Body/Medium", "size": 16, "weight": 400, "lineHeight": "1.6", "letterSpacing": "0" },
+    { "name": "Body/Small", "size": 14, "weight": 400, "lineHeight": "1.5", "letterSpacing": "0" },
+    { "name": "Label/Large", "size": 14, "weight": 700, "lineHeight": "1.4", "letterSpacing": "0.02" },
+    { "name": "Label/Medium", "size": 12, "weight": 700, "lineHeight": "1.4", "letterSpacing": "0.02" },
+    { "name": "Label/Small", "size": 11, "weight": 400, "lineHeight": "1.4", "letterSpacing": "0.03" }
+  ],
+  "_rawHtml": "<div class=\"foundation-content\"><div id=\"typography-table-mount\"></div></div>"
+}

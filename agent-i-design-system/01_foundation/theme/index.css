@@ -1,0 +1,15 @@
+/**
+ * @agent-i/theme
+ *
+ * Loads light theme by default (+ dark mode via prefers-color-scheme).
+ *
+ * For manual dark mode control:
+ *   @import "@agent-i/theme/light.css";
+ *   @import "@agent-i/theme/dark.css";
+ *
+ * For brand customization:
+ *   @import "@agent-i/theme/brand.css";
+ */
+
+@import "./light.css";
+@import "./dark.css";

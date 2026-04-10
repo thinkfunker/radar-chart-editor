@@ -1,0 +1,23 @@
+{
+  "name": "Review Card",
+  "tier": "02_components",
+  "key": "reviewcard",
+  "type": "block",
+  "description": "A component for displaying summarized product reviews or comparative tables.",
+  "guidelines": {
+    "purpose": "Review Card summarizes product reviews, prices, and AI-generated insights. It can transform into a 3-column comparison table for side-by-side evaluations.",
+    "variants": {
+      "standard": "var(--size-card-width-lg) width, includes header, price, ratings, gallery, and AI summary box.",
+      "comparison": "rc--cmp modifier. Shows 2 columns in a bordered card with thumbnail, rating, attribute rows, and a full-width outline-tertiary action button."
+    },
+    "anatomy": {
+      "header": "rc__title (var(--sizing-400) bold) and rc__sub (var(--line-height-label-xsmall) muted).",
+      "price_row": "rc__price (bold) + rc__discount (red) + rc__pay-logo (PayPay/etc label).",
+      "rating": "rc__star-row with 5-star Amber stars and numeric score.",
+      "ai_box": "rc__ai-box (var(--color-background-secondary) bg). Contains AI gradient icon and var(--line-height-label-xsmall) summary text.",
+      "shop_icons": "Overlapping var(--sizing-500) circles representing available stores.",
+      "gallery": "3-column photo grid, height var(--size-gallery-thumb-height) per image."
+    }
+  },
+  "selector": ".rc"
+}

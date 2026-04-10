@@ -1,0 +1,58 @@
+/**
+ * @agent-i/design-tokens — Typography Tokens
+ * Font family, size, weight, line-height raw vars only.
+ * For semantic utility classes see @agent-i/ui.
+ *
+ * Font family notes:
+ *   Web / Android : "Noto Sans JP"
+ *   macOS / iOS   : "Hiragino Kaku Gothic Pro"
+ */
+
+:root {
+
+  /* ──────────────────────────────────────────
+     Font Family
+     ────────────────────────────────────────── */
+  --font-family-primary: "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
+
+  /* ──────────────────────────────────────────
+     Font Size
+     ────────────────────────────────────────── */
+  --font-size-0687: var(--font-size-0687);   /* label/xsmall  */
+  --font-size-075:  var(--sizing-300);   /* label/small, body/small  */
+  --font-size-0875: var(--line-height-label-small);   /* label/medium, body/medium */
+  --font-size-100:  var(--sizing-400);   /* label/large, body/large, title/xxsmall */
+  --font-size-112:  var(--font-size-112);   /* title/xsmall */
+  --font-size-125:  var(--sizing-500);   /* title/small  */
+  --font-size-150:  var(--sizing-600);   /* title/medium */
+  --font-size-175:  var(--sizing-700);   /* title/large  */
+  --font-size-200:  var(--sizing-800);   /* title/xlarge */
+  --font-size-275:  var(--sizing-1100);   /* title/xxlarge */
+
+  /* ──────────────────────────────────────────
+     Font Weight
+     ────────────────────────────────────────── */
+  --font-weight-light:   300;
+  --font-weight-regular: 400;
+  --font-weight-bold:    700;
+
+  /* ──────────────────────────────────────────
+     Line Height
+     ────────────────────────────────────────── */
+  --line-height-title-xxlarge: var(--line-height-title-xxlarge);
+  --line-height-title-xlarge:  var(--line-height-title-xlarge);
+  --line-height-title-large:   var(--sizing-900);
+  --line-height-title-medium:  var(--line-height-title-medium);
+  --line-height-title-small:   var(--line-height-body-large);
+  --line-height-title-xsmall:  var(--line-height-title-xsmall);
+  --line-height-title-xxsmall: var(--line-height-title-xxsmall);
+
+  --line-height-body-large:    var(--line-height-body-large);
+  --line-height-body-medium:   var(--line-height-body-medium);
+  --line-height-body-small:    var(--line-height-body-small);
+
+  --line-height-label-large:   var(--line-height-body-small);
+  --line-height-label-medium:  var(--line-height-label-medium);
+  --line-height-label-small:   var(--line-height-label-small);
+  --line-height-label-xsmall:  var(--line-height-label-xsmall);
+}

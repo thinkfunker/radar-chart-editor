@@ -1,0 +1,9 @@
+{
+  "name": "Toast",
+  "tier": "03_blocks",
+  "key": "toast",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".toast"
+}

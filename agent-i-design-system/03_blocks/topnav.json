@@ -1,0 +1,9 @@
+{
+  "name": "Top Navigation",
+  "tier": "03_blocks",
+  "key": "topnav",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".topnav"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Phone Frame",
+  "tier": "03_blocks",
+  "key": "phoneFrame",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.phoneFrame(opts)"
+}

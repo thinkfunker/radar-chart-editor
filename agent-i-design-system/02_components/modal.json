@@ -1,0 +1,96 @@
+{
+  "name": "Modal",
+  "tier": "02_components",
+  "key": "modal",
+  "type": "block",
+  "description": "ユーザーの操作を一時的に中断し、重要な情報提示や意思決定を促すダイアログです。",
+  "guidelines": {
+    "purpose": "Modalは、主要な操作フローを遮断し、確認・入力・警告などの目的で使用します。",
+    "anatomy": {
+      "elements": [
+        "Scrim",
+        "Container",
+        "Title（任意）",
+        "Description（任意）",
+        "Action buttons（Primary / Secondary / Close）",
+        "Optional elements（Link / Page indicator / Progress indicator / Checkbox）"
+      ]
+    },
+    "style": {
+      "os": {
+        "mobile": [
+          "タップ操作を前提としたレイアウト",
+          "Buttonは縦配置（vertical）を推奨"
+        ],
+        "pc": [
+          "画面中央に表示",
+          "横配置（horizontal）が基本"
+        ]
+      },
+      "buttonLayout": {
+        "vertical": [
+          "モバイルでの使用を推奨",
+          "誤操作防止のため、Buttonを縦に分離"
+        ],
+        "horizontal": [
+          "PC または簡易的な確認Modalに使用",
+          "Primary / Secondaryの関係が明確な場合に適します"
+        ]
+      }
+    },
+    "content": {
+      "title": [
+        "Modalの目的を簡潔に示します",
+        "情報量が多い場合や、意思決定が必要なケースでの使用を推奨します"
+      ],
+      "description": [
+        "Titleを補足する説明文",
+        "Title の有無にかかわらず使用できます"
+      ]
+    },
+    "actionButtons": {
+      "primary": [
+        "最も重要なアクション",
+        "原則 1 つのみ使用します"
+      ],
+      "secondary": [
+        "キャンセルや補助的操作"
+      ],
+      "close": [
+        "明示的なクローズ手段",
+        "危険操作を含む場合は必ず有効化します"
+      ]
+    },
+    "optionalElements": {
+      "link": [
+        "補足情報への導線",
+        "主要アクションの代替として使用しません"
+      ],
+      "pageIndicator": [
+        "複数ステップのフローで使用"
+      ],
+      "progressIndicator": [
+        "進行状況を伴う処理で使用"
+      ],
+      "checkbox": [
+        "ユーザーの明示的な同意が必要な場合に使用"
+      ]
+    },
+    "usageGuidelines": {
+      "placement": "Modalは、PC・Mobileのいずれの環境においても画面の中央に配置します。"
+    },
+    "do": [
+      "Title だけで目的が理解できるようにします。",
+      "Primary Actionは明確に強調します。",
+      "Mobileではverticalレイアウトを基本とします。",
+      "1 画面につき 1 つのModalのみ表示します。",
+      "ユーザーが操作を中断できる手段を必ず用意します。"
+    ],
+    "dont": [
+      "Modal内で別のModalを表示しません。",
+      "Modalの多重表示は行いません。",
+      "簡潔な補足情報の表示に使用しません。(状況に合わせてToastやTooltipを活用してください。)"
+    ]
+  },
+  "selector": ".mdl"
+}

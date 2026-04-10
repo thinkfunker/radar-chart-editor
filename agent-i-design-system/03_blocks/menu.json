@@ -1,0 +1,52 @@
+{
+  "name": "Menu",
+  "tier": "03_blocks",
+  "key": "menu",
+  "type": "composition",
+  "description": "複数の選択肢をリスト表示し、アクションや遷移先を提示するメニューです。",
+  "guidelines": {
+    "purpose": "Menuは、複数の選択肢をリスト形式で表示し、ユーザーに対してアクションや遷移先を提供するコンポーネントです。",
+    "anatomy": {
+      "elements": [
+        "Label",
+        "Left Icon",
+        "Container",
+        "Divider（任意）"
+      ]
+    },
+    "type": {
+      "default": "Iconを表示しないタイプ",
+      "icon": "Iconを表示するタイプ"
+    },
+    "style": {
+      "state": [
+        "enabled",
+        "hovered",
+        "focused",
+        "pressed",
+        "disabled"
+      ]
+    },
+    "usageGuidelines": {
+      "placement": [
+        "画面の端から最低8px以上の間隔を開けます。",
+        "トリガー要素とは2〜8pxの間隔を開けます。"
+      ],
+      "minimumWidth": "Mobile・PC環境では、Menuの最小幅を112pxに設定しており、この値より小さくならないようにします。",
+      "maximumWidth": [
+        "Mobile環境では、Menuの最大幅を224pxに設定しています。",
+        "PC環境では、Menuの最大幅を300pxに設定しています。"
+      ]
+    },
+    "do": [
+      "MenuのLabelは、簡潔で直感的な内容に設定してください。",
+      "Menu listでは、Dividerを活用することで、関連性のあるMenuをまとめて表示し、Sectionを明確に区切ることができます。"
+    ],
+    "dont": [
+      "すべてのMenu listにDividerを使用しないでください。",
+      "最下段のMenu listにはDividerを使用しないでください。",
+      "Menu listは7件以上表示しないでください。（より多くのOptionを表示できるBottom sheetやModalの使用をおすすめします。）"
+    ]
+  },
+  "selector": ".menu"
+}

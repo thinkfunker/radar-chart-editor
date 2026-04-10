@@ -1,0 +1,63 @@
+{
+  "sections": [
+    {
+      "id": "foundations",
+      "title": "Foundations",
+      "subtitle": "(Atomic Tier)",
+      "items": [
+        { "id": "colors", "label": "Colors", "badge": 10 },
+        { "id": "typography", "label": "Typography", "badge": 28 },
+        { "id": "icons", "label": "Icons", "badge": 326, "badgeId": "sidebar-icon-badge" },
+        { "id": "common", "label": "Common", "badge": 10 }
+      ]
+    },
+    {
+      "id": "components",
+      "title": "Components",
+      "subtitle": "(Tier 2: Atoms)",
+      "items": [
+        { "id": "comp-button", "label": "Button", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/button.json" },
+        { "id": "comp-ghost-button", "label": "Ghost Button", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/button.json" },
+        { "id": "comp-toggle-button", "label": "Toggle Button", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/button.json" },
+        { "id": "comp-chip", "label": "Chip", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/chip.json" },
+        { "id": "comp-badge", "label": "Badge", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/badge.json" },
+        { "id": "comp-tag", "label": "Tag", "iconGradient": "linear-gradient(135deg, var(--color-gradient-background-stop-1) , var(--color-gradient-background-stop-2) )", "jsonPath": "agent-i-design-system/02_components/tag.json" },
+        { "id": "comp-score", "label": "Score", "iconGradient": "linear-gradient(135deg,var(--color-content-warning),#ff8c00)", "jsonPath": "agent-i-design-system/02_components/score.json" },
+        { "id": "comp-avatar", "label": "Avatar", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/avatar.json" },
+        { "id": "comp-checkbox", "label": "Checkbox", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/checkbox.json" },
+        { "id": "comp-radio-button", "label": "Radio Button", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/radio-button.json" },
+        { "id": "comp-mappin", "label": "Mappin", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/mappin.json" },
+        { "id": "comp-pgnav", "label": "Pagination Nav", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/pgnav.json" },
+        { "id": "comp-scrim", "label": "Scrim", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/scrim.json" },
+        { "id": "comp-filterinput", "label": "Filter Input", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/filterinput.json" },
+        { "id": "comp-floatingbutton", "label": "Floating Button", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/floatingButton.json" },
+        { "id": "comp-progressindicator", "label": "Progress Indicator", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/progressIndicator.json" },
+        { "id": "comp-switch", "label": "Switch", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/switch.json" },
+        { "id": "comp-progress", "label": "Progress Indicator", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/progress.json" },
+        { "id": "comp-slider", "label": "Slider", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/slider.json" },
+        { "id": "comp-thumb", "label": "Thumbnail", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/thumb.json" },
+        { "id": "comp-divider", "label": "Divider", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/02_components/divider.json" }
+      ]
+    },
+    {
+      "id": "blocks",
+      "title": "Blocks",
+      "subtitle": "(Tier 3: Composition)",
+      "items": [
+        { "id": "blk-topbar", "label": "Topbar", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/topbar.json" },
+        { "id": "blk-searchbar", "label": "Search Bar", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/searchbar.json" },
+        { "id": "blk-list", "label": "List", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/list.json" },
+        { "id": "blk-list-sel", "label": "Selectable List", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/selectable-list.json" },
+        { "id": "blk-product-card", "label": "Product Card", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/product-card.json" },
+        { "id": "blk-media-card", "label": "Media Card", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/media-card.json" },
+        { "id": "blk-onboarding-card", "label": "Onboarding Card", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/onboarding-card.json" },
+        { "id": "blk-category-card", "label": "Category Card", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/category-card.json" },
+        { "id": "blk-chat-modal", "label": "Chat Modal", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/chat-modal.json" },
+        { "id": "blk-info-card", "label": "Info Card", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/info-card.json" },
+        { "id": "blk-sticky-header", "label": "Sticky Header", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/sticky-header.json" },
+        { "id": "blk-bottom-nav", "label": "Bottom Nav", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/bottom-nav.json" },
+        { "id": "blk-carousel", "label": "Carousel", "iconGradient": "linear-gradient(135deg,var(--color-content-key),var(--color-gradient-content-stop-1))", "jsonPath": "agent-i-design-system/03_blocks/carousel.json" }
+      ]
+    }
+  ]
+}

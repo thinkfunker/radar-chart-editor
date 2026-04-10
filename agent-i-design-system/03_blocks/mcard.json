@@ -1,0 +1,9 @@
+{
+  "name": "Media Card",
+  "tier": "03_blocks",
+  "key": "mcard",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".mcard"
+}

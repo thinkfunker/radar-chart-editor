@@ -1,0 +1,9 @@
+{
+  "name": "Thumbnail",
+  "tier": "02_components",
+  "key": "thumb",
+  "type": "component",
+  "description": "Image thumbnail with ratio, cropped/uncropped, gradation, and outline options.",
+  "guidelines": {},
+  "selector": ".thumb"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Selection Card",
+  "tier": "02_components",
+  "key": "selcard",
+  "type": "block",
+  "description": "A 2-stage category selection card system for interactive choice flows.",
+  "guidelines": {
+    "purpose": "Selection Card is designed for multi-step category selection flows. Stage 1 presents broad categories, and Stage 2 reveals granular options with the parent category highlighted.",
+    "states": {
+      "not_selected": "Category overview. 2-column x 4-row grid of icons + labels with chevrons.",
+      "selected": "Detailed options. 4-column x 2-row grid with the relative item highlighted. Includes a bottom confirm button."
+    },
+    "anatomy": {
+      "container": "Selcard base with linear gradient background (var(--color-gradient-background-ai-surface-stop-1) to var(--color-gradient-background-ai-surface-stop-2)).",
+      "header": "Icons and descriptive text for context.",
+      "chip_group": "Grid of interactive chips. Nav chips (chevron) or Option chips (selection state).",
+      "action": "Confirm button at the bottom of the 'selected' stage."
+    }
+  },
+  "selector": ".selcard"
+}

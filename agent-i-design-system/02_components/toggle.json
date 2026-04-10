@@ -1,0 +1,64 @@
+{
+  "name": "Toggle Button",
+  "tier": "02_components",
+  "key": "toggle",
+  "type": "atom",
+  "description": "A button component for switching the selection state (On / Off) of a specific option.",
+  "guidelines": {
+    "purpose": "Toggle Button is a button component for switching the selection state (On / Off) of a specific option. Each press inverts the state, instantly expressing the enabled/disabled status of the option.",
+    "anatomy": [
+      "Icon",
+      "Label area",
+      "Container"
+    ],
+    "style": {
+      "size": [
+        "Medium",
+        "Large",
+        "XLarge",
+        "XXLarge"
+      ],
+      "state": [
+        "enabled",
+        "hovered",
+        "focused",
+        "pressed",
+        "disabled"
+      ],
+      "icon_rules": [
+        "Icon is mandatory in the Selected (on) state.",
+        "Icon is not displayed in the Unselected (off) state.",
+        "Toggle Buttons consisting of only an Icon or only a Label are not provided.",
+        "Default Icon is check, can be changed via Swap icon property."
+      ]
+    },
+    "usage_guidelines": {
+      "general": [
+        "Toggle Button is used for options where the selection state is maintained.",
+        "The selection state must be clearly recognizable by both the Icon and Label.",
+        "Suitable for expressing the enabled/disabled status of a single option."
+      ]
+    },
+    "tokens": {
+      "bg_selected": "gradient/background/primary (var(--color-gradient-content-stop-1) to var(--color-content-key))",
+      "bg_unselected": "background/transparent",
+      "border_unselected": "border/secondary (var(--color-border-secondary))",
+      "text_selected": "content/on-color (var(--color-background-white))",
+      "text_unselected": "content/primary (var(--color-content-primary))",
+      "disabled_opacity": "0.4"
+    },
+    "do_dont": {
+      "do": [
+        "Always use Icon and Label together in the Selected state.",
+        "Configure so that the selection completion state is clearly recognized.",
+        "Select a Size suitable for the context of use."
+      ],
+      "dont": [
+        "Do not use Toggle Buttons consisting of only an Icon or only a Label.",
+        "Do not use Shadow on Toggle Buttons."
+      ]
+    },
+    "_rawHtml": "\n<div class=\"guide-section\">\n            <div class=\"guide-title\">Purpose</div>\n            <div class=\"guide-body\">\n              <p>Toggle Buttonは、特定のオプションの選択状態（On / Off）を切り替えるためのボタンコンポーネントです。<br>押すたびに状態が反転し、オプションの有効／無効を即時に表現します。</p>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Anatomy</div>\n            <div class=\"guide-body\">\n              <ul>\n                <li>Icon</li>\n                <li>Label area</li>\n                <li>Container</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Style</div>\n            <div class=\"guide-body\">\n              <p><strong>Size</strong></p>\n              <ul>\n                <li>Toggle Buttonには Medium / Large / XLarge / XXLarge のサイズがあります。</li>\n                <li>使用コンテキストやラベルの長さに応じてサイズを選択します。</li>\n                <li>各サイズは固定の height・padding・corner radius を使用します。</li>\n              </ul>\n              <p style=\"margin-top:var(--line-height-label-small);\"><strong>State</strong></p>\n              <ul>\n                <li>enabled</li>\n                <li>hovered</li>\n                <li>focused</li>\n                <li>pressed</li>\n                <li>disabled</li>\n              </ul>\n              <p style=\"margin-top:var(--line-height-label-small);\"><strong>Icon</strong></p>\n              <ul>\n                <li>Iconは Selected（on）状態において必須で表示されます。</li>\n                <li>Unselected（off）状態ではIconは表示されません。</li>\n                <li>Iconのみ、またはLabelのみで構成するToggle Buttonは提供していません。</li>\n                <li>デフォルトのIconはcheckで、Swap iconプロパティで変更できます。</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Usage Guidelines</div>\n            <div class=\"guide-body\">\n              <p><strong>General</strong></p>\n              <ul>\n                <li>Toggle Buttonは、選択状態が保持されるオプションに使用します。</li>\n                <li>選択状態はIconとLabelの両方で明確に認識できる必要があります。</li>\n                <li>単一オプションの有効／無効の表現に適しています。</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Do &amp; Don't</div>\n            <div class=\"guide-body\">\n              <p><strong>Do</strong></p>\n              <ul>\n                <li>Selected状態では、IconとLabelを必ず併用します。</li>\n                <li>選択完了状態が明確に認識できるように構成します。</li>\n                <li>使用コンテキストに適したSizeを選択します。</li>\n              </ul>\n              <!-- Do 実例: カード UI -->\n              <div style=\"display:flex; gap:var(--spacing-400); margin-top:var(--spacing-400); margin-bottom:var(--spacing-500); flex-wrap:wrap;\">\n                <!-- Card 1: unselected -->\n                <div style=\"background: var(--color-background-white); border-radius:var(--line-height-label-small); padding:var(--line-height-label-small); width:calc(var(--sizing-100) * 50); box-shadow:0 var(--border-width-100) var(--radius-xs) var(--color-border-tertiary); border:var(--border-width-100) solid var(--color-border-tertiary);\">\n                  <div style=\"font-size: var(--text-size-xs);; font-weight:700; margin-bottom:var(--spacing-100);\">伏見稲荷神社</div>\n                  <div style=\"font-size: var(--font-size-0687); color: var(--color-content-tertiary); margin-bottom:var(--spacing-200);\">寺院 ★★★★½ 4.5</div>\n                  <div style=\"background: var(--color-background-tertiary); border-radius:var(--border-radius-200); height:calc(var(--sizing-100) * 18); margin-bottom:var(--space-lg);\"></div>\n                  <div style=\"display:flex; gap:var(--spacing-200);\">\n                    <button class=\"toggle-btn toggle-btn--large\" style=\"flex:1; pointer-events:none;\">Label</button>\n                    <button class=\"toggle-btn toggle-btn--large\" style=\"flex:1; pointer-events:none;\">コースに追加</button>\n                  </div>\n                </div>\n                <!-- Card 2: selected -->\n                <div style=\"background: var(--color-background-white); border-radius:var(--line-height-label-small); padding:var(--line-height-label-small); width:calc(var(--sizing-100) * 50); box-shadow:0 var(--border-width-100) var(--radius-xs) var(--color-border-tertiary); border:var(--border-width-100) solid var(--color-border-tertiary);\">\n                  <div style=\"font-size: var(--text-size-xs);; font-weight:700; margin-bottom:var(--spacing-100);\">伏見稲荷神社</div>\n                  <div style=\"font-size: var(--font-size-0687); color: var(--color-content-tertiary); margin-bottom:var(--spacing-200);\">寺院 ★★★★½ 4.5</div>\n                  <div style=\"background: var(--color-background-tertiary); border-radius:var(--border-radius-200); height:calc(var(--sizing-100) * 18); margin-bottom:var(--space-lg);\"></div>\n                  <div style=\"display:flex; gap:var(--spacing-200);\">\n                    <button class=\"toggle-btn toggle-btn--large\" style=\"flex:1; pointer-events:none;\">Label</button>\n                    <button class=\"toggle-btn toggle-btn--large selected\" style=\"flex:1; pointer-events:none;\"><span class=\"toggle-btn-icon\" data-ds-icon=\"check_solid\" data-ds-size=\"16\" data-ds-color=\"currentColor\"></span>追加済み</button>\n                  </div>\n                </div>\n              </div>\n              <p style=\"margin-top:var(--spacing-100);\"><strong>Don't</strong></p>\n              <ul>\n                <li>IconまたはLabelのみで構成するToggle Buttonは使用しません。</li>\n                <li>Toggle ButtonにShadowを使用しません。</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Design Tokens</div>\n            <div class=\"guide-body\">\n              <table style=\"width:100%; border-collapse:collapse; font-size: var(--text-size-xs);;\">\n                <thead>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <th style=\"text-align:left; padding:var(--spacing-200) 0; color:var(--shell-muted); font-weight:600;\">Property</th>\n                    <th style=\"text-align:left; padding:var(--spacing-200) 0; color:var(--shell-muted); font-weight:600;\">Token</th>\n                    <th style=\"text-align:left; padding:var(--spacing-200) 0; color:var(--shell-muted); font-weight:600;\">Value</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">BG selected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">gradient/background/primary</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--color-gradient-content-stop-1) → var(--color-content-key)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">BG unselected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">background/transparent</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">transparent</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Border unselected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">border/secondary</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--color-border-secondary)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Text selected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">content/on-color</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--color-background-white)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Text unselected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">content/primary</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">var(--color-content-primary)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Disabled opacity</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">opacity/disabled</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">0.4</td>\n                  </tr>\n                  <tr>\n                    <td style=\"padding:var(--space-lg) 0; color:var(--shell-muted);\">Heights</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">sizing/400–700</code></td>\n                    <td style=\"color:var(--shell-muted); font-size: var(--text-size-xs);;\">32 / 40 / 48 / var(--sizing-1400)</td>\n                  </tr>\n                </tbody>\n              </table>\n            </div>\n          </div>\n    "
+  },
+  "selector": ".toggle-btn"
+}

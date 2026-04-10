@@ -1,0 +1,138 @@
+{
+  "name": "Chip",
+  "tier": "02_components",
+  "key": "chip",
+  "type": "atom",
+  "description": "UI element for representing small units of information like actions, tags, filters, or options.",
+  "guidelines": {
+    "purpose": "Chip is a UI element meant to represent small units of information such as simple actions, tags, filter selections, and option displays. Users can quickly switch contexts by selecting/toggling Chips accompanied by short text or icons.",
+    "anatomy": [
+      "Container",
+      "Label",
+      "Graphic (optional)",
+      "Left / Right icon (optional)"
+    ],
+    "variants": {
+      "solid-rounded-rect": "Solid type Chip with a rounded rectangular shape, providing a stable visual style.",
+      "solid-rounded": "Pill-shaped Solid Chip with stronger rounding, providing a soft and casual visual expression.",
+      "outline-gradient": "Chip with a gradient outline, functioning as a more decorative and emphasized visual style."
+    },
+    "style": {
+      "size": {
+        "xlarge": "var(--sizing-1200)",
+        "large": "var(--sizing-1000)",
+        "medium": "var(--sizing-800)",
+        "small": "var(--sizing-700)"
+      },
+      "state": [
+        "enabled",
+        "hovered",
+        "focused",
+        "pressed",
+        "disabled"
+      ],
+      "selected": [
+        "on",
+        "off"
+      ],
+      "icon_controls": [
+        "Left Icon ON/OFF",
+        "Right Icon ON/OFF",
+        "Icon swap"
+      ]
+    },
+    "usage_guidelines": [
+      "Suitable for communicating concise text and simple actions.",
+      "When placing multiple Chips, maintain consistency by using the same size/style."
+    ],
+    "do_dont": {
+      "do": [
+        "Keep the Selected state visually distinct.",
+        "Use icons/avatars only when necessary for meaning communication.",
+        "Use Small size for high-density information areas or auxiliary tags/labels.",
+        "Prioritize Medium size for primary actions like filter triggers or starting searches."
+      ],
+      "dont": [
+        "Do not use excessively long text in a Chip."
+      ]
+    },
+    "playground": {
+      "controls": [
+        {
+          "id": "variant",
+          "label": "Variant",
+          "type": "toggle",
+          "options": [
+            "solid-rounded-rect",
+            "solid-rounded",
+            "outline-gradient"
+          ],
+          "default": "solid-rounded-rect"
+        },
+        {
+          "id": "size",
+          "label": "Size",
+          "type": "toggle",
+          "options": [
+            "small",
+            "medium",
+            "large",
+            "xlarge"
+          ],
+          "default": "medium"
+        },
+        {
+          "id": "state",
+          "label": "State",
+          "type": "toggle",
+          "options": [
+            "enabled",
+            "hovered",
+            "focused",
+            "pressed",
+            "disabled"
+          ],
+          "default": "enabled"
+        },
+        {
+          "id": "selected",
+          "label": "Selected",
+          "type": "toggle",
+          "options": [
+            true,
+            false
+          ],
+          "default": false
+        },
+        {
+          "id": "chipLabel",
+          "label": "Chip label",
+          "type": "text",
+          "default": "Chip"
+        },
+        {
+          "id": "showLeftIcon",
+          "label": "Show left icon",
+          "type": "toggle",
+          "options": [
+            false,
+            true
+          ],
+          "default": false
+        },
+        {
+          "id": "showRightIcon",
+          "label": "Show right icon",
+          "type": "toggle",
+          "options": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "_rawHtml": "\n<div class=\"guide-section\">\n            <div class=\"guide-title\">Purpose</div>\n            <div class=\"guide-body\">\n              <p>Chipは、簡易アクション、タグ、フィルター選択、オプション表示など、小さな単位の情報を表すための UI 要素です。ユーザーは短いテキストやアイコンを伴う Chip を選択／トグルすることで、文脈を素早く切り替えることができます。</p>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Anatomy</div>\n            <div class=\"guide-body\">\n              <p><strong>構成要素</strong></p>\n              <ul>\n                <li>Container</li>\n                <li>Label</li>\n                <li>Graphic（任意）</li>\n                <li>Left / Right icon（任意）</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Variant</div>\n            <div class=\"guide-body\">\n              <p><strong>solid-rounded-rect</strong></p>\n              <p>角が丸い四角形シェイプを持つ Solid タイプの Chip であり、安定感のある視覚スタイルとして使用されます。</p>\n              <div style=\"display:flex;gap:var(--spacing-300);margin:var(--spacing-300) 0 var(--spacing-500);flex-wrap:wrap;\">\n                <button class=\"chip chip--solid-rounded-rect chip--xlarge\" style=\"pointer-events:none;\">solid-rounded-rect</button>\n                <button class=\"chip chip--solid-rounded-rect chip--xlarge selected\" style=\"pointer-events:none;\">solid-rounded-rect</button>\n              </div>\n              <p><strong>solid-rounded</strong></p>\n              <p>より丸みの強いピル形状の Solid Chip で、柔らかくカジュアルな印象を与える視覚表現となります。</p>\n              <div style=\"display:flex;gap:var(--spacing-300);margin:var(--spacing-300) 0 var(--spacing-500);flex-wrap:wrap;\">\n                <button class=\"chip chip--solid-rounded chip--xlarge\" style=\"pointer-events:none;\">solid-rounded</button>\n                <button class=\"chip chip--solid-rounded chip--xlarge selected\" style=\"pointer-events:none;\">solid-rounded</button>\n              </div>\n              <p><strong>outline-gradient</strong></p>\n              <p>グラデーションのアウトラインを持つ Chip で、より装飾的かつ強調を伴う視覚スタイルとして機能します。</p>\n              <div style=\"display:flex;gap:var(--spacing-300);margin:var(--spacing-300) 0;flex-wrap:wrap;\">\n                <button class=\"chip chip--outline-gradient chip--xlarge\" style=\"pointer-events:none;\">outline-gradient</button>\n                <button class=\"chip chip--outline-gradient chip--xlarge selected\" style=\"pointer-events:none;\">outline-gradient</button>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Style</div>\n            <div class=\"guide-body\">\n              <p><strong>Size</strong></p>\n              <p>Chip の高さとパディングスケールを調整します。</p>\n              <ul>\n                <li>xlarge — var(--sizing-1200)</li>\n                <li>large — var(--sizing-1000)</li>\n                <li>medium — var(--sizing-800)</li>\n                <li>small — var(--sizing-700)</li>\n              </ul>\n              <p style=\"margin-top:var(--line-height-label-small);\"><strong>State</strong></p>\n              <p>Chip はインタラクションに応じて状態が変化します。</p>\n              <ul>\n                <li>enabled</li><li>hovered</li><li>focused</li><li>pressed</li><li>disabled</li>\n              </ul>\n              <p style=\"margin-top:var(--line-height-label-small);\"><strong>Selected</strong></p>\n              <p>選択された Chip は塗り／アウトライン／アイコン色が変化し、選択状態を明確に示します。</p>\n              <ul><li>on</li><li>off</li></ul>\n              <p style=\"margin-top:var(--line-height-label-small);\"><strong>Graphic</strong></p>\n              <p>Graphic が true の場合、Chip 内にアイコンまたはアバターなどの視覚要素が含まれます。<br>Graphic は outline-gradient のみで提供しています。</p>\n              <ul><li>true</li><li>false</li></ul>\n              <p style=\"margin-top:var(--line-height-label-small);\"><strong>Icon Controls</strong></p>\n              <p>コンテンツ構造に応じてアイコン表示は自動的に制御されます。</p>\n              <ul>\n                <li>Left Icon ON/OFF</li>\n                <li>Right Icon ON/OFF</li>\n                <li>Icon swap</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Usage Guidelines</div>\n            <div class=\"guide-body\">\n              <ul>\n                <li>簡潔なテキストと単純なアクションを伝えるのに適しています。</li>\n                <li>複数並べる場合、同じ size／style を用いて一貫性を保ちます。</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Do &amp; Don't</div>\n            <div class=\"guide-body\">\n              <p><strong>Do</strong></p>\n              <ul>\n                <li>Selected 状態は視覚的な差異を明確に保ちます。</li>\n                <li>アイコン／アバターは意味伝達が必要な場合にのみ使用します。</li>\n                <li>Small サイズは情報密度が高い領域や、補助的なタグ／ラベル用途で使用します。</li>\n                <li>主なアクション（フィルター起点・探索開始など）が目的の場合は Medium サイズの使用を優先します。</li>\n              </ul>\n              <p style=\"margin-top:var(--spacing-300);\"><strong>Don't</strong></p>\n              <ul>\n                <li>長すぎるテキストを Chip に使用しないでください。</li>\n                <li>Graphic と左右アイコンを過度に組み合わせ、UI を複雑にしないでください。</li>\n                <li>基本的に background / disabled トークンを使用します。一般的な surface 上では、disabled-accent は使用しません。</li>\n                <li>Small サイズを主なアクションのトリガーとして使わないでください。</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"guide-section\">\n            <div class=\"guide-title\">Design Tokens</div>\n            <div class=\"guide-body\">\n              <table style=\"width:100%; border-collapse:collapse; font-size: var(--text-size-xs);;\">\n                <thead>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">Property</th>\n                    <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">Token</th>\n                    <th style=\"text-align:left;padding:var(--spacing-200) 0;color:var(--shell-muted);font-weight:600;\">Value</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0;color:var(--shell-muted);\">BG unselected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">background/secondary</code></td>\n                    <td style=\"color:var(--shell-muted);font-size: var(--text-size-xs);;\">var(--color-background-secondary)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0;color:var(--shell-muted);\">BG selected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">background/selection-secondary</code></td>\n                    <td style=\"color:var(--shell-muted);font-size: var(--text-size-xs);;\">var(--color-background-selection-secondary)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0;color:var(--shell-muted);\">Border selected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">gradient/border/stop-1</code></td>\n                    <td style=\"color:var(--shell-muted);font-size: var(--text-size-xs);;\">var(--color-gradient-content-stop-1)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0;color:var(--shell-muted);\">Text selected</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">content/key</code></td>\n                    <td style=\"color:var(--shell-muted);font-size: var(--text-size-xs);;\">var(--color-content-key)</td>\n                  </tr>\n                  <tr style=\"border-bottom:var(--border-width-100) solid var(--shell-border);\">\n                    <td style=\"padding:var(--space-lg) 0;color:var(--shell-muted);\">Border outline-gradient</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">gradient/border/secondary/stop-1</code></td>\n                    <td style=\"color:var(--shell-muted);font-size: var(--text-size-xs);;\">var(--color-gradient-border-secondary-stop-1)</td>\n                  </tr>\n                  <tr>\n                    <td style=\"padding:var(--space-lg) 0;color:var(--shell-muted);\">Heights</td>\n                    <td><code style=\"font-size: var(--text-size-xs);;\">sizing/700–1200</code></td>\n                    <td style=\"color:var(--shell-muted);font-size: var(--text-size-xs);;\">28 / 32 / 40 / var(--sizing-1200)</td>\n                  </tr>\n                </tbody>\n              </table>\n            </div>\n          </div>\n    "
+  },
+  "selector": ".chip"
+}

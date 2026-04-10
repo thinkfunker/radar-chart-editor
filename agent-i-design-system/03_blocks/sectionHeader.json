@@ -1,0 +1,9 @@
+{
+  "name": "Section Header",
+  "tier": "03_blocks",
+  "key": "sectionHeader",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.sectionHeader(opts)"
+}

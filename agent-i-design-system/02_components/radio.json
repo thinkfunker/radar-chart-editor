@@ -1,0 +1,62 @@
+{
+  "name": "Radio Button",
+  "tier": "02_components",
+  "key": "radio",
+  "type": "atom",
+  "description": "An input component for single selection within a group.",
+  "guidelines": {
+    "purpose": "Radio Button is an input component for single selection. It allows selecting only one item from multiple choices and is used within a group.",
+    "anatomy": {
+      "radio_wrap": "Overall container (acts as label).",
+      "radio_btn": "Circular button outer frame.",
+      "radio_dot": "Inner dot (var(--sizing-300)) shown when selected.",
+      "radio_label": "Text label."
+    },
+    "style": {
+      "state": [
+        "enabled off/on",
+        "hovered off/on",
+        "focused off/on",
+        "pressed off/on",
+        "disabled off/on"
+      ],
+      "css_classes": {
+        "selected": ".radio-wrap--selected",
+        "disabled": ".radio-wrap--disabled"
+      }
+    },
+    "usage": "Radio Button must always be used within a group. Use Checkbox for single standalone items. Selected state is indicated by the blue inner dot (.radio-dot).",
+    "playground": {
+      "controls": [
+        {
+          "id": "checked",
+          "label": "Checked",
+          "type": "toggle",
+          "options": [
+            true,
+            false
+          ],
+          "default": false
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "text",
+          "default": "Radio Label"
+        },
+        {
+          "id": "state",
+          "label": "State",
+          "type": "toggle",
+          "options": [
+            "enabled",
+            "disabled"
+          ],
+          "default": "enabled"
+        }
+      ]
+    },
+    "_rawHtml": "\n<div class=\"guide-block\">\n          <h2 class=\"guide-title\">Radio Button</h2>\n          <p>単一選択のための入力コンポーネントです。複数の項目から一つだけ選択でき、グループ内で使用します。</p>\n        </div>\n        <div class=\"guide-block\">\n          <h3 class=\"guide-subtitle\">States</h3>\n          <div style=\"display:flex; flex-direction:column; gap:var(--spacing-400); margin-top:var(--spacing-200);\">\n            <div style=\"display:flex; flex-wrap:wrap; gap:var(--spacing-600); align-items:center;\">\n              <label class=\"radio-wrap\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Enabled off</span></label>\n              <label class=\"radio-wrap radio-wrap--selected\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Enabled on</span></label>\n            </div>\n            <div style=\"display:flex; flex-wrap:wrap; gap:var(--spacing-600); align-items:center;\">\n              <label class=\"radio-wrap state-hovered\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Hovered off</span></label>\n              <label class=\"radio-wrap radio-wrap--selected state-hovered\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Hovered on</span></label>\n            </div>\n            <div style=\"display:flex; flex-wrap:wrap; gap:var(--spacing-600); align-items:center;\">\n              <label class=\"radio-wrap state-focused\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Focused off</span></label>\n              <label class=\"radio-wrap radio-wrap--selected state-focused\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Focused on</span></label>\n            </div>\n            <div style=\"display:flex; flex-wrap:wrap; gap:var(--spacing-600); align-items:center;\">\n              <label class=\"radio-wrap state-pressed\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Pressed off</span></label>\n              <label class=\"radio-wrap radio-wrap--selected state-pressed\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Pressed on</span></label>\n            </div>\n            <div style=\"display:flex; flex-wrap:wrap; gap:var(--spacing-600); align-items:center;\">\n              <label class=\"radio-wrap radio-wrap--disabled\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Disabled off</span></label>\n              <label class=\"radio-wrap radio-wrap--selected radio-wrap--disabled\"><span class=\"radio-btn\"><span class=\"radio-dot\"></span></span><span class=\"radio-label\">Disabled on</span></label>\n            </div>\n          </div>\n        </div>\n        <div class=\"guide-block\">\n          <h3 class=\"guide-subtitle\">Usage</h3>\n          <p>Radio Buttonは必ずグループ内で使用します。単独の場合はCheckboxを使用してください。選択された項目は青い内部点（<code>.radio-dot</code>）で視覚的に示されます。</p>\n        </div>\n        <div class=\"guide-block\">\n          <h3 class=\"guide-subtitle\">Anatomy</h3>\n          <p><strong>.radio-wrap</strong> — 全体コンテナ（label 役割）<br>\n          <strong>.radio-btn</strong> — 円形ボタン外枠<br>\n          <strong>.radio-dot</strong> — 選択時の内部点（var(--sizing-300)）<br>\n          <strong>.radio-label</strong> — テキストラベル</p>\n          <p style=\"margin-top:var(--spacing-200);\">選択状態: <code>.radio-wrap--selected</code><br>\n          非活性: <code>.radio-wrap--disabled</code></p>\n        </div>\n    "
+  },
+  "selector": ".radio-wrap"
+}

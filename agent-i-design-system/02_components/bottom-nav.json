@@ -1,0 +1,25 @@
+{
+  "name": "Bottom Navigation",
+  "tier": "02_components",
+  "key": "bottomnav",
+  "type": "block",
+  "description": "A sticky mobile navigation bar positioned at the bottom of the viewport.",
+  "guidelines": {
+    "purpose": "Bottom Navigation provides primary navigation links at the bottom of the mobile interface. It ensures accessibility to main sections through icons and labels, supporting active states and notification badges.",
+    "anatomy": {
+      "container": "ds-bottom-nav. Sticky position, var(--color-background-white) background, top border var(--color-background-tertiary).",
+      "item": "bnav-item. Centered flex container for icon and label.",
+      "badge": "Optional numerical badge (badge--small) at the top-right of the item."
+    },
+    "state": {
+      "active": "Icon var(--color-content-key), active label class Applied.",
+      "inactive": "Icon var(--color-content-tertiary), default label style."
+    },
+    "specs": {
+      "height": "Optimized for mobile touch targets (approx calc(var(--sizing-100) * 18) total height including padding).",
+      "spacing": "Flex-around distribution for even item spacing.",
+      "typography": "Label font size var(--font-size-0687)."
+    }
+  },
+  "selector": ".ds-bottom-nav"
+}

@@ -1,0 +1,161 @@
+/**
+ * @agent-i/theme — Dark Theme
+ *
+ * Overrides semantic variables from light.css for dark mode.
+ *
+ * Apply via:
+ *   Option A — class: <html class="theme-dark">
+ *   Option B — data attribute: <html data-theme="dark">
+ *   Option C — media query: auto-detect from OS setting
+ *
+ * For auto dark mode (recommended):
+ *   @import "@agent-i/theme/light.css";
+ *   @import "@agent-i/theme/dark.css";   ← includes @media prefers-color-scheme
+ */
+
+/* Class / attribute override */
+[data-theme="dark"],
+.theme-dark {
+
+  /* ──────────────────────────────────────────
+     Brand / Accent (dark-adjusted)
+     ────────────────────────────────────────── */
+  --color-primary:          var(--color-blue-5, #669bfe);
+  --color-primary-hover:    var(--color-blue-4, #84aefe);
+  --color-primary-active:   var(--color-blue-6, #4988fe);
+  --color-primary-subtle:   rgba(102, 155, 254, 0.12);
+  --color-primary-border:   rgba(102, 155, 254, 0.32);
+
+  --color-secondary:        #c97af5;
+  --color-secondary-subtle: rgba(201, 122, 245, 0.12);
+  --color-secondary-border: rgba(201, 122, 245, 0.32);
+
+  /* ──────────────────────────────────────────
+     Semantic Status
+     ────────────────────────────────────────── */
+  --color-success:          #4caf70;
+  --color-success-subtle:   rgba(76, 175, 112, 0.12);
+  --color-success-border:   rgba(76, 175, 112, 0.32);
+
+  --color-warning:          #ffb838;
+  --color-warning-subtle:   rgba(255, 184, 56, 0.12);
+  --color-warning-border:   rgba(255, 184, 56, 0.32);
+
+  --color-danger:           #f25c5c;
+  --color-danger-subtle:    rgba(242, 92, 92, 0.12);
+  --color-danger-border:    rgba(242, 92, 92, 0.32);
+
+  --color-info:             #6db0ff;
+  --color-info-subtle:      rgba(109, 176, 255, 0.12);
+  --color-info-border:      rgba(109, 176, 255, 0.32);
+
+  /* ──────────────────────────────────────────
+     Text
+     ────────────────────────────────────────── */
+  --color-text-primary:     var(--color-background-secondary);
+  --color-text-secondary:   rgba(232, 234, 240, 0.60);
+  --color-text-placeholder: rgba(232, 234, 240, 0.38);
+  --color-text-disabled:    rgba(232, 234, 240, 0.26);
+  --color-text-inverse:     #17181a;
+  --color-text-link:        var(--color-primary);
+  --color-text-link-hover:  var(--color-primary-hover);
+
+  /* ──────────────────────────────────────────
+     Background
+     ────────────────────────────────────────── */
+  --color-bg-page:          #0e0f11;
+  --color-bg-surface:       #1a1c20;
+  --color-bg-elevated:      #23262c;
+  --color-bg-overlay:       rgba(0, 0, 0, 0.64);
+  --color-bg-hover:         var(--color-background-overlay-white);
+  --color-bg-active:        var(--color-background-overlay-white);
+  --color-bg-selected:      rgba(102, 155, 254, 0.12);
+  --color-bg-muted:         #1e2025;
+  --color-bg-disabled:      var(--color-background-overlay-white);
+
+  /* ──────────────────────────────────────────
+     Border / Divider
+     ────────────────────────────────────────── */
+  --color-border:           var(--color-background-overlay-white);
+  --color-border-strong:    rgba(255, 255, 255, 0.20);
+  --color-border-focus:     var(--color-primary);
+  --color-border-disabled:  var(--color-background-overlay-white);
+
+  /* ──────────────────────────────────────────
+     Icon
+     ────────────────────────────────────────── */
+  --color-icon-primary:     var(--color-background-secondary);
+  --color-icon-secondary:   rgba(232, 234, 240, 0.56);
+  --color-icon-disabled:    rgba(232, 234, 240, 0.26);
+  --color-icon-inverse:     #17181a;
+
+  /* ──────────────────────────────────────────
+     Shell / Navigation
+     ────────────────────────────────────────── */
+  --color-shell-bg:         #1a1c20;
+  --color-shell-border:     var(--color-background-overlay-white);
+  --color-shell-sidebar-bg: #14161a;
+  --color-shell-topbar-bg:  #1a1c20;
+
+  /* ──────────────────────────────────────────
+     Tag / Badge
+     ────────────────────────────────────────── */
+  --color-tag-text:         var(--color-primary);
+  --color-tag-bg:           var(--color-primary-subtle);
+  --color-tag-border:       var(--color-primary-border);
+
+  /* ──────────────────────────────────────────
+     Component Aliases
+     ────────────────────────────────────────── */
+  --input-bg:               var(--color-bg-surface);
+  --input-border:           var(--color-border-strong);
+  --input-text:             var(--color-text-primary);
+  --input-placeholder:      var(--color-text-placeholder);
+
+  --btn-primary-bg:         var(--color-primary);
+  --btn-primary-text:       #ffffff;
+
+  --card-bg:                var(--color-bg-surface);
+  --card-border:            var(--color-border);
+  --card-shadow:            var(--shadow-2);
+}
+
+/* Auto dark mode — OS-level preference */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not(.theme-light) {
+    --color-primary:          var(--color-blue-5, #669bfe);
+    --color-primary-hover:    var(--color-blue-4, #84aefe);
+    --color-primary-active:   var(--color-blue-6, #4988fe);
+    --color-primary-subtle:   rgba(102, 155, 254, 0.12);
+    --color-primary-border:   rgba(102, 155, 254, 0.32);
+
+    --color-text-primary:     var(--color-background-secondary);
+    --color-text-secondary:   rgba(232, 234, 240, 0.60);
+    --color-text-placeholder: rgba(232, 234, 240, 0.38);
+    --color-text-disabled:    rgba(232, 234, 240, 0.26);
+    --color-text-inverse:     #17181a;
+
+    --color-bg-page:          #0e0f11;
+    --color-bg-surface:       #1a1c20;
+    --color-bg-elevated:      #23262c;
+    --color-bg-hover:         var(--color-background-overlay-white);
+    --color-bg-active:        var(--color-background-overlay-white);
+    --color-bg-selected:      rgba(102, 155, 254, 0.12);
+    --color-bg-muted:         #1e2025;
+
+    --color-border:           var(--color-background-overlay-white);
+    --color-border-strong:    rgba(255, 255, 255, 0.20);
+
+    --color-icon-primary:     var(--color-background-secondary);
+    --color-icon-secondary:   rgba(232, 234, 240, 0.56);
+
+    --color-shell-bg:         #1a1c20;
+    --color-shell-border:     var(--color-background-overlay-white);
+    --color-shell-sidebar-bg: #14161a;
+    --color-shell-topbar-bg:  #1a1c20;
+
+    --card-bg:                var(--color-bg-surface);
+    --card-border:            var(--color-border);
+    --card-shadow:            var(--shadow-2);
+  }
+}

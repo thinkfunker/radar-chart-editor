@@ -1,0 +1,9 @@
+{
+  "name": "Product Card",
+  "tier": "03_blocks",
+  "key": "productCard",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.productCard(opts)"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Sticky Header",
+  "tier": "03_blocks",
+  "key": "stickyHeader",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "usage_fn": "DS.stickyHeader(opts)"
+}

@@ -1,0 +1,3387 @@
+window.DS_ICON_REGISTRY = {
+  "icons": [
+    {
+      "id": "ai-analysis_gradient",
+      "path": "icons/ai-analysis_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "analysis",
+        "gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-analysis_gradient_dark",
+      "path": "icons/ai-analysis_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-analysis gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-analysis_primary",
+      "path": "icons/ai-analysis_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "analysis",
+        "primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-bookmark_gradient",
+      "path": "icons/ai-bookmark_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "bookmark",
+        "gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-bookmark_gradient_dark",
+      "path": "icons/ai-bookmark_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-bookmark gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-bookmark_primary",
+      "path": "icons/ai-bookmark_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "bookmark",
+        "primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-calendar_gradient",
+      "path": "icons/ai-calendar_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-calendar gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-calendar_gradient_dark",
+      "path": "icons/ai-calendar_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-calendar gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-calendar_primary",
+      "path": "icons/ai-calendar_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-calendar primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-car_gradient",
+      "path": "icons/ai-car_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-car gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-car_gradient_dark",
+      "path": "icons/ai-car_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-car gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-car_primary",
+      "path": "icons/ai-car_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-car primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-career",
+      "path": "icons/ai-career_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "career"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-career_gradient_dark",
+      "path": "icons/ai-career_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-career gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-career_primary",
+      "path": "icons/ai-career_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-career primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-check_gradient",
+      "path": "icons/ai-check_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "check",
+        "gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-check_gradient_dark",
+      "path": "icons/ai-check_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-check gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-check_primary",
+      "path": "icons/ai-check_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "check",
+        "primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-counseling_gradient",
+      "path": "icons/ai-counseling_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-counseling gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-counseling_gradient_dark",
+      "path": "icons/ai-counseling_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-counseling gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-counseling_primary",
+      "path": "icons/ai-counseling_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-counseling primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-edit_gradient",
+      "path": "icons/ai-edit_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-edit gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-edit_gradient_dark",
+      "path": "icons/ai-edit_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-edit gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-edit_primary",
+      "path": "icons/ai-edit_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-edit primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-fortune_gradient",
+      "path": "icons/ai-fortune_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-fortune gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-fortune_gradient_dark",
+      "path": "icons/ai-fortune_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-fortune gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-fortune_solid",
+      "path": "icons/ai-fortune_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "fortune",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "ai-map_gradient",
+      "path": "icons/ai-map_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "gradient",
+        "map"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-map_primary",
+      "path": "icons/ai-map_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "map",
+        "primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-messenger_gradient",
+      "path": "icons/ai-messenger_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "gradient",
+        "messenger"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-messenger_gradient_dark",
+      "path": "icons/ai-messenger_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-messenger gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-messenger_primary",
+      "path": "icons/ai-messenger_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "messenger",
+        "primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-mic_gradient",
+      "path": "icons/ai-mic_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-mic gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-mic_gradient_dark",
+      "path": "icons/ai-mic_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-mic gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-mic_primary",
+      "path": "icons/ai-mic_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-mic primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-news_gradient",
+      "path": "icons/ai-news_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "gradient",
+        "news"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-news_gradient_dark",
+      "path": "icons/ai-news_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-news gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-news_primary",
+      "path": "icons/ai-news_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "news",
+        "primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-apple",
+      "path": "icons/ai-quick-menu-apple.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-apple"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-balance-scale",
+      "path": "icons/ai-quick-menu-balance-scale.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-balance-scale"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-bowl-chopsticks",
+      "path": "icons/ai-quick-menu-bowl-chopsticks.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-bowl-chopsticks"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-bread-slice",
+      "path": "icons/ai-quick-menu-bread-slice.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-bread-slice"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-briefcase",
+      "path": "icons/ai-quick-menu-briefcase.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-briefcase"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-burger",
+      "path": "icons/ai-quick-menu-burger.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-burger"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-business-bag",
+      "path": "icons/ai-quick-menu-business-bag.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-business-bag"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-calendar-check",
+      "path": "icons/ai-quick-menu-calendar-check.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-calendar-check"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-car",
+      "path": "icons/ai-quick-menu-car.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-car"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-car-key",
+      "path": "icons/ai-quick-menu-car-key.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-car-key"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-car-wheel",
+      "path": "icons/ai-quick-menu-car-wheel.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-car-wheel"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-cloche",
+      "path": "icons/ai-quick-menu-cloche.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-cloche"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-coin-yen",
+      "path": "icons/ai-quick-menu-coin-yen.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-coin-yen"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-dango",
+      "path": "icons/ai-quick-menu-dango.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-dango"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-ellipsis",
+      "path": "icons/ai-quick-menu-ellipsis.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-ellipsis"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-globe",
+      "path": "icons/ai-quick-menu-globe.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-globe"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-graduation-cap",
+      "path": "icons/ai-quick-menu-graduation-cap.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-graduation-cap"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-heart",
+      "path": "icons/ai-quick-menu-heart.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-heart"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-house",
+      "path": "icons/ai-quick-menu-house.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-house"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-lunchbox",
+      "path": "icons/ai-quick-menu-lunchbox.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-lunchbox"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-medal",
+      "path": "icons/ai-quick-menu-medal.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-medal"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-repair-tools",
+      "path": "icons/ai-quick-menu-repair-tools.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-repair-tools"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-stopwatch",
+      "path": "icons/ai-quick-menu-stopwatch.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-stopwatch"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-quick-menu-users",
+      "path": "icons/ai-quick-menu-users.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-quick-menu-users"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-real-estate_gradient",
+      "path": "icons/ai-real-estate_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-real-estate gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-real-estate_gradient_dark",
+      "path": "icons/ai-real-estate_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-real-estate gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-real-estate_primary",
+      "path": "icons/ai-real-estate_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-real-estate primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-recipe_gradient",
+      "path": "icons/ai-recipe_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-recipe gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-recipe_gradient_dark",
+      "path": "icons/ai-recipe_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-recipe gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-recipe_primary",
+      "path": "icons/ai-recipe_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-recipe primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-scan_gradient",
+      "path": "icons/ai-scan_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-scan gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-scan_gradient_dark",
+      "path": "icons/ai-scan_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-scan gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-scan_solid",
+      "path": "icons/ai-scan_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "scan",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "ai-shopping_gradient",
+      "path": "icons/ai-shopping_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "gradient",
+        "shopping"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-shopping_gradient_dark",
+      "path": "icons/ai-shopping_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-shopping gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-shopping_primary",
+      "path": "icons/ai-shopping_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai",
+        "ai-agent-icons",
+        "primary",
+        "shopping"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-stock_gradient",
+      "path": "icons/ai-stock_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-stock gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-stock_gradient_dark",
+      "path": "icons/ai-stock_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-stock gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-stock_primary",
+      "path": "icons/ai-stock_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-stock primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-travel_gradient",
+      "path": "icons/ai-travel_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-travel gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-travel_gradient_dark",
+      "path": "icons/ai-travel_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-travel gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-travel_primary",
+      "path": "icons/ai-travel_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-travel primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-voice_gradient",
+      "path": "icons/ai-voice_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-voice gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-voice_gradient_dark",
+      "path": "icons/ai-voice_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-voice gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-voice_primary",
+      "path": "icons/ai-voice_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-voice primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ai-weather_gradient",
+      "path": "icons/ai-weather_gradient.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-weather gradient"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-weather_gradient_dark",
+      "path": "icons/ai-weather_gradient_dark.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-weather gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-weather_primary",
+      "path": "icons/ai-weather_primary.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "ai-weather primary"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "air-conditioner_outline",
+      "path": "icons/air-conditioner_outline.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "air-conditioner outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "air-conditioner_solid",
+      "path": "icons/air-conditioner_solid.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "air-conditioner solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "hair-dryer_outline",
+      "path": "icons/hair-dryer_outline.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "hair-dryer outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "hair-dryer_solid",
+      "path": "icons/hair-dryer_solid.svg",
+      "category": "ai-agent-icons",
+      "keywords": [
+        "hair-dryer solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "Jiaa_solid",
+      "path": "icons/Jiaa_solid.svg",
+      "category": "common",
+      "keywords": [
+        "Jiaa solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "arrow-down-bold",
+      "path": "icons/arrow-down-bold_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "bold",
+        "common",
+        "down"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrow-down_outline",
+      "path": "icons/arrow-down_outline.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "down",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrow-down_solid",
+      "path": "icons/arrow-down_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "down",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "arrow-left_outline",
+      "path": "icons/arrow-left_outline.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "left",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrow-left_solid",
+      "path": "icons/arrow-left_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "left",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "arrow-right_outline",
+      "path": "icons/arrow-right_outline.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "outline",
+        "right"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrow-right_solid",
+      "path": "icons/arrow-right_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "right",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "arrow-turn-down-right_outline",
+      "path": "icons/arrow-turn-down-right_outline.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "down",
+        "outline",
+        "right",
+        "turn"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrow-turn-down-right_solid",
+      "path": "icons/arrow-turn-down-right_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrow-turn-down-right solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "arrow-up-bold",
+      "path": "icons/arrow-up-bold_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "bold",
+        "common",
+        "up"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrow-up_outline",
+      "path": "icons/arrow-up_outline.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "outline",
+        "up"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrow-up_solid",
+      "path": "icons/arrow-up_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrow",
+        "common",
+        "solid",
+        "up"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "arrows-diagonal-in_outline",
+      "path": "icons/arrows-diagonal-in_outline.svg",
+      "category": "common",
+      "keywords": [
+        "arrows-diagonal-in outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrows-diagonal-in_solid",
+      "path": "icons/arrows-diagonal-in_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrows-diagonal-in solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "arrows-diagonal-out_outline",
+      "path": "icons/arrows-diagonal-out_outline.svg",
+      "category": "common",
+      "keywords": [
+        "arrows-diagonal-out outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "arrows-diagonal-out_solid",
+      "path": "icons/arrows-diagonal-out_solid.svg",
+      "category": "common",
+      "keywords": [
+        "arrows-diagonal-out solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "balloons_outline",
+      "path": "icons/balloons_outline.svg",
+      "category": "common",
+      "keywords": [
+        "balloons outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "balloons_solid",
+      "path": "icons/balloons_solid.svg",
+      "category": "common",
+      "keywords": [
+        "balloons solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "bars_outline",
+      "path": "icons/bars_outline.svg",
+      "category": "common",
+      "keywords": [
+        "bars",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "bars_solid",
+      "path": "icons/bars_solid.svg",
+      "category": "common",
+      "keywords": [
+        "bars",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "baseball-ball_outline",
+      "path": "icons/baseball-ball_outline.svg",
+      "category": "common",
+      "keywords": [
+        "baseball-ball outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "baseball-ball_solid",
+      "path": "icons/baseball-ball_solid.svg",
+      "category": "common",
+      "keywords": [
+        "baseball-ball solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "bell_outline",
+      "path": "icons/bell_outline.svg",
+      "category": "common",
+      "keywords": [
+        "bell",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "bell_solid",
+      "path": "icons/bell_solid.svg",
+      "category": "common",
+      "keywords": [
+        "bell",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "browser_outline",
+      "path": "icons/browser_outline.svg",
+      "category": "common",
+      "keywords": [
+        "browser",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "browser_solid",
+      "path": "icons/browser_solid.svg",
+      "category": "common",
+      "keywords": [
+        "browser",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "bulb_outline",
+      "path": "icons/bulb_outline.svg",
+      "category": "common",
+      "keywords": [
+        "bulb",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "bulb_solid",
+      "path": "icons/bulb_solid.svg",
+      "category": "common",
+      "keywords": [
+        "bulb",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "bus_outline",
+      "path": "icons/bus_outline.svg",
+      "category": "common",
+      "keywords": [
+        "bus outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "bus_solid",
+      "path": "icons/bus_solid.svg",
+      "category": "common",
+      "keywords": [
+        "bus solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "cafe_solid",
+      "path": "icons/cafe_solid.svg",
+      "category": "common",
+      "keywords": [
+        "cafe solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "camera_outline",
+      "path": "icons/camera_outline.svg",
+      "category": "common",
+      "keywords": [
+        "camera",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "camera_solid",
+      "path": "icons/camera_solid.svg",
+      "category": "common",
+      "keywords": [
+        "camera",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "car_outline",
+      "path": "icons/car_outline.svg",
+      "category": "common",
+      "keywords": [
+        "car",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "car_solid",
+      "path": "icons/car_solid.svg",
+      "category": "common",
+      "keywords": [
+        "car",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "cart_outline",
+      "path": "icons/cart_outline.svg",
+      "category": "common",
+      "keywords": [
+        "cart",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "cart_solid",
+      "path": "icons/cart_solid.svg",
+      "category": "common",
+      "keywords": [
+        "cart",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "chart-bar_outline",
+      "path": "icons/chart-bar_outline.svg",
+      "category": "common",
+      "keywords": [
+        "bar",
+        "chart",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "chart-bar_solid",
+      "path": "icons/chart-bar_solid.svg",
+      "category": "common",
+      "keywords": [
+        "bar",
+        "chart",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "chat-ellipsis_outline",
+      "path": "icons/chat-ellipsis_outline.svg",
+      "category": "common",
+      "keywords": [
+        "chat",
+        "common",
+        "ellipsis",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "chat-ellipsis_solid",
+      "path": "icons/chat-ellipsis_solid.svg",
+      "category": "common",
+      "keywords": [
+        "chat",
+        "common",
+        "ellipsis",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "chat-lines_outline",
+      "path": "icons/chat-lines_outline.svg",
+      "category": "common",
+      "keywords": [
+        "chat",
+        "common",
+        "lines",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "chat-lines_solid",
+      "path": "icons/chat-lines_solid.svg",
+      "category": "common",
+      "keywords": [
+        "chat",
+        "common",
+        "lines",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "check",
+      "path": "icons/check_outline.svg",
+      "category": "common",
+      "keywords": [
+        "check",
+        "common"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "check-1",
+      "path": "icons/check-1.svg",
+      "category": "common",
+      "keywords": [
+        "check-1"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "check-circle_outline",
+      "path": "icons/check-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "check",
+        "circle",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "check-circle_solid",
+      "path": "icons/check-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "check",
+        "circle",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "check_outline",
+      "path": "icons/check_outline.svg",
+      "category": "common",
+      "keywords": [
+        "check",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "check_solid",
+      "path": "icons/check_solid.svg",
+      "category": "common",
+      "keywords": [
+        "check",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "chevron-down_outline",
+      "path": "icons/chevron-down_outline.svg",
+      "category": "common",
+      "keywords": [
+        "chevron",
+        "common",
+        "down",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "chevron-down_solid",
+      "path": "icons/chevron-down_solid.svg",
+      "category": "common",
+      "keywords": [
+        "chevron",
+        "common",
+        "down",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "chevron-left_outline",
+      "path": "icons/chevron-left_outline.svg",
+      "category": "common",
+      "keywords": [
+        "chevron",
+        "common",
+        "left",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "chevron-left_solid",
+      "path": "icons/chevron-left_solid.svg",
+      "category": "common",
+      "keywords": [
+        "chevron",
+        "common",
+        "left",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "chevron-right_outline",
+      "path": "icons/chevron-right_outline.svg",
+      "category": "common",
+      "keywords": [
+        "chevron",
+        "common",
+        "outline",
+        "right"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "chevron-right_solid",
+      "path": "icons/chevron-right_solid.svg",
+      "category": "common",
+      "keywords": [
+        "chevron",
+        "common",
+        "right",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "chevron-up_outline",
+      "path": "icons/chevron-up_outline.svg",
+      "category": "common",
+      "keywords": [
+        "chevron",
+        "common",
+        "outline",
+        "up"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "chevron-up_solid",
+      "path": "icons/chevron-up_solid.svg",
+      "category": "common",
+      "keywords": [
+        "chevron",
+        "common",
+        "solid",
+        "up"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "child_solid",
+      "path": "icons/child_solid.svg",
+      "category": "common",
+      "keywords": [
+        "child solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "clock_outline",
+      "path": "icons/clock_outline.svg",
+      "category": "common",
+      "keywords": [
+        "clock",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "clock_solid",
+      "path": "icons/clock_solid.svg",
+      "category": "common",
+      "keywords": [
+        "clock",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "code-reader_outline",
+      "path": "icons/code-reader_outline.svg",
+      "category": "common",
+      "keywords": [
+        "code",
+        "common",
+        "outline",
+        "reader"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "code-reader_solid",
+      "path": "icons/code-reader_solid.svg",
+      "category": "common",
+      "keywords": [
+        "code",
+        "common",
+        "reader",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "coins_outline",
+      "path": "icons/coins_outline.svg",
+      "category": "common",
+      "keywords": [
+        "coins",
+        "common",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "coins_solid",
+      "path": "icons/coins_solid.svg",
+      "category": "common",
+      "keywords": [
+        "coins",
+        "common",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "conical-flask_outline",
+      "path": "icons/conical-flask_outline.svg",
+      "category": "common",
+      "keywords": [
+        "conical-flask outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "conical-flask_solid",
+      "path": "icons/conical-flask_solid.svg",
+      "category": "common",
+      "keywords": [
+        "conical-flask solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "coupon_outline",
+      "path": "icons/coupon_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "coupon",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "coupon_solid",
+      "path": "icons/coupon_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "coupon",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "credit-card_outline",
+      "path": "icons/credit-card_outline.svg",
+      "category": "common",
+      "keywords": [
+        "card",
+        "common",
+        "credit",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "credit-card_solid",
+      "path": "icons/credit-card_solid.svg",
+      "category": "common",
+      "keywords": [
+        "card",
+        "common",
+        "credit",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "cross-circle_outline",
+      "path": "icons/cross-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "cross",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "cross-circle_solid",
+      "path": "icons/cross-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "cross",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "cross_outline",
+      "path": "icons/cross_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "cross",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "cross_solid",
+      "path": "icons/cross_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "cross",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "date_solid",
+      "path": "icons/date_solid.svg",
+      "category": "common",
+      "keywords": [
+        "date solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "desktop_outline",
+      "path": "icons/desktop_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "desktop",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "desktop_solid",
+      "path": "icons/desktop_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "desktop",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "earphones_outline",
+      "path": "icons/earphones_outline.svg",
+      "category": "common",
+      "keywords": [
+        "earphones outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "earphones_solid",
+      "path": "icons/earphones_solid.svg",
+      "category": "common",
+      "keywords": [
+        "earphones solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "earth_outline",
+      "path": "icons/earth_outline.svg",
+      "category": "common",
+      "keywords": [
+        "earth outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "earth_solid",
+      "path": "icons/earth_solid.svg",
+      "category": "common",
+      "keywords": [
+        "earth solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "edit-alt_extrabold",
+      "path": "icons/edit-alt_extrabold.svg",
+      "category": "common",
+      "keywords": [
+        "edit-alt extrabold"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "edit-alt_outline",
+      "path": "icons/edit-alt_outline.svg",
+      "category": "common",
+      "keywords": [
+        "alt",
+        "common",
+        "edit",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "edit-alt_solid",
+      "path": "icons/edit-alt_solid.svg",
+      "category": "common",
+      "keywords": [
+        "alt",
+        "common",
+        "edit",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "ellipsis-horizonal_outline",
+      "path": "icons/ellipsis-horizonal_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "ellipsis",
+        "horizonal",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ellipsis-horizonal_solid",
+      "path": "icons/ellipsis-horizonal_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "ellipsis",
+        "horizonal",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "ellipsis-vertical_outline",
+      "path": "icons/ellipsis-vertical_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "ellipsis",
+        "outline",
+        "vertical"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ellipsis-vertical_solid",
+      "path": "icons/ellipsis-vertical_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "ellipsis",
+        "solid",
+        "vertical"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "envelope_outline",
+      "path": "icons/envelope_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "envelope",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "envelope_solid",
+      "path": "icons/envelope_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "envelope",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "exclamation-circle_outline",
+      "path": "icons/exclamation-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "exclamation",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "exclamation-circle_solid",
+      "path": "icons/exclamation-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "exclamation",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "exclamation-triangle_outline",
+      "path": "icons/exclamation-triangle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "exclamation",
+        "outline",
+        "triangle"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "exclamation-triangle_solid",
+      "path": "icons/exclamation-triangle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "exclamation",
+        "solid",
+        "triangle"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "facebook",
+      "path": "icons/facebook_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "facebook"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "facebook_solid",
+      "path": "icons/facebook_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "facebook",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "folder_outline",
+      "path": "icons/folder_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "folder",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "folder_solid",
+      "path": "icons/folder_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "folder",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "gear-alt_outline",
+      "path": "icons/gear-alt_outline.svg",
+      "category": "common",
+      "keywords": [
+        "alt",
+        "common",
+        "gear",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "gear-alt_solid",
+      "path": "icons/gear-alt_solid.svg",
+      "category": "common",
+      "keywords": [
+        "alt",
+        "common",
+        "gear",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "gourmet_outline",
+      "path": "icons/gourmet_outline.svg",
+      "category": "common",
+      "keywords": [
+        "gourmet outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "gourmet_solid",
+      "path": "icons/gourmet_solid.svg",
+      "category": "common",
+      "keywords": [
+        "gourmet solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "graduation-cap_outline",
+      "path": "icons/graduation-cap_outline.svg",
+      "category": "common",
+      "keywords": [
+        "graduation-cap outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "graduation-cap_solid",
+      "path": "icons/graduation-cap_solid.svg",
+      "category": "common",
+      "keywords": [
+        "graduation-cap solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "heart_outline",
+      "path": "icons/heart_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "heart",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "heart_solid",
+      "path": "icons/heart_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "heart",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "home-alt_outline",
+      "path": "icons/home-alt_outline.svg",
+      "category": "common",
+      "keywords": [
+        "alt",
+        "common",
+        "home",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "home-alt_solid",
+      "path": "icons/home-alt_solid.svg",
+      "category": "common",
+      "keywords": [
+        "alt",
+        "common",
+        "home",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "image-alt_outline",
+      "path": "icons/image-alt_outline.svg",
+      "category": "common",
+      "keywords": [
+        "image-alt outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "image-alt_solid",
+      "path": "icons/image-alt_solid.svg",
+      "category": "common",
+      "keywords": [
+        "alt",
+        "common",
+        "image",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "info-circle_outline",
+      "path": "icons/info-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "info-circle outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "info-circle_solid",
+      "path": "icons/info-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "info-circle solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "instagram",
+      "path": "icons/instagram_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "instagram"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "keyboard-alt",
+      "path": "icons/keyboard-alt_outline.svg",
+      "category": "common",
+      "keywords": [
+        "alt",
+        "common",
+        "keyboard"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "keyboard_outline",
+      "path": "icons/keyboard_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "keyboard",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "keyboard_solid",
+      "path": "icons/keyboard_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "keyboard",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "landmark_solid",
+      "path": "icons/landmark_solid.svg",
+      "category": "common",
+      "keywords": [
+        "landmark solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "lightning-times_outline",
+      "path": "icons/lightning-times_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "lightning",
+        "outline",
+        "times"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "lightning-times_solid",
+      "path": "icons/lightning-times_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "lightning",
+        "solid",
+        "times"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "microphone_outline",
+      "path": "icons/microphone_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "microphone",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "microphone_solid",
+      "path": "icons/microphone_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "microphone",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "minus_outline",
+      "path": "icons/minus_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "minus",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "minus_solid",
+      "path": "icons/minus_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "minus",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "mobile_outline",
+      "path": "icons/mobile_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "mobile",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "mobile_solid",
+      "path": "icons/mobile_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "mobile",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "moon_outline",
+      "path": "icons/moon_outline.svg",
+      "category": "common",
+      "keywords": [
+        "moon outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "moon_solid",
+      "path": "icons/moon_solid.svg",
+      "category": "common",
+      "keywords": [
+        "moon solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "newspaper_outline",
+      "path": "icons/newspaper_outline.svg",
+      "category": "common",
+      "keywords": [
+        "newspaper outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "newspaper_solid",
+      "path": "icons/newspaper_solid.svg",
+      "category": "common",
+      "keywords": [
+        "newspaper solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "ocean-view_solid",
+      "path": "icons/ocean-view_solid.svg",
+      "category": "common",
+      "keywords": [
+        "ocean-view solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "palette_outline",
+      "path": "icons/palette_outline.svg",
+      "category": "common",
+      "keywords": [
+        "palette outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "palette_solid",
+      "path": "icons/palette_solid.svg",
+      "category": "common",
+      "keywords": [
+        "palette solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "paper-plane_outline",
+      "path": "icons/paper-plane_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "paper",
+        "plane"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "paper-plane_solid",
+      "path": "icons/paper-plane_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "paper",
+        "plane",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "paperclip_outline",
+      "path": "icons/paperclip_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "paperclip"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "paperclip_solid",
+      "path": "icons/paperclip_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "paperclip",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "paypay",
+      "path": "icons/paypay_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "paypay"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "pen_outline",
+      "path": "icons/pen_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "pen"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "pen_solid",
+      "path": "icons/pen_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "pen",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "pet_solid",
+      "path": "icons/pet_solid.svg",
+      "category": "common",
+      "keywords": [
+        "pet solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "phone_outline",
+      "path": "icons/phone_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "phone"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "phone_solid",
+      "path": "icons/phone_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "phone",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "plane-departure_outline",
+      "path": "icons/plane-departure_outline.svg",
+      "category": "common",
+      "keywords": [
+        "plane-departure outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "plane-departure_solid",
+      "path": "icons/plane-departure_solid.svg",
+      "category": "common",
+      "keywords": [
+        "plane-departure solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "plus-circle_outline",
+      "path": "icons/plus-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "outline",
+        "plus"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "plus-circle_solid",
+      "path": "icons/plus-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "plus",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "plus_outline",
+      "path": "icons/plus_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "plus"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "plus_solid",
+      "path": "icons/plus_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "plus",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "qr-code-small_outline",
+      "path": "icons/qr-code-small_outline.svg",
+      "category": "common",
+      "keywords": [
+        "code",
+        "common",
+        "outline",
+        "qr",
+        "small"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "qr-code-small_solid",
+      "path": "icons/qr-code-small.svg",
+      "category": "common",
+      "keywords": [
+        "code",
+        "common",
+        "qr",
+        "small",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "question-circle_outline",
+      "path": "icons/question-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "outline",
+        "question"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "question-circle_solid",
+      "path": "icons/question-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "question",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "question-text-circle_outline",
+      "path": "icons/question-text-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "outline",
+        "question",
+        "text"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "question-text-circle_solid",
+      "path": "icons/question-text-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "question",
+        "solid",
+        "text"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "redo_outline",
+      "path": "icons/redo_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "redo"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "redo_solid",
+      "path": "icons/redo_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "redo",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "refrigerator_outline",
+      "path": "icons/refrigerator_outline.svg",
+      "category": "common",
+      "keywords": [
+        "refrigerator outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "refrigerator_solid",
+      "path": "icons/refrigerator_solid.svg",
+      "category": "common",
+      "keywords": [
+        "refrigerator solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "rice-cooker_outline",
+      "path": "icons/rice-cooker_outline.svg",
+      "category": "common",
+      "keywords": [
+        "rice-cooker outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "rice-cooker_solid",
+      "path": "icons/rice-cooker_solid.svg",
+      "category": "common",
+      "keywords": [
+        "rice-cooker solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "share-aos_outline",
+      "path": "icons/share-aos_outline.svg",
+      "category": "common",
+      "keywords": [
+        "share-aos outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "share-aos_solid",
+      "path": "icons/share-aos_solid.svg",
+      "category": "common",
+      "keywords": [
+        "share-aos solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "share-ios_extrabold",
+      "path": "icons/share-ios_extrabold.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "extrabold",
+        "ios",
+        "share"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "share-ios_solid",
+      "path": "icons/share-ios_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "ios",
+        "share",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "ship_outline",
+      "path": "icons/ship_outline.svg",
+      "category": "common",
+      "keywords": [
+        "ship outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "ship_solid",
+      "path": "icons/ship_solid.svg",
+      "category": "common",
+      "keywords": [
+        "ship solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "sidebar_outline",
+      "path": "icons/sidebar_outline.svg",
+      "category": "common",
+      "keywords": [
+        "sidebar outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "sidebar_solid",
+      "path": "icons/sidebar_solid.svg",
+      "category": "common",
+      "keywords": [
+        "sidebar solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "sightseeing_solid",
+      "path": "icons/sightseeing_solid.svg",
+      "category": "common",
+      "keywords": [
+        "sightseeing solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "sliders-horizonal_outline",
+      "path": "icons/sliders-horizonal_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "horizonal",
+        "outline",
+        "sliders"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "sliders-horizonal_solid",
+      "path": "icons/sliders-horizonal_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "horizonal",
+        "sliders",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "souvenir_solid",
+      "path": "icons/souvenir_solid.svg",
+      "category": "common",
+      "keywords": [
+        "souvenir solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "squares_outline",
+      "path": "icons/squares_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "squares"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "squares_solid",
+      "path": "icons/squares_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "squares"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "star_outline",
+      "path": "icons/star_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "star"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "star_solid_full",
+      "path": "icons/star_solid_full.svg",
+      "category": "common",
+      "keywords": [
+        "star solid full"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "star_solid_half",
+      "path": "icons/star_solid_half.svg",
+      "category": "common",
+      "keywords": [
+        "star solid half"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "stop_outline",
+      "path": "icons/stop_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "stop"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "stop_solid",
+      "path": "icons/stop_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "stop"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "streetfood_solid",
+      "path": "icons/streetfood_solid.svg",
+      "category": "common",
+      "keywords": [
+        "streetfood solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "summer_solid",
+      "path": "icons/summer_solid.svg",
+      "category": "common",
+      "keywords": [
+        "summer solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "sun_outline",
+      "path": "icons/sun_outline.svg",
+      "category": "common",
+      "keywords": [
+        "sun outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "sun_solid",
+      "path": "icons/sun_solid.svg",
+      "category": "common",
+      "keywords": [
+        "sun solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "sync_outline",
+      "path": "icons/sync_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "sync"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "sync_solid",
+      "path": "icons/sync_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "sync"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "television_outline",
+      "path": "icons/television_outline.svg",
+      "category": "common",
+      "keywords": [
+        "television outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "television_solid",
+      "path": "icons/television_solid.svg",
+      "category": "common",
+      "keywords": [
+        "television solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "thumb-up_outline",
+      "path": "icons/thumb-up_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "thumb",
+        "up"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "thumb-up_outline-1",
+      "path": "icons/thumb-up_outline-1.svg",
+      "category": "common",
+      "keywords": [
+        "thumb-up outline-1"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "thumb-up_solid",
+      "path": "icons/thumb-up_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "thumb",
+        "up"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "thumb-up_solid-1",
+      "path": "icons/thumb-up_solid-1.svg",
+      "category": "common",
+      "keywords": [
+        "thumb-up solid-1"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "timer_extrabold",
+      "path": "icons/timer_extrabold.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "extrabold",
+        "timer"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "timer_outline",
+      "path": "icons/timer_outline.svg",
+      "category": "common",
+      "keywords": [
+        "timer outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "timer_solid",
+      "path": "icons/timer_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "timer"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "times-circle_outline",
+      "path": "icons/times-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "outline",
+        "times"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "times-circle_solid",
+      "path": "icons/times-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "solid",
+        "times"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "train_outline",
+      "path": "icons/train_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "train"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "train_solid",
+      "path": "icons/train_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "train"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "trash_outline",
+      "path": "icons/trash_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "trash"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "trash_solid",
+      "path": "icons/trash_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "trash"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "undo_outline",
+      "path": "icons/undo_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "undo"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "undo_solid",
+      "path": "icons/undo_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "undo"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "user_outline",
+      "path": "icons/user_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "user"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "user_solid",
+      "path": "icons/user_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "user"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "users_outline",
+      "path": "icons/users_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "users"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "users_solid",
+      "path": "icons/users_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "users"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "vacuum-cleaner_outline",
+      "path": "icons/vacuum-cleaner_outline.svg",
+      "category": "common",
+      "keywords": [
+        "vacuum-cleaner outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "vacuum-cleaner_solid",
+      "path": "icons/vacuum-cleaner_solid.svg",
+      "category": "common",
+      "keywords": [
+        "vacuum-cleaner solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "video-camera_outline",
+      "path": "icons/video-camera_outline.svg",
+      "category": "common",
+      "keywords": [
+        "camera",
+        "common",
+        "outline",
+        "video"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "video-camera_solid",
+      "path": "icons/video-camera_solid.svg",
+      "category": "common",
+      "keywords": [
+        "camera",
+        "common",
+        "solid",
+        "video"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "volume-slash_outline",
+      "path": "icons/volume-slash_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "slash",
+        "volume"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "volume-slash_solid",
+      "path": "icons/volume-slash_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "slash",
+        "solid",
+        "volume"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "walk_outline",
+      "path": "icons/walk_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "walk"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "walk_solid",
+      "path": "icons/walk_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "walk"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "wallet_outline",
+      "path": "icons/wallet_outline.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "outline",
+        "wallet"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "wallet_solid",
+      "path": "icons/wallet_solid.svg",
+      "category": "common",
+      "keywords": [
+        "common",
+        "solid",
+        "wallet"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "washing-machine_outline",
+      "path": "icons/washing-machine_outline.svg",
+      "category": "common",
+      "keywords": [
+        "washing-machine outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "washing-machine_solid",
+      "path": "icons/washing-machine_solid.svg",
+      "category": "common",
+      "keywords": [
+        "washing-machine solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "x-com",
+      "path": "icons/x-com_outline.svg",
+      "category": "common",
+      "keywords": [
+        "com",
+        "common",
+        "x"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "yen-circle_outline",
+      "path": "icons/yen-circle_outline.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "outline",
+        "yen"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "yen-circle_solid",
+      "path": "icons/yen-circle_solid.svg",
+      "category": "common",
+      "keywords": [
+        "circle",
+        "common",
+        "solid",
+        "yen"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "ai-map_gradient_dark",
+      "path": "icons/ai-map_gradient_dark.svg",
+      "category": "map",
+      "keywords": [
+        "ai-map gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "check-marker",
+      "path": "icons/check-marker_solid.svg",
+      "category": "map",
+      "keywords": [
+        "check",
+        "map",
+        "marker"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "check-marker_solid",
+      "path": "icons/check-marker_solid.svg",
+      "category": "map",
+      "keywords": [
+        "check",
+        "map",
+        "marker",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "map-marker_outline",
+      "path": "icons/map-marker_outline.svg",
+      "category": "map",
+      "keywords": [
+        "map",
+        "marker",
+        "outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "map-marker_solid",
+      "path": "icons/map-marker_solid.svg",
+      "category": "map",
+      "keywords": [
+        "map",
+        "marker",
+        "solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "mappin-other_outline",
+      "path": "icons/mappin-other_outline.svg",
+      "category": "map",
+      "keywords": [
+        "mappin-other outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "mappin-other_solid",
+      "path": "icons/mappin-other_solid.svg",
+      "category": "map",
+      "keywords": [
+        "mappin-other solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "mappin-selected_outline",
+      "path": "icons/mappin-selected_outline.svg",
+      "category": "map",
+      "keywords": [
+        "mappin-selected outline"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "mappin-selected_solid",
+      "path": "icons/mappin-selected_solid.svg",
+      "category": "map",
+      "keywords": [
+        "mappin-selected solid"
+      ],
+      "variant": "solid"
+    },
+    {
+      "id": "ai-search_gradient",
+      "path": "icons/ai-search_gradient.svg",
+      "category": "search",
+      "keywords": [
+        "ai",
+        "gradient",
+        "search"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-search_gradient_dark",
+      "path": "icons/ai-search_gradient_dark.svg",
+      "category": "search",
+      "keywords": [
+        "ai-search gradient dark"
+      ],
+      "variant": "gradient"
+    },
+    {
+      "id": "ai-search_primary",
+      "path": "icons/ai-search_primary.svg",
+      "category": "search",
+      "keywords": [
+        "ai",
+        "primary",
+        "search"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "search_outline",
+      "path": "icons/search_outline.svg",
+      "category": "search",
+      "keywords": [
+        "outline",
+        "search"
+      ],
+      "variant": "outline"
+    },
+    {
+      "id": "search_solid",
+      "path": "icons/search_solid.svg",
+      "category": "search",
+      "keywords": [
+        "search",
+        "solid"
+      ],
+      "variant": "solid"
+    }
+  ]
+};

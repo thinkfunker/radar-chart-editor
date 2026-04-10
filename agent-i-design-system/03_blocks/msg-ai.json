@@ -1,0 +1,9 @@
+{
+  "name": "AI Message",
+  "tier": "03_blocks",
+  "key": "msg-ai",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".msg-ai"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Button",
+  "tier": "03_blocks",
+  "key": "btn",
+  "type": "composition",
+  "description": "",
+  "guidelines": {},
+  "selector": ".btn"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Switch",
+  "tier": "02_components",
+  "key": "sw",
+  "type": "atom",
+  "description": "A toggle component for instantly switching settings or functions on/off.",
+  "guidelines": {
+    "purpose": "Switch is a toggle component for instantly switching settings or functions on/off. The selection state is reflected immediately upon interaction without requiring a confirmation action.",
+    "anatomy": [
+      "Thumb (sw__thumb)",
+      "Layer (sw__layer)",
+      "Track"
+    ],
+    "style": {
+      "state": {
+        "enabled": "Default state",
+        "hovered": "State layer on hover",
+        "focused": "State layer on focus",
+        "pressed": "State layer on press",
+        "disabled": "Non-interactive, opacity 0.38"
+      },
+      "specs": {
+        "size": "36 x var(--sizing-500)",
+        "track_border_radius": "var(--border-radius-full) (full pill)",
+        "thumb_size": "18 x var(--font-size-112)",
+        "colors": {
+          "off_bg": "var(--color-background-tertiary)",
+          "on_bg": "var(--color-content-key) (key)"
+        },
+        "disabled_opacity": "0.38"
+      }
+    },
+    "usage": "Use for settings that take effect immediately without confirmation (e.g., notification on/off, dark mode).",
+    "playground": {
+      "controls": [
+        { "id": "selected", "label": "Selected", "type": "toggle", "options": [true, false], "default": false },
+        { "id": "state", "label": "State", "type": "toggle", "options": ["enabled", "disabled"], "default": "enabled" }
+      ]
+    }
+  },
+  "selector": ".sw"
+}

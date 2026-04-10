@@ -1,0 +1,33 @@
+/**
+ * @agent-i/ui — Toggle Button Component
+ * Requires: @agent-i/design-tokens, @agent-i/theme
+ */
+
+/* ── Toggle Button Component ─────────────────────────── */
+.toggle-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--space-xs); cursor: pointer;
+  font-family: var(--font-family-primary, 'Noto Sans JP', sans-serif);
+  font-weight: 700; line-height: 1; white-space: nowrap;
+  transition: all .15s;
+  position: relative; text-decoration: none; outline: none;
+  border: calc(var(--border-width-100) * 1.5) solid var(--color-border-primary);
+  background: transparent; color: var(--color-content-primary);
+}
+.toggle-btn.selected {
+  background: linear-gradient(26deg, var(--color-gradient-background-stop-1) 5.1%, var(--color-gradient-background-stop-2) 92.4%);
+  color: var(--color-content-inverted); border-color: transparent;
+}
+.toggle-btn:disabled, .toggle-btn.state-disabled { opacity: 0.4; pointer-events: none; }
+.toggle-btn.state-hovered:not(.selected) { border-color: var(--color-content-tertiary); background: var(--color-background-disabled-accent); }
+.toggle-btn.state-hovered.selected { opacity: 0.88; }
+.toggle-btn.state-pressed:not(.selected) { background: var(--color-border-tertiary); }
+.toggle-btn.state-pressed.selected { opacity: 0.74; transform: scale(0.98); }
+.toggle-btn.state-focused:not(.selected) { box-shadow: 0 0 0 var(--border-width-300) var(--color-border-secondary); }
+.toggle-btn.state-focused.selected { box-shadow: 0 0 0 var(--border-width-300) var(--color-state-focused-secondary); }
+.toggle-btn--medium  { height: var(--sizing-800); padding: 0 var(--spacing-300); font-size: var(--font-size-0875); border-radius: var(--border-radius-200); }
+.toggle-btn--large   { height: var(--sizing-1000); padding: 0 var(--spacing-400); font-size: var(--font-size-0875); border-radius: var(--radius-lg); }
+.toggle-btn--xlarge  { height: var(--sizing-1200); padding: 0 var(--spacing-500); font-size: var(--sizing-400); border-radius: var(--border-radius-300); }
+.toggle-btn--xxlarge { height: var(--sizing-1400); padding: 0 var(--spacing-600); font-size: var(--sizing-400); border-radius: var(--line-height-label-small); gap: var(--spacing-200); }
+.toggle-btn .toggle-btn-icon { width: 1em; height: 1em; display: none; flex-shrink: 0; }
+.toggle-btn.selected .toggle-btn-icon { display: block; }

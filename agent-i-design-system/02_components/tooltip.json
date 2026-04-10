@@ -1,0 +1,39 @@
+{
+  "name": "Tooltip",
+  "tier": "02_components",
+  "key": "tooltip",
+  "type": "block",
+  "description": "特定のUI要素に対する補足説明を簡潔に提供するコンポーネントです。",
+  "guidelines": {
+    "purpose": "Tooltipは、特定のUI要素に対する補足説明を簡潔に提供するためのコンポーネントです。ユーザーは画面遷移をせず、現在の文脈の中で意味や状態を理解することができます。",
+    "anatomy": {
+      "elements": [
+        "Arrow",
+        "Title（任意）",
+        "Text",
+        "Container"
+      ]
+    },
+    "type": [
+      "With Title",
+      "Text Only"
+    ],
+    "usageGuidelines": {
+      "arrowAlign": "Arrowは、表示スペースや対象要素の位置に応じて左 / 中央 / 右 に配置を変更できます。",
+      "alignment": "Arrowの位置調整は、新しいコンポーネントを追加せず、Tooltip内のAlign設定で対応します。Align設定を変更することで、Arrowを左 / 中央 / 右 に調整できます。"
+    },
+    "do": [
+      "Tooltipは特定のUI要素と明確に関連付けて使用します。",
+      "Titleを使用する場合は、短く要点のみを記載します。",
+      "画面端ではAlignを調整し、視覚的なつながりを保ちます。",
+      "繰り返し表示されるTooltipは、ユーザー負荷を考慮します。"
+    ],
+    "dont": [
+      "長文や複雑な説明をTooltipに入れません。",
+      "同一目的で複数の案内パターンを併用しません。",
+      "Arrow位置の違いだけで新しいTooltipパターンを作成しません。",
+      "意味のない装飾目的でTooltipを使用しません。"
+    ]
+  },
+  "selector": ".tooltip"
+}
