@@ -6,15 +6,16 @@
  */
 
 (() => {
-  const COMP_BASE = './02_components/';
-  const BLOCK_BASE = './03_blocks/';
-  const FOUNDATION_BASE = './01_foundation/';
+  const BASE_URL = new URL('.', import.meta.url);
+  const COMP_BASE = new URL('./02_components/', BASE_URL);
+  const BLOCK_BASE = new URL('./03_blocks/', BASE_URL);
+  const FOUNDATION_BASE = new URL('./01_foundation/', BASE_URL);
   const cacheBust = `?v=${Date.now()}`;
 
   const ensureUtils = () => new Promise((resolve, reject) => {
     if (window.DS_UTILS) return resolve();
     const script = document.createElement('script');
-    script.src = `${FOUNDATION_BASE}utils.js${cacheBust}`;
+    script.src = new URL(`./01_foundation/utils.js${cacheBust}`, BASE_URL).href;
     script.onload = resolve;
     script.onerror = reject;
     document.head.appendChild(script);
@@ -23,7 +24,7 @@
   const ensureIcons = async () => {
     if (window.DS_ICON_REGISTRY) return;
     try {
-      const res = await fetch(`${FOUNDATION_BASE}icons.json${cacheBust}`);
+      const res = await fetch(new URL(`./01_foundation/icons.json${cacheBust}`, BASE_URL).href);
       window.DS_ICON_REGISTRY = await res.json();
     } catch (err) {
       console.warn('[agent-i-components] Icon registry load failed:', err);
@@ -83,53 +84,53 @@
       { default: textinput },
       { default: reviewcard }
     ] = await Promise.all([
-      import(`${BLOCK_BASE}phoneFrame.js${cacheBust}`),
-      import(`${BLOCK_BASE}scrollArea.js${cacheBust}`),
-      import(`${BLOCK_BASE}stickyHeader.js${cacheBust}`),
-      import(`${BLOCK_BASE}page.js${cacheBust}`),
-      import(`${BLOCK_BASE}topnav.js${cacheBust}`),
-      import(`${BLOCK_BASE}bottomNav.js${cacheBust}`),
-      import(`${BLOCK_BASE}searchBar.js${cacheBust}`),
-      import(`${BLOCK_BASE}aiSuggestionChips.js${cacheBust}`),
-      import(`${BLOCK_BASE}templateAiTextInput.js${cacheBust}`),
-      import(`${BLOCK_BASE}chatUi.js${cacheBust}`),
-      import(`${BLOCK_BASE}aiBackground.js${cacheBust}`),
-      import(`${BLOCK_BASE}chipsUi.js${cacheBust}`),
-      import(`${BLOCK_BASE}listCard.js${cacheBust}`),
-      import(`${BLOCK_BASE}onboardingCard.js${cacheBust}`),
-      import(`${BLOCK_BASE}sectionHeader.js${cacheBust}`),
-      import(`${BLOCK_BASE}divider.js${cacheBust}`),
-      import(`${BLOCK_BASE}productCard.js${cacheBust}`),
-      import(`${BLOCK_BASE}productGrid.js${cacheBust}`),
-      import(`${BLOCK_BASE}mediaCard.js${cacheBust}`),
-      import(`${COMP_BASE}badge.js${cacheBust}`),
-      import(`${COMP_BASE}tag.js${cacheBust}`),
-      import(`${COMP_BASE}score.js${cacheBust}`),
-      import(`${COMP_BASE}toast.js${cacheBust}`),
-      import(`${COMP_BASE}button.js${cacheBust}`),
-      import(`${COMP_BASE}ghostButton.js${cacheBust}`),
-      import(`${COMP_BASE}avatar.js${cacheBust}`),
-      import(`${COMP_BASE}thumb.js${cacheBust}`),
-      import(`${COMP_BASE}progress.js${cacheBust}`),
-      import(`${COMP_BASE}infocard.js${cacheBust}`),
-      import(`${COMP_BASE}qcard.js${cacheBust}`),
-      import(`${COMP_BASE}rpattern.js${cacheBust}`),
-      import(`${COMP_BASE}selectionChip.js${cacheBust}`),
-      import(`${COMP_BASE}cardbtn.js${cacheBust}`),
-      import(`${COMP_BASE}selectionChipGroup.js${cacheBust}`),
-      import(`${COMP_BASE}selectionCard.js${cacheBust}`),
-      import(`${COMP_BASE}moreButton.js${cacheBust}`),
-      import(`${COMP_BASE}carousel.js${cacheBust}`),
-      import(`${COMP_BASE}message.js${cacheBust}`),
-      import(`${COMP_BASE}keyValueList.js${cacheBust}`),
-      import(`${COMP_BASE}menuItem.js${cacheBust}`),
-      import(`${COMP_BASE}menu.js${cacheBust}`),
-      import(`${COMP_BASE}modal.js${cacheBust}`),
-      import(`${COMP_BASE}bottomSheet.js${cacheBust}`),
-      import(`${COMP_BASE}cardExpand.js${cacheBust}`),
-      import(`${COMP_BASE}bottomButton.js${cacheBust}`),
-      import(`${COMP_BASE}textinput.js${cacheBust}`),
-      import(`${COMP_BASE}reviewCard.js${cacheBust}`)
+      import(new URL(`./03_blocks/phoneFrame.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/scrollArea.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/stickyHeader.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/page.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/topnav.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/bottomNav.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/searchBar.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/aiSuggestionChips.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/templateAiTextInput.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/chatUi.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/aiBackground.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/chipsUi.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/listCard.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/onboardingCard.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/sectionHeader.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/divider.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/productCard.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/productGrid.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./03_blocks/mediaCard.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/badge.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/tag.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/score.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/toast.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/button.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/ghostButton.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/avatar.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/thumb.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/progress.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/infocard.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/qcard.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/rpattern.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/selectionChip.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/cardbtn.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/selectionChipGroup.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/selectionCard.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/moreButton.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/carousel.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/message.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/keyValueList.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/menuItem.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/menu.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/modal.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/bottomSheet.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/cardExpand.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/bottomButton.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/textinput.js${cacheBust}`, BASE_URL).href),
+      import(new URL(`./02_components/reviewCard.js${cacheBust}`, BASE_URL).href)
     ]);
 
     const DS = window.DS || {};
