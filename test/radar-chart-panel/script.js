@@ -7,9 +7,9 @@ function initRadarApp() {
   const app = document.getElementById('app');
   if (!app) return;
   try {
-    const headerHtml = window.DS && window.DS.sectionHeader
-      ? window.DS.sectionHeader({ title: 'Radar Chart Editor' })
-      : '<div class="local-header">Radar Chart Editor</div>';
+  const headerHtml = window.DS && window.DS.sectionHeader
+    ? window.DS.sectionHeader({ title: 'Radar Chart Editor' })
+    : '<div class="local-header">Radar Chart Editor</div>';
 
     app.innerHTML = `
       ${headerHtml}
@@ -79,7 +79,7 @@ function initRadarApp() {
     if (state.labels.length !== points) {
       const nextLabels = [];
       for (let i = 0; i < points; i += 1) {
-        nextLabels.push(state.labels[i] || `항목 ${i + 1}`);
+        nextLabels.push(state.labels[i] || `Item ${i + 1}`);
       }
       state.labels = nextLabels;
     }
@@ -280,99 +280,99 @@ function initRadarApp() {
       <div class="controls">
         <h3>Controls</h3>
         <div class="control-row">
-          <label>포인트 수 (축 개수)</label>
+          <label>Point Count (Axes)</label>
           <input type="number" min="3" max="12" step="1" data-control="points" value="${state.points}" />
         </div>
         <div class="control-row">
-          <label>차트 중첩 갯수 (Series)</label>
+          <label>Series Count</label>
           <input type="number" min="1" max="5" step="1" data-control="series" value="${state.series}" />
         </div>
         <div class="control-row">
-          <label>컬러 라인 두께</label>
+          <label>Line Thickness</label>
           <div class="inline">
             <input type="range" min="1" max="8" step="1" data-control="lineWidth" value="${state.lineWidth}" />
             <span>${state.lineWidth}px</span>
           </div>
         </div>
         <div class="control-row">
-          <label>포인트 크기</label>
+          <label>Point Size</label>
           <div class="inline">
             <input type="range" min="0" max="10" step="1" data-control="pointSize" value="${state.pointSize}" />
             <span>${state.pointSize}px</span>
           </div>
         </div>
         <div class="control-row">
-          <label>그리드 스타일</label>
+          <label>Grid Style</label>
           <select data-control="gridStyle">
-            <option value="polygon" ${state.gridStyle === 'polygon' ? 'selected' : ''}>다각형 링</option>
-            <option value="circle" ${state.gridStyle === 'circle' ? 'selected' : ''}>원형 링</option>
+            <option value="polygon" ${state.gridStyle === 'polygon' ? 'selected' : ''}>Polygon Rings</option>
+            <option value="circle" ${state.gridStyle === 'circle' ? 'selected' : ''}>Circular Rings</option>
           </select>
         </div>
         <div class="control-row">
-          <label>축 라인 표시</label>
+          <label>Show Axis Lines</label>
           <select data-control="showAxis">
-            <option value="true" ${state.showAxis ? 'selected' : ''}>표시</option>
-            <option value="false" ${!state.showAxis ? 'selected' : ''}>숨김</option>
+            <option value="true" ${state.showAxis ? 'selected' : ''}>On</option>
+            <option value="false" ${!state.showAxis ? 'selected' : ''}>Off</option>
           </select>
         </div>
         <div class="control-row">
-          <label>포인트 표시</label>
+          <label>Show Points</label>
           <select data-control="showPoints">
-            <option value="true" ${state.showPoints ? 'selected' : ''}>표시</option>
-            <option value="false" ${!state.showPoints ? 'selected' : ''}>숨김</option>
+            <option value="true" ${state.showPoints ? 'selected' : ''}>On</option>
+            <option value="false" ${!state.showPoints ? 'selected' : ''}>Off</option>
           </select>
         </div>
         <div class="control-row">
-          <label>포인트 외곽선</label>
+          <label>Point Stroke</label>
           <div class="inline">
             <input type="color" data-control="pointStrokeColor" value="${state.pointStrokeColor}" />
             <input type="number" min="0" max="4" step="1" data-control="pointStrokeWidth" value="${state.pointStrokeWidth}" />
           </div>
         </div>
         <div class="control-row">
-          <label>라벨 대/소문자</label>
+          <label>Label Case</label>
           <select data-control="labelCase">
-            <option value="upper" ${state.labelCase === 'upper' ? 'selected' : ''}>대문자</option>
-            <option value="lower" ${state.labelCase === 'lower' ? 'selected' : ''}>소문자</option>
+            <option value="upper" ${state.labelCase === 'upper' ? 'selected' : ''}>Uppercase</option>
+            <option value="lower" ${state.labelCase === 'lower' ? 'selected' : ''}>Lowercase</option>
           </select>
         </div>
         <div class="control-row">
-          <label>라벨 거리(오프셋)</label>
+          <label>Label Offset</label>
           <div class="inline">
             <input type="range" min="1.0" max="1.4" step="0.02" data-control="labelOffset" value="${state.labelOffset}" />
             <span>${state.labelOffset.toFixed(2)}x</span>
           </div>
         </div>
         <div class="control-row">
-          <label>값 범위 (min / max)</label>
+          <label>Value Range (min / max)</label>
           <div class="inline">
             <input type="number" min="-1000" max="1000" step="1" data-control="min" value="${state.min}" />
             <input type="number" min="-1000" max="1000" step="1" data-control="max" value="${state.max}" />
           </div>
         </div>
         <div class="control-row">
-          <label>그리드 단계 수</label>
+          <label>Grid Levels</label>
           <input type="number" min="3" max="8" step="1" data-control="levels" value="${state.levels}" />
         </div>
         <div class="control-row">
-          <label>채우기 투명도</label>
+          <label>Fill Opacity</label>
           <div class="inline">
             <input type="range" min="0" max="0.6" step="0.02" data-control="fillAlpha" value="${state.fillAlpha}" />
             <span>${Math.round(state.fillAlpha * 100)}%</span>
           </div>
         </div>
         <div class="control-row">
-          <label>채우기 그라데이션</label>
+          <label>Fill Gradient</label>
           <select data-control="useGradientFill">
             <option value="false" ${!state.useGradientFill ? 'selected' : ''}>Off</option>
             <option value="true" ${state.useGradientFill ? 'selected' : ''}>On</option>
           </select>
         </div>
         <div class="control-row">
-          <label>포인트 스타일</label>
+          <label>Point Shape</label>
           <select data-control="pointShape">
-            <option value="circle" ${state.pointShape === 'circle' ? 'selected' : ''}>원형</option>
-            <option value="square" ${state.pointShape === 'square' ? 'selected' : ''}>사각형</option>
+            <option value="circle" ${state.pointShape === 'circle' ? 'selected' : ''}>Circle</option>
+            <option value="square" ${state.pointShape === 'square' ? 'selected' : ''}>Square</option>
           </select>
         </div>
       </div>
@@ -383,30 +383,30 @@ function initRadarApp() {
         </div>
         <div class="series-colors">
           <div class="color-row">
-            <label>배경 컬러</label>
+            <label>Background</label>
             <input type="color" data-control="bgColor" value="${state.bgColor}" />
           </div>
           <div class="color-row">
-            <label>축 라인 컬러</label>
+            <label>Axis Lines</label>
             <input type="color" data-control="axisColor" value="${state.axisColor}" />
           </div>
           <div class="color-row">
-            <label>텍스트 컬러</label>
+            <label>Text</label>
             <input type="color" data-control="textColor" value="${state.textColor}" />
           </div>
           <div class="color-row">
-            <label>그라데이션 시작</label>
+            <label>Gradient Start</label>
             <input type="color" data-control="gradientStart" value="${state.gradientStart}" />
           </div>
           <div class="color-row">
-            <label>그라데이션 끝</label>
+            <label>Gradient End</label>
             <input type="color" data-control="gradientEnd" value="${state.gradientEnd}" />
           </div>
         </div>
         <div class="series-colors">
           ${state.seriesAlphas.map((alpha, idx) => `
             <div class="color-row">
-              <label>Series ${idx + 1} 투명도</label>
+              <label>Series ${idx + 1} Opacity</label>
               <input type="range" min="0" max="0.6" step="0.02" data-series-alpha="${idx}" value="${alpha}" />
             </div>
           `).join('')}
@@ -426,7 +426,7 @@ function initRadarApp() {
           </tbody>
         </table>
         <div class="control-row">
-          <label>레이더차트 코드 출력</label>
+          <label>Radar Chart Code</label>
           <textarea id="chartCode" rows="8" readonly></textarea>
           <div class="inline">
             <button type="button" id="exportBtn">Export Code</button>
@@ -484,7 +484,7 @@ function initRadarApp() {
     panel.querySelectorAll('[data-label]').forEach((input) => {
       input.addEventListener('input', () => {
         const idx = Number(input.dataset.label);
-        state.labels[idx] = input.value || `항목 ${idx + 1}`;
+        state.labels[idx] = input.value || `Item ${idx + 1}`;
         renderChart();
       });
     });
@@ -546,9 +546,9 @@ function initRadarApp() {
       try {
         if (!codeArea.value) codeArea.value = buildChartCode();
         await navigator.clipboard.writeText(codeArea.value);
-        alert('코드가 복사되었습니다.');
+        alert('Code copied.');
       } catch (err) {
-        alert('복사에 실패했습니다.');
+        alert('Copy failed.');
       }
     });
 
@@ -557,7 +557,7 @@ function initRadarApp() {
     const presetArea = document.createElement('div');
     presetArea.className = 'control-row';
     presetArea.innerHTML = `
-      <label>스타일 프리셋 (최대 3개)</label>
+      <label>Style Presets (max 3)</label>
       <div class="preset-grid">
         <button type="button" data-preset-save="0">Save 1</button>
         <button type="button" data-preset-save="1">Save 2</button>
@@ -607,7 +607,7 @@ function initRadarApp() {
         const idx = Number(btn.dataset.presetSave);
         presets[idx] = getStyleSnapshot();
         localStorage.setItem(presetKey, JSON.stringify(presets.slice(0, 3)));
-        alert(`프리셋 ${idx + 1} 저장됨`);
+        alert(`Preset ${idx + 1} saved`);
       });
     });
 
@@ -615,7 +615,7 @@ function initRadarApp() {
       btn.addEventListener('click', () => {
         const idx = Number(btn.dataset.presetLoad);
         if (!presets[idx]) {
-          alert('저장된 프리셋이 없습니다.');
+          alert('No saved preset found.');
           return;
         }
         applyStyleSnapshot(presets[idx]);
