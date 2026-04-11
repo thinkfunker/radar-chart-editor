@@ -69,7 +69,7 @@ function initRadarApp() {
     gradientEnd: '#000000',
     labels: [],
     data: [],
-    colors: ['#2563EB', '#F97316', '#22C55E', '#EC4899']
+    colors: ['#669BFE', '#AEA1FF', '#22C55E', '#EC4899']
   };
 
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
