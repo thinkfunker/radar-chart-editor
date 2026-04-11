@@ -84,6 +84,9 @@ function initRadarApp() {
     if (Array.isArray(savedPresets[0].data)) {
       state.data = savedPresets[0].data.map((row) => row.slice());
     }
+    if (Array.isArray(savedPresets[0].colors)) {
+      state.colors = savedPresets[0].colors.slice();
+    }
     if (Array.isArray(savedPresets[0].seriesAlphas)) {
       state.seriesAlphas = savedPresets[0].seriesAlphas.slice();
     }
@@ -586,8 +589,9 @@ function initRadarApp() {
 
     function getStyleSnapshot() {
       return {
-        labels: state.labels,
-        data: state.data,
+        labels: state.labels.slice(),
+        data: state.data.map((row) => row.slice()),
+        colors: state.colors.slice(),
         lineWidth: state.lineWidth,
         pointSize: state.pointSize,
         min: state.min,
@@ -612,6 +616,18 @@ function initRadarApp() {
 
     function applyStyleSnapshot(snapshot) {
       Object.assign(state, snapshot);
+      if (Array.isArray(snapshot.labels)) {
+        state.labels = snapshot.labels.slice();
+      }
+      if (Array.isArray(snapshot.data)) {
+        state.data = snapshot.data.map((row) => row.slice());
+      }
+      if (Array.isArray(snapshot.colors)) {
+        state.colors = snapshot.colors.slice();
+      }
+      if (Array.isArray(snapshot.seriesAlphas)) {
+        state.seriesAlphas = snapshot.seriesAlphas.slice();
+      }
       ensureData();
       renderPanel();
       renderChart();
