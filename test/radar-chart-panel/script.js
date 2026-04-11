@@ -50,7 +50,7 @@ function initRadarApp() {
     pointSize: 5,
     min: 0,
     max: 100,
-    levels: 5,
+    levels: 4,
     fillAlpha: 0.18,
     pointShape: 'circle',
     showPoints: true,
@@ -63,7 +63,7 @@ function initRadarApp() {
     useGradientFill: false,
     seriesAlphas: [],
     bgColor: '#eef7fc',
-    axisColor: 'rgba(148, 163, 184, 0.6)',
+    axisColor: '#494B4F29',
     textColor: '#0f172a',
     gradientStart: '#ffffff',
     gradientEnd: '#000000',
@@ -425,27 +425,27 @@ function initRadarApp() {
         <div class="series-colors">
           <div class="color-row">
             <label>Background</label>
-            <input type="color" data-control="bgColor" value="${state.bgColor}" />
+            <input type="color" data-control="bgColor" value="${state.bgColor.slice(0, 7)}" />
             <input type="text" data-control-hex="bgColor" value="${state.bgColor}" />
           </div>
           <div class="color-row">
             <label>Axis Lines</label>
-            <input type="color" data-control="axisColor" value="${state.axisColor}" />
+            <input type="color" data-control="axisColor" value="${state.axisColor.slice(0, 7)}" />
             <input type="text" data-control-hex="axisColor" value="${state.axisColor}" />
           </div>
           <div class="color-row">
             <label>Text</label>
-            <input type="color" data-control="textColor" value="${state.textColor}" />
+            <input type="color" data-control="textColor" value="${state.textColor.slice(0, 7)}" />
             <input type="text" data-control-hex="textColor" value="${state.textColor}" />
           </div>
           <div class="color-row">
             <label>Gradient Start</label>
-            <input type="color" data-control="gradientStart" value="${state.gradientStart}" />
+            <input type="color" data-control="gradientStart" value="${state.gradientStart.slice(0, 7)}" />
             <input type="text" data-control-hex="gradientStart" value="${state.gradientStart}" />
           </div>
           <div class="color-row">
             <label>Gradient End</label>
-            <input type="color" data-control="gradientEnd" value="${state.gradientEnd}" />
+            <input type="color" data-control="gradientEnd" value="${state.gradientEnd.slice(0, 7)}" />
             <input type="text" data-control-hex="gradientEnd" value="${state.gradientEnd}" />
           </div>
         </div>
@@ -540,7 +540,14 @@ function initRadarApp() {
       if (/^[0-9a-fA-F]{3}$/.test(hex)) {
         return `#${hex.split('').map((c) => c + c).join('')}`.toUpperCase();
       }
+      if (/^[0-9a-fA-F]{4}$/.test(hex)) {
+        const expanded = hex.split('').map((c) => c + c).join('');
+        return `#${expanded}`.toUpperCase();
+      }
       if (/^[0-9a-fA-F]{6}$/.test(hex)) {
+        return `#${hex}`.toUpperCase();
+      }
+      if (/^[0-9a-fA-F]{8}$/.test(hex)) {
         return `#${hex}`.toUpperCase();
       }
       return null;
@@ -555,11 +562,11 @@ function initRadarApp() {
           const idx = Number(key);
           state.colors[idx] = normalized;
           const colorInput = panel.querySelector(`[data-color="${idx}"]`);
-          if (colorInput) colorInput.value = normalized;
+          if (colorInput) colorInput.value = normalized.slice(0, 7);
         } else {
           state[key] = normalized;
           const colorInput = panel.querySelector(`[data-control="${key}"]`);
-          if (colorInput) colorInput.value = normalized;
+          if (colorInput) colorInput.value = normalized.slice(0, 7);
         }
         input.value = normalized;
         renderChart();
