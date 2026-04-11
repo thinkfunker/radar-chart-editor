@@ -405,22 +405,27 @@ function initRadarApp() {
           <div class="color-row">
             <label>Background</label>
             <input type="color" data-control="bgColor" value="${state.bgColor}" />
+            <input type="text" data-control-hex="bgColor" value="${state.bgColor}" />
           </div>
           <div class="color-row">
             <label>Axis Lines</label>
             <input type="color" data-control="axisColor" value="${state.axisColor}" />
+            <input type="text" data-control-hex="axisColor" value="${state.axisColor}" />
           </div>
           <div class="color-row">
             <label>Text</label>
             <input type="color" data-control="textColor" value="${state.textColor}" />
+            <input type="text" data-control-hex="textColor" value="${state.textColor}" />
           </div>
           <div class="color-row">
             <label>Gradient Start</label>
             <input type="color" data-control="gradientStart" value="${state.gradientStart}" />
+            <input type="text" data-control-hex="gradientStart" value="${state.gradientStart}" />
           </div>
           <div class="color-row">
             <label>Gradient End</label>
             <input type="color" data-control="gradientEnd" value="${state.gradientEnd}" />
+            <input type="text" data-control-hex="gradientEnd" value="${state.gradientEnd}" />
           </div>
         </div>
         <div class="series-colors">
@@ -487,6 +492,10 @@ function initRadarApp() {
         if (key === 'textColor') state.textColor = value;
         if (key === 'gradientStart') state.gradientStart = value;
         if (key === 'gradientEnd') state.gradientEnd = value;
+        const hexMirror = panel.querySelector(`[data-control-hex="${key}"]`);
+        if (hexMirror && typeof value === 'string') {
+          hexMirror.value = value;
+        }
         if (state.max <= state.min) state.max = state.min + 1;
         renderPanel();
         renderChart();
@@ -518,12 +527,19 @@ function initRadarApp() {
 
     panel.querySelectorAll('[data-color-hex]').forEach((input) => {
       input.addEventListener('input', () => {
-        const idx = Number(input.dataset.colorHex);
+        const key = input.dataset.colorHex;
         const normalized = normalizeHex(input.value);
         if (!normalized) return;
-        state.colors[idx] = normalized;
-        const colorInput = panel.querySelector(`[data-color="${idx}"]`);
-        if (colorInput) colorInput.value = normalized;
+        if (/^\d+$/.test(key)) {
+          const idx = Number(key);
+          state.colors[idx] = normalized;
+          const colorInput = panel.querySelector(`[data-color="${idx}"]`);
+          if (colorInput) colorInput.value = normalized;
+        } else {
+          state[key] = normalized;
+          const colorInput = panel.querySelector(`[data-control="${key}"]`);
+          if (colorInput) colorInput.value = normalized;
+        }
         input.value = normalized;
         renderChart();
       });
