@@ -271,6 +271,7 @@ function initRadarApp() {
         <div class="color-row">
           <label>Series ${idx + 1}</label>
           <input type="color" data-color="${idx}" value="${state.colors[idx]}" />
+          <input type="text" data-color-hex="${idx}" value="${state.colors[idx]}" />
         </div>
       `;
     }).join('');
@@ -496,6 +497,34 @@ function initRadarApp() {
       input.addEventListener('input', () => {
         const idx = Number(input.dataset.color);
         state.colors[idx] = input.value;
+        const hexInput = panel.querySelector(`[data-color-hex="${idx}"]`);
+        if (hexInput) hexInput.value = input.value;
+        renderChart();
+      });
+    });
+
+    const normalizeHex = (value) => {
+      const v = value.trim();
+      if (!v) return null;
+      const hex = v.startsWith('#') ? v.slice(1) : v;
+      if (/^[0-9a-fA-F]{3}$/.test(hex)) {
+        return `#${hex.split('').map((c) => c + c).join('')}`.toUpperCase();
+      }
+      if (/^[0-9a-fA-F]{6}$/.test(hex)) {
+        return `#${hex}`.toUpperCase();
+      }
+      return null;
+    };
+
+    panel.querySelectorAll('[data-color-hex]').forEach((input) => {
+      input.addEventListener('input', () => {
+        const idx = Number(input.dataset.colorHex);
+        const normalized = normalizeHex(input.value);
+        if (!normalized) return;
+        state.colors[idx] = normalized;
+        const colorInput = panel.querySelector(`[data-color="${idx}"]`);
+        if (colorInput) colorInput.value = normalized;
+        input.value = normalized;
         renderChart();
       });
     });
