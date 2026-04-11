@@ -547,7 +547,7 @@ function initRadarApp() {
     };
 
     panel.querySelectorAll('[data-color-hex]').forEach((input) => {
-      input.addEventListener('input', () => {
+      const applyHex = () => {
         const key = input.dataset.colorHex;
         const normalized = normalizeHex(input.value);
         if (!normalized) return;
@@ -563,7 +563,10 @@ function initRadarApp() {
         }
         input.value = normalized;
         renderChart();
-      });
+      };
+      input.addEventListener('input', applyHex);
+      input.addEventListener('change', applyHex);
+      input.addEventListener('blur', applyHex);
     });
 
     panel.querySelectorAll('[data-label]').forEach((input) => {
