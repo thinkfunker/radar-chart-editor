@@ -212,6 +212,7 @@ body {
   height: 100%;
   border-radius: 12px;
   background: var(--radar-bg, #eef7fc);
+  mix-blend-mode: multiply;
 }
 
 @media (max-width: 960px) {
