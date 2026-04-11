@@ -156,6 +156,8 @@ function initRadarApp() {
     canvas.style.setProperty('--radar-bg', state.bgColor);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    ctx.globalCompositeOperation = 'source-over';
+
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
     const centerX = width / 2;
@@ -209,6 +211,7 @@ function initRadarApp() {
       ctx.fillText(label, x * state.labelOffset, y * state.labelOffset);
     }
 
+    ctx.globalCompositeOperation = 'multiply';
     for (let s = 0; s < state.series; s += 1) {
       const color = state.colors[s];
       const values = state.data[s];
@@ -232,6 +235,24 @@ function initRadarApp() {
         ctx.fillStyle = hexToRgba(color, state.seriesAlphas[s]);
       }
       ctx.fill();
+    }
+
+    ctx.globalCompositeOperation = 'source-over';
+
+    for (let s = 0; s < state.series; s += 1) {
+      const color = state.colors[s];
+      const values = state.data[s];
+      ctx.beginPath();
+      for (let i = 0; i < state.points; i += 1) {
+        const angle = (Math.PI * 2 * i) / state.points - Math.PI / 2;
+        const v = clamp(values[i], state.min, state.max);
+        const normalized = (v - state.min) / range;
+        const x = Math.cos(angle) * radius * normalized;
+        const y = Math.sin(angle) * radius * normalized;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.closePath();
       ctx.strokeStyle = color;
       ctx.lineWidth = state.lineWidth;
       ctx.stroke();
