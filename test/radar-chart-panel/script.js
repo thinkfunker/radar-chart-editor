@@ -74,6 +74,22 @@ function initRadarApp() {
 
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
+  const presetKey = 'radar-style-presets-v1';
+  const savedPresets = JSON.parse(localStorage.getItem(presetKey) || '[]');
+  if (savedPresets[0]) {
+    Object.assign(state, savedPresets[0]);
+    if (Array.isArray(savedPresets[0].labels)) {
+      state.labels = savedPresets[0].labels.slice();
+    }
+    if (Array.isArray(savedPresets[0].data)) {
+      state.data = savedPresets[0].data.map((row) => row.slice());
+    }
+    if (Array.isArray(savedPresets[0].seriesAlphas)) {
+      state.seriesAlphas = savedPresets[0].seriesAlphas.slice();
+    }
+    if (state.max <= state.min) state.max = state.min + 1;
+  }
+
   function ensureData() {
     const { points, series } = state;
     if (state.labels.length !== points) {
@@ -552,7 +568,6 @@ function initRadarApp() {
       }
     });
 
-    const presetKey = 'radar-style-presets-v1';
     const presets = JSON.parse(localStorage.getItem(presetKey) || '[]');
     const presetArea = document.createElement('div');
     presetArea.className = 'control-row';
